@@ -28,6 +28,7 @@ $pages = array(
 	'render_settings'   => array(),
 	'render_vocabulary' => array(),
 	'render_bulk'       => array(),
+	'render_help'       => array(),
 );
 
 // Need a WP_Screen-ish context for enqueue checks; render methods only need caps.
@@ -45,6 +46,23 @@ foreach ( $pages as $method => $args ) {
 	}
 	error_reporting( $previous );
 }
+
+// --- UX, onboarding, documentation and attribution ----------------------------
+ob_start();
+$admin->render_dashboard();
+$dashboard_html = ob_get_clean();
+a_check( false !== strpos( $dashboard_html, 'data-ele-onboarding="true"' ), 'dashboard has first-run onboarding' );
+a_check( false !== strpos( $dashboard_html, 'data-ele-step="build-index"' ), 'onboarding contains index step' );
+a_check( false !== strpos( $dashboard_html, 'https://eullrich.com/' ), 'dashboard has author link' );
+a_check( false !== strpos( $dashboard_html, 'noopener noreferrer' ), 'author link uses safe rel attributes' );
+
+ob_start();
+$admin->render_help();
+$help_html = ob_get_clean();
+a_check( false !== strpos( $help_html, 'id="entity-mapping"' ), 'help documents entity mapping' );
+a_check( false !== strpos( $help_html, 'id="retrieval"' ), 'help documents fan-out retrieval' );
+a_check( false !== strpos( $help_html, 'id="editor-workflow"' ), 'help documents insertion and undo' );
+a_check( false !== strpos( $help_html, 'id="semantic-privacy"' ), 'help documents semantic privacy' );
 
 // --- Meta box render ----------------------------------------------------------
 $posts = get_posts( array( 'post_type' => 'post', 'numberposts' => 1, 'post_status' => 'publish' ) );

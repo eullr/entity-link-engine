@@ -1,49 +1,594 @@
-/* Entity Link Engine — admin styles. */
+/* Entity Link Engine — WordPress-native admin UI. */
 
-.ele-cards {
-	display: flex;
-	gap: 16px;
-	margin: 16px 0 24px;
-	flex-wrap: wrap;
+.ele-app {
+	--ele-ink: #151918;
+	--ele-muted: #5f6b66;
+	--ele-border: #dfe6e2;
+	--ele-soft: #f6f9f7;
+	--ele-accent: #12a66b;
+	--ele-accent-dark: #08784b;
+	--ele-accent-soft: #e5f7ef;
+	--ele-warn: #9a6700;
+	--ele-warn-soft: #fff6d9;
+	max-width: 1180px;
+	color: var(--ele-ink);
 }
 
+.ele-app *,
+#ele-meta * {
+	box-sizing: border-box;
+}
+
+.ele-app a,
+#ele-meta a {
+	color: var(--ele-accent-dark, #08784b);
+}
+
+.ele-app a:focus,
+.ele-app button:focus,
+.ele-app input:focus,
+.ele-app select:focus,
+#ele-meta a:focus,
+#ele-meta button:focus {
+	box-shadow: 0 0 0 2px #fff, 0 0 0 4px var(--ele-accent, #12a66b);
+	outline: 2px solid transparent;
+}
+
+.ele-page-header {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	gap: 24px;
+	padding: 28px 0 22px;
+}
+
+.ele-page-header h1 {
+	margin: 3px 0 8px;
+	color: var(--ele-ink);
+	font-size: 30px;
+	font-weight: 600;
+	letter-spacing: -0.5px;
+	line-height: 1.18;
+}
+
+.ele-page-header .button,
+.ele-save-bar .button,
+.ele-panel .button {
+	border-color: #c7d2cc;
+	border-radius: 999px;
+}
+
+.ele-page-header .button {
+	margin-top: 9px;
+}
+
+.ele-eyebrow,
+.ele-kicker {
+	margin: 0;
+	color: var(--ele-accent-dark);
+	font-size: 11px;
+	font-weight: 600;
+	letter-spacing: 0.08em;
+	line-height: 1.5;
+	text-transform: uppercase;
+}
+
+.ele-lead {
+	max-width: 720px;
+	margin: 0;
+	color: var(--ele-muted);
+	font-size: 15px;
+	line-height: 1.6;
+}
+
+.ele-panel,
 .ele-card {
 	background: #fff;
-	border: 1px solid #dcdcde;
-	border-radius: 4px;
-	padding: 16px 20px;
-	min-width: 160px;
-	display: flex;
-	flex-direction: column;
+	border: 1px solid var(--ele-border);
+	border-radius: 16px;
+	box-shadow: 0 2px 5px rgba(20, 42, 31, 0.025);
 }
 
-.ele-card-num {
-	font-size: 28px;
+.ele-panel {
+	padding: 24px;
+	margin: 0 0 20px;
+}
+
+.ele-panel h2 {
+	margin: 4px 0 12px;
+	font-size: 20px;
 	font-weight: 600;
-	line-height: 1.2;
-	color: #1d2327;
+	letter-spacing: -0.2px;
+	line-height: 1.3;
 }
 
-.ele-card-label {
-	color: #646970;
+.ele-panel h3 {
+	margin: 0 0 6px;
+	font-size: 15px;
+	font-weight: 600;
+}
+
+.ele-panel p {
+	line-height: 1.55;
+}
+
+.ele-section-heading {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	gap: 20px;
+	margin-bottom: 18px;
+}
+
+.ele-section-heading h2 {
+	margin-bottom: 0;
+}
+
+.ele-onboarding {
+	position: relative;
+	overflow: hidden;
+	background:
+		radial-gradient(circle at 94% -20%, rgba(18, 166, 107, 0.14), transparent 34%),
+		#fff;
+}
+
+.ele-steps {
+	display: grid;
+	grid-template-columns: repeat(4, minmax(0, 1fr));
+	gap: 12px;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.ele-steps li {
+	display: flex;
+	gap: 12px;
+	min-height: 142px;
+	margin: 0;
+	padding: 16px;
+	background: var(--ele-soft);
+	border: 1px solid transparent;
+	border-radius: 12px;
+}
+
+.ele-steps li.is-current {
+	background: #fff;
+	border-color: rgba(18, 166, 107, 0.38);
+}
+
+.ele-steps li.is-complete .ele-step-number {
+	background: var(--ele-accent);
+	color: #fff;
+}
+
+.ele-step-number {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	flex: 0 0 28px;
+	height: 28px;
+	background: #fff;
+	border: 1px solid var(--ele-border);
+	border-radius: 999px;
+	font-size: 12px;
+	font-weight: 600;
+}
+
+.ele-steps p {
+	min-height: 55px;
+	margin: 0 0 8px;
+	color: var(--ele-muted);
 	font-size: 13px;
 }
 
-#ele-meta .ele-results ul {
-	margin: 0 0 8px;
-	list-style: disc;
-	padding-left: 18px;
+.ele-steps a {
+	font-size: 13px;
+	font-weight: 600;
+	text-decoration: none;
 }
 
-#ele-meta .ele-results .ele-score {
-	background: #f0f0f1;
-	border-radius: 10px;
-	padding: 1px 8px;
+.ele-cards {
+	display: grid;
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+	gap: 16px;
+	margin: 0 0 20px;
+}
+
+.ele-card {
+	padding: 20px 22px;
+}
+
+.ele-stat {
+	display: flex;
+	flex-direction: column;
+	min-height: 102px;
+	justify-content: center;
+}
+
+.ele-card-num {
+	color: var(--ele-ink);
+	font-size: 31px;
+	font-weight: 600;
+	letter-spacing: -0.6px;
+	line-height: 1.15;
+}
+
+.ele-card-label {
+	margin-top: 5px;
+	color: var(--ele-muted);
+	font-size: 13px;
+}
+
+.ele-status-pill {
+	display: inline-flex;
+	align-items: center;
+	min-height: 27px;
+	padding: 3px 10px;
+	border-radius: 999px;
 	font-size: 11px;
-	margin-left: 4px;
+	font-weight: 600;
+	line-height: 1.4;
+	white-space: nowrap;
+}
+
+.ele-status-pill.is-ready {
+	background: var(--ele-accent-soft);
+	color: var(--ele-accent-dark);
+}
+
+.ele-status-pill.is-pending {
+	background: var(--ele-warn-soft);
+	color: var(--ele-warn);
+}
+
+.ele-status-pill.is-working {
+	background: #eaf2ff;
+	color: #245ca6;
+}
+
+.ele-report-table {
+	border: 0;
+	box-shadow: none;
+}
+
+.ele-report-table th {
+	color: var(--ele-muted);
+	font-size: 12px;
+	font-weight: 600;
+}
+
+.ele-report-table td,
+.ele-report-table th {
+	padding: 12px 10px;
+	vertical-align: middle;
+}
+
+.ele-empty {
+	padding: 28px !important;
+	color: var(--ele-muted);
+	text-align: center;
+}
+
+.ele-settings-grid,
+.ele-two-column {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 18px;
+	align-items: start;
+}
+
+.ele-settings-grid .ele-panel,
+.ele-two-column .ele-panel {
+	margin-bottom: 0;
+}
+
+.ele-field {
+	margin: 18px 0 0;
+}
+
+.ele-field:first-of-type {
+	margin-top: 10px;
+}
+
+.ele-field-row {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 14px;
+}
+
+.ele-field-label {
+	display: block;
+	margin-bottom: 7px;
+	font-weight: 600;
+}
+
+.ele-app input[type="text"],
+.ele-app input[type="url"],
+.ele-app input[type="password"],
+.ele-app input[type="number"],
+.ele-app select {
+	width: 100%;
+	max-width: none;
+	min-height: 38px;
+	border-color: #c7d2cc;
+	border-radius: 8px;
+}
+
+.ele-app .description {
+	margin-top: 6px;
+	color: var(--ele-muted);
+}
+
+.ele-check-grid {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 8px 12px;
+}
+
+.ele-check-grid label {
+	padding: 7px 9px;
+	background: var(--ele-soft);
+	border-radius: 8px;
+}
+
+.ele-toggle {
+	display: flex;
+	align-items: flex-start;
+	gap: 10px;
+}
+
+.ele-toggle input {
+	margin-top: 3px;
+}
+
+.ele-toggle span,
+.ele-toggle small {
+	display: block;
+}
+
+.ele-toggle small {
+	margin-top: 3px;
+	color: var(--ele-muted);
+	line-height: 1.45;
+}
+
+.ele-privacy-note {
+	display: flex;
+	align-items: flex-start;
+	gap: 10px;
+	margin: 14px 0;
+	padding: 13px 14px;
+	background: var(--ele-soft);
+	border-radius: 10px;
+	color: var(--ele-muted);
+}
+
+.ele-privacy-note .dashicons {
+	color: var(--ele-accent-dark);
+}
+
+.ele-privacy-note p {
+	margin: 0;
+}
+
+.ele-save-bar {
+	display: flex;
+	align-items: center;
+	gap: 16px;
+	margin-top: 18px;
+	padding: 15px 18px;
+	background: #fff;
+	border: 1px solid var(--ele-border);
+	border-radius: 14px;
+}
+
+.ele-entity-form .form-table,
+.ele-entity-form .form-table tbody,
+.ele-entity-form .form-table tr,
+.ele-entity-form .form-table th,
+.ele-entity-form .form-table td {
+	display: block;
+	width: 100%;
+}
+
+.ele-entity-form .form-table th {
+	padding: 13px 0 5px;
+}
+
+.ele-entity-form .form-table td {
+	padding: 0;
+}
+
+.ele-vocabulary-list {
+	overflow-x: auto;
+}
+
+.ele-progress {
+	height: 9px;
+	margin-top: 16px;
+	overflow: hidden;
+	background: #e7ece9;
+	border-radius: 999px;
+}
+
+.ele-progress span {
+	display: block;
+	height: 100%;
+	background: var(--ele-accent);
+	border-radius: inherit;
+}
+
+.ele-progress-label {
+	margin: 7px 0 0;
+	color: var(--ele-muted);
+	font-size: 12px;
+}
+
+.ele-docs-layout {
+	display: grid;
+	grid-template-columns: 210px minmax(0, 1fr);
+	gap: 22px;
+	align-items: start;
+}
+
+.ele-docs-nav {
+	position: sticky;
+	top: 48px;
+	display: flex;
+	flex-direction: column;
+	gap: 3px;
+	padding: 16px;
+	background: #fff;
+	border: 1px solid var(--ele-border);
+	border-radius: 14px;
+}
+
+.ele-docs-nav strong {
+	margin: 0 8px 8px;
+	font-size: 12px;
+}
+
+.ele-docs-nav a {
+	padding: 7px 8px;
+	border-radius: 7px;
+	color: var(--ele-muted);
+	text-decoration: none;
+}
+
+.ele-docs-nav a:hover {
+	background: var(--ele-soft);
+	color: var(--ele-accent-dark);
+}
+
+.ele-docs-content .ele-panel {
+	scroll-margin-top: 48px;
+}
+
+.ele-footer {
+	padding: 8px 2px 24px;
+	color: var(--ele-muted);
+	font-size: 12px;
+}
+
+.ele-footer a {
+	color: inherit;
+	text-decoration: none;
+}
+
+.ele-footer a:hover {
+	color: var(--ele-accent-dark);
+}
+
+#ele-meta {
+	--ele-accent: #12a66b;
+	--ele-accent-dark: #08784b;
+	--ele-muted: #5f6b66;
+}
+
+#ele-meta .ele-meta-intro {
+	display: flex;
+	align-items: flex-start;
+	gap: 8px;
+	padding: 10px;
+	background: #f6f9f7;
+	border-radius: 9px;
+}
+
+#ele-meta .ele-meta-intro .dashicons {
+	color: var(--ele-accent-dark);
+}
+
+#ele-meta .ele-meta-intro p,
+#ele-meta .ele-status {
+	margin: 0;
+	color: var(--ele-muted);
+	font-size: 12px;
+	line-height: 1.45;
 }
 
 #ele-meta .ele-status {
-	margin-top: 0;
-	color: #646970;
+	padding: 10px 2px;
+}
+
+#ele-meta .ele-candidates {
+	margin: 4px 0 10px;
+	padding: 0;
+	list-style: none;
+}
+
+#ele-meta .ele-candidates li {
+	margin: 0 0 7px;
+	padding: 9px;
+	background: #fff;
+	border: 1px solid #dfe6e2;
+	border-radius: 8px;
+}
+
+#ele-meta .ele-score {
+	display: inline-block;
+	padding: 1px 7px;
+	background: #e5f7ef;
+	border-radius: 999px;
+	color: var(--ele-accent-dark);
+	font-size: 10px;
+	font-weight: 600;
+}
+
+#ele-meta .ele-meta-actions {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 6px;
+}
+
+#ele-meta .button-primary {
+	background: var(--ele-accent-dark);
+	border-color: var(--ele-accent-dark);
+}
+
+#ele-meta .ele-meta-help {
+	margin: 11px 0 0;
+	font-size: 11px;
+}
+
+@media (max-width: 1100px) {
+	.ele-steps {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+}
+
+@media (max-width: 782px) {
+	.ele-page-header,
+	.ele-section-heading,
+	.ele-save-bar {
+		align-items: stretch;
+		flex-direction: column;
+	}
+
+	.ele-page-header .button {
+		align-self: flex-start;
+	}
+
+	.ele-cards,
+	.ele-settings-grid,
+	.ele-two-column,
+	.ele-field-row,
+	.ele-docs-layout {
+		grid-template-columns: 1fr;
+	}
+
+	.ele-docs-nav {
+		position: static;
+	}
+}
+
+@media (max-width: 560px) {
+	.ele-steps,
+	.ele-check-grid {
+		grid-template-columns: 1fr;
+	}
+
+	.ele-panel {
+		padding: 18px;
+	}
 }
