@@ -1,0 +1,2754 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0"
+    xmlns:excerpt="http://wordpress.org/export/1.2/excerpt/"
+    xmlns:content="http://purl.org/rss/1.0/modules/content/"
+    xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:wp="http://wordpress.org/export/1.2/">
+<channel>
+    <title>Demo Import Industrie-Klimageräte</title>
+    <link>http://127.0.0.1:8080</link>
+    <description>Demo-Content: Industrie-Klimageräte (50 Artikel, 20 Seiten)</description>
+    <pubDate>Sat, 15 Aug 2026 10:00:00 +0000</pubDate>
+    <language>de-DE</language>
+    <wp:wxr_version>1.2</wp:wxr_version>
+    <wp:base_site_url>http://127.0.0.1:8080</wp:base_site_url>
+    <wp:base_blog_url>http://127.0.0.1:8080</wp:base_blog_url>
+    <wp:author><wp:author_id>1</wp:author_id><wp:author_login><![CDATA[admin]]></wp:author_login><wp:author_email><![CDATA[e@example.test]]></wp:author_email><wp:author_display_name><![CDATA[Admin]]></wp:author_display_name><wp:author_first_name><![CDATA[]]></wp:author_first_name><wp:author_last_name><![CDATA[]]></wp:author_last_name></wp:author>
+    <wp:category><wp:term_id>51</wp:term_id><wp:category_nicename><![CDATA[planung]]></wp:category_nicename><wp:category_parent><![CDATA[]]></wp:category_parent><wp:cat_name><![CDATA[Planung]]></wp:cat_name></wp:category>
+    <wp:category><wp:term_id>34</wp:term_id><wp:category_nicename><![CDATA[produkte]]></wp:category_nicename><wp:category_parent><![CDATA[]]></wp:category_parent><wp:cat_name><![CDATA[Produkte]]></wp:cat_name></wp:category>
+    <wp:category><wp:term_id>53</wp:term_id><wp:category_nicename><![CDATA[kaeltemittel]]></wp:category_nicename><wp:category_parent><![CDATA[]]></wp:category_parent><wp:cat_name><![CDATA[Kältemittel]]></wp:cat_name></wp:category>
+    <wp:category><wp:term_id>88</wp:term_id><wp:category_nicename><![CDATA[effizienz]]></wp:category_nicename><wp:category_parent><![CDATA[]]></wp:category_parent><wp:cat_name><![CDATA[Effizienz]]></wp:cat_name></wp:category>
+    <wp:category><wp:term_id>55</wp:term_id><wp:category_nicename><![CDATA[wartung]]></wp:category_nicename><wp:category_parent><![CDATA[]]></wp:category_parent><wp:cat_name><![CDATA[Wartung]]></wp:cat_name></wp:category>
+    <wp:category><wp:term_id>60</wp:term_id><wp:category_nicename><![CDATA[sicherheit]]></wp:category_nicename><wp:category_parent><![CDATA[]]></wp:category_parent><wp:cat_name><![CDATA[Sicherheit]]></wp:cat_name></wp:category>
+    <wp:category><wp:term_id>64</wp:term_id><wp:category_nicename><![CDATA[branchen]]></wp:category_nicename><wp:category_parent><![CDATA[]]></wp:category_parent><wp:cat_name><![CDATA[Branchen]]></wp:cat_name></wp:category>
+    <wp:category><wp:term_id>17</wp:term_id><wp:category_nicename><![CDATA[foerderung]]></wp:category_nicename><wp:category_parent><![CDATA[]]></wp:category_parent><wp:cat_name><![CDATA[Förderung]]></wp:cat_name></wp:category>
+    <wp:tag><wp:term_id>200</wp:term_id><wp:tag_slug><![CDATA[kuehlung]]></wp:tag_slug><wp:tag_name><![CDATA[kuehlung]]></wp:tag_name></wp:tag>
+    <wp:tag><wp:term_id>201</wp:term_id><wp:tag_slug><![CDATA[rechenzentrum]]></wp:tag_slug><wp:tag_name><![CDATA[rechenzentrum]]></wp:tag_name></wp:tag>
+    <wp:tag><wp:term_id>202</wp:term_id><wp:tag_slug><![CDATA[logistik]]></wp:tag_slug><wp:tag_name><![CDATA[logistik]]></wp:tag_name></wp:tag>
+    <wp:tag><wp:term_id>203</wp:term_id><wp:tag_slug><![CDATA[produktion]]></wp:tag_slug><wp:tag_name><![CDATA[produktion]]></wp:tag_name></wp:tag>
+    <wp:tag><wp:term_id>204</wp:term_id><wp:tag_slug><![CDATA[foerderung]]></wp:tag_slug><wp:tag_name><![CDATA[foerderung]]></wp:tag_name></wp:tag>
+    <wp:tag><wp:term_id>205</wp:term_id><wp:tag_slug><![CDATA[saison]]></wp:tag_slug><wp:tag_name><![CDATA[saison]]></wp:tag_name></wp:tag>
+    <wp:tag><wp:term_id>206</wp:term_id><wp:tag_slug><![CDATA[smart]]></wp:tag_slug><wp:tag_name><![CDATA[smart]]></wp:tag_name></wp:tag>
+    <wp:tag><wp:term_id>207</wp:term_id><wp:tag_slug><![CDATA[lebensmittel]]></wp:tag_slug><wp:tag_name><![CDATA[lebensmittel]]></wp:tag_name></wp:tag>
+    <wp:tag><wp:term_id>208</wp:term_id><wp:tag_slug><![CDATA[pharma]]></wp:tag_slug><wp:tag_name><![CDATA[pharma]]></wp:tag_name></wp:tag>
+    <wp:tag><wp:term_id>209</wp:term_id><wp:tag_slug><![CDATA[notfall]]></wp:tag_slug><wp:tag_name><![CDATA[notfall]]></wp:tag_name></wp:tag>
+  <item>
+    <title>Industrie-Klimageräte für Produktion, Logistik und Rechenzentren</title>
+    <link>http://127.0.0.1:8080/page/startseite/</link>
+    <pubDate>Thu, 01 Jan 2026 09:00:00 +0100</pubDate>
+    <dc:creator><![CDATA[admin]]></dc:creator>
+    <guid isPermaLink="false">http://127.0.0.1:8080/?p=101</guid>
+    <description></description>
+    <content:encoded><![CDATA[<p>Industrie-Klimageräte sind keine Komfortkühlung, sondern Prozesswerkzeug. Wir planen, liefern und warten Kältetechnik für Produktionshallen, Logistikzentren und Rechenzentren – von der Kältelastberechnung bis zum Wartungsvertrag.</p>
+
+<h2>Leistungen</h2>
+
+<p>Kälteplanung und Dimensionierung, Installation und Inbetriebnahme, Wartung und Notdienst rund um die Uhr.</p>
+
+<p>Prozessklimatisierung, Kaltwassersätze, Dachklimageräte, Schaltschrankklimatisierung, Serverraum-Klimatisierung und Mobile Klimageräte aus einer Hand.</p>
+
+<h2>Warum Betreiber auf uns setzen</h2>
+
+<p>Jede Anlage beginnt mit einer echten Kältelastberechnung. Jede Anlage wird mit Redundanzkonzept ausgeliefert. Jede Anlage wird dokumentiert gewartet.</p>
+
+<p>Förderung über die BAFA-Förderung wird bei der Planung mitgedacht.</p>]]></content:encoded>
+    <excerpt:encoded><![CDATA[Industrie-Klimageräte sind keine Komfortkühlung, sondern Prozesswerkzeug. Wir planen, liefern und warten Kältetechnik für Produktionshallen, Logistikzentren und Rechenzentren – von der Kältelastberechnung bis zum Wartungsvertrag.]]></excerpt:encoded>
+    <wp:post_id>101</wp:post_id>
+    <wp:post_date>2026-01-01 09:00:00</wp:post_date>
+    <wp:post_date_gmt>2026-01-01 08:00:00</wp:post_date_gmt>
+    <wp:comment_status>open</wp:comment_status>
+    <wp:ping_status>open</wp:ping_status>
+    <wp:post_name><![CDATA[startseite]]></wp:post_name>
+    <wp:status>publish</wp:status>
+    <wp:post_parent>0</wp:post_parent>
+    <wp:menu_order>0</wp:menu_order>
+    <wp:post_type>page</wp:post_type>
+    <wp:post_password></wp:post_password>
+    <wp:is_sticky>0</wp:is_sticky>
+  </item>
+  <item>
+    <title>Leistungen: Kälteplanung und Dimensionierung</title>
+    <link>http://127.0.0.1:8080/page/leistungen-planung/</link>
+    <pubDate>Fri, 02 Jan 2026 09:00:00 +0100</pubDate>
+    <dc:creator><![CDATA[admin]]></dc:creator>
+    <guid isPermaLink="false">http://127.0.0.1:8080/?p=102</guid>
+    <description></description>
+    <content:encoded><![CDATA[<p>Gute Kältetechnik beginnt mit guter Planung. Wir erstellen Kältelastberechnungen, Lastenhefte und Redundanzkonzepte – bevor ein Gerät bestellt wird.</p>
+
+<h2>Planungsleistungen</h2>
+
+<p>Kältelastberechnung nach den Lasten der Maschinen, Beleuchtung und Gebäudehülle.</p>
+
+<p>Technologievergleich: Kaltwassersatz, Dachklimagerät oder dezentrale Lösung. Dazu Amortisationsrechnung und Förderberatung (BAFA-Förderung).</p>
+
+<h2>Redundanz und Ausfallsicherheit</h2>
+
+<p>Notkühlkonzepte, Redundanzstufen N, N+1 und 2N, hydraulische Verschaltung mit Pufferspeicher.</p>
+
+<p>Die Planung endet mit einem Lastenheft, das als Ausschreibungsgrundlage dient.</p>]]></content:encoded>
+    <excerpt:encoded><![CDATA[Gute Kältetechnik beginnt mit guter Planung. Wir erstellen Kältelastberechnungen, Lastenhefte und Redundanzkonzepte – bevor ein Gerät bestellt wird.]]></excerpt:encoded>
+    <wp:post_id>102</wp:post_id>
+    <wp:post_date>2026-01-02 09:00:00</wp:post_date>
+    <wp:post_date_gmt>2026-01-02 08:00:00</wp:post_date_gmt>
+    <wp:comment_status>open</wp:comment_status>
+    <wp:ping_status>open</wp:ping_status>
+    <wp:post_name><![CDATA[leistungen-planung]]></wp:post_name>
+    <wp:status>publish</wp:status>
+    <wp:post_parent>0</wp:post_parent>
+    <wp:menu_order>0</wp:menu_order>
+    <wp:post_type>page</wp:post_type>
+    <wp:post_password></wp:post_password>
+    <wp:is_sticky>0</wp:is_sticky>
+  </item>
+  <item>
+    <title>Leistungen: Installation und Inbetriebnahme</title>
+    <link>http://127.0.0.1:8080/page/leistungen-installation/</link>
+    <pubDate>Sat, 03 Jan 2026 09:00:00 +0100</pubDate>
+    <dc:creator><![CDATA[admin]]></dc:creator>
+    <guid isPermaLink="false">http://127.0.0.1:8080/?p=103</guid>
+    <description></description>
+    <content:encoded><![CDATA[<p>Montage, Anschluss und Inbetriebnahme aus einer Hand – mit Protokoll und Übergabe.</p>
+
+<h2>Installation</h2>
+
+<p>Aufstellung, Kältemittelleitungen, Hydraulik und Elektroanschluss durch zertifizierte Monteure.</p>
+
+<p>Arbeiten an Kältemittelkreisen nach EN 378 und F-Gas-Verordnung mit vollständiger Dokumentation.</p>
+
+<h2>Inbetriebnahme</h2>
+
+<p>Funktionstest, Einregelung, Messprotokoll und Unterweisung des Betriebspersonals.</p>
+
+<p>Die saisonale Inbetriebnahme im Frühjahr ist im Wartungsvertrag enthalten.</p>]]></content:encoded>
+    <excerpt:encoded><![CDATA[Montage, Anschluss und Inbetriebnahme aus einer Hand – mit Protokoll und Übergabe.]]></excerpt:encoded>
+    <wp:post_id>103</wp:post_id>
+    <wp:post_date>2026-01-03 09:00:00</wp:post_date>
+    <wp:post_date_gmt>2026-01-03 08:00:00</wp:post_date_gmt>
+    <wp:comment_status>open</wp:comment_status>
+    <wp:ping_status>open</wp:ping_status>
+    <wp:post_name><![CDATA[leistungen-installation]]></wp:post_name>
+    <wp:status>publish</wp:status>
+    <wp:post_parent>0</wp:post_parent>
+    <wp:menu_order>0</wp:menu_order>
+    <wp:post_type>page</wp:post_type>
+    <wp:post_password></wp:post_password>
+    <wp:is_sticky>0</wp:is_sticky>
+  </item>
+  <item>
+    <title>Leistungen: Wartung und Service</title>
+    <link>http://127.0.0.1:8080/page/leistungen-wartung/</link>
+    <pubDate>Sun, 04 Jan 2026 09:00:00 +0100</pubDate>
+    <dc:creator><![CDATA[admin]]></dc:creator>
+    <guid isPermaLink="false">http://127.0.0.1:8080/?p=104</guid>
+    <description></description>
+    <content:encoded><![CDATA[<p>Regelmäßige Wartung hält Kälteanlagen effizient und sicher – mit dokumentierten Durchgängen.</p>
+
+<h2>Wartungsvertrag</h2>
+
+<p>Zwei Wartungsdurchgänge pro Jahr, Dichtigkeitsprüfung nach F-Gas-Verordnung, Filterwechsel, Reinigung der Wärmetauscher.</p>
+
+<p>Optional mit Fernwartung und garantierter Reaktionszeit im Notfall.</p>
+
+<h2>Leistungen im Detail</h2>
+
+<p>Kältemittelleckagen finden und beheben, Glykolkonzentration prüfen, Effizienzwerte dokumentieren.</p>
+
+<p>Alle Durchgänge werden protokolliert und bilden das Anlagendossier.</p>]]></content:encoded>
+    <excerpt:encoded><![CDATA[Regelmäßige Wartung hält Kälteanlagen effizient und sicher – mit dokumentierten Durchgängen.]]></excerpt:encoded>
+    <wp:post_id>104</wp:post_id>
+    <wp:post_date>2026-01-04 09:00:00</wp:post_date>
+    <wp:post_date_gmt>2026-01-04 08:00:00</wp:post_date_gmt>
+    <wp:comment_status>open</wp:comment_status>
+    <wp:ping_status>open</wp:ping_status>
+    <wp:post_name><![CDATA[leistungen-wartung]]></wp:post_name>
+    <wp:status>publish</wp:status>
+    <wp:post_parent>0</wp:post_parent>
+    <wp:menu_order>0</wp:menu_order>
+    <wp:post_type>page</wp:post_type>
+    <wp:post_password></wp:post_password>
+    <wp:is_sticky>0</wp:is_sticky>
+  </item>
+  <item>
+    <title>Leistungen: Notdienst 24/7</title>
+    <link>http://127.0.0.1:8080/page/leistungen-notdienst/</link>
+    <pubDate>Mon, 05 Jan 2026 09:00:00 +0100</pubDate>
+    <dc:creator><![CDATA[admin]]></dc:creator>
+    <guid isPermaLink="false">http://127.0.0.1:8080/?p=105</guid>
+    <description></description>
+    <content:encoded><![CDATA[<p>Wenn die Kälte ausfällt, zählt jede Stunde. Der Notdienst reagiert rund um die Uhr.</p>
+
+<h2>Garantierte Reaktionszeiten</h2>
+
+<p>Für Produktionsbetriebe und Rechenzentren garantieren wir Reaktionszeiten von wenigen Stunden – auch am Wochenende.</p>
+
+<p>Mobile Klimageräte überbrücken die Zeit bis zur Reparatur.</p>
+
+<h2>Notkühlung als Service</h2>
+
+<p>Mietgeräte für die Notkühlung stehen auf Abruf bereit, inklusive Anschluss und Inbetriebnahme.</p>
+
+<p>Das Notkühlkonzept wird gemeinsam mit dem Redundanzkonzept geplant.</p>]]></content:encoded>
+    <excerpt:encoded><![CDATA[Wenn die Kälte ausfällt, zählt jede Stunde. Der Notdienst reagiert rund um die Uhr.]]></excerpt:encoded>
+    <wp:post_id>105</wp:post_id>
+    <wp:post_date>2026-01-05 09:00:00</wp:post_date>
+    <wp:post_date_gmt>2026-01-05 08:00:00</wp:post_date_gmt>
+    <wp:comment_status>open</wp:comment_status>
+    <wp:ping_status>open</wp:ping_status>
+    <wp:post_name><![CDATA[leistungen-notdienst]]></wp:post_name>
+    <wp:status>publish</wp:status>
+    <wp:post_parent>0</wp:post_parent>
+    <wp:menu_order>0</wp:menu_order>
+    <wp:post_type>page</wp:post_type>
+    <wp:post_password></wp:post_password>
+    <wp:is_sticky>0</wp:is_sticky>
+  </item>
+  <item>
+    <title>Dachklimageräte</title>
+    <link>http://127.0.0.1:8080/page/produkte-dachklimageraete/</link>
+    <pubDate>Tue, 06 Jan 2026 09:00:00 +0100</pubDate>
+    <dc:creator><![CDATA[admin]]></dc:creator>
+    <guid isPermaLink="false">http://127.0.0.1:8080/?p=106</guid>
+    <description></description>
+    <content:encoded><![CDATA[<p>Dachklimageräte kühlen Hallen, ohne wertvolle Fläche zu belegen – modular erweiterbar.</p>
+
+<h2>Einsatz</h2>
+
+<p>Produktionshallen, Logistikzentren, Hochregallager. Die komplette Kältetechnik steht auf dem Dach.</p>
+
+<p>Modulare Bauweise: Bei Hallenerweiterung wird ein weiteres Gerät aufgestellt.</p>
+
+<h2>Ausstattung</h2>
+
+<p>Wärmerückgewinnung, adiabatische Zusatzkühlung und Anbindung an die IoT-Steuerung.</p>
+
+<p>Die Auslegung basiert auf der Kältelastberechnung der Halle.</p>]]></content:encoded>
+    <excerpt:encoded><![CDATA[Dachklimageräte kühlen Hallen, ohne wertvolle Fläche zu belegen – modular erweiterbar.]]></excerpt:encoded>
+    <wp:post_id>106</wp:post_id>
+    <wp:post_date>2026-01-06 09:00:00</wp:post_date>
+    <wp:post_date_gmt>2026-01-06 08:00:00</wp:post_date_gmt>
+    <wp:comment_status>open</wp:comment_status>
+    <wp:ping_status>open</wp:ping_status>
+    <wp:post_name><![CDATA[produkte-dachklimageraete]]></wp:post_name>
+    <wp:status>publish</wp:status>
+    <wp:post_parent>0</wp:post_parent>
+    <wp:menu_order>0</wp:menu_order>
+    <wp:post_type>page</wp:post_type>
+    <wp:post_password></wp:post_password>
+    <wp:is_sticky>0</wp:is_sticky>
+  </item>
+  <item>
+    <title>Kaltwassersätze</title>
+    <link>http://127.0.0.1:8080/page/produkte-kaltwassersaetze/</link>
+    <pubDate>Wed, 07 Jan 2026 09:00:00 +0100</pubDate>
+    <dc:creator><![CDATA[admin]]></dc:creator>
+    <guid isPermaLink="false">http://127.0.0.1:8080/?p=107</guid>
+    <description></description>
+    <content:encoded><![CDATA[<p>Kaltwassersätze versorgen mehrere Verbraucher zentral mit präziser Kälteleistung.</p>
+
+<h2>Einsatz</h2>
+
+<p>Zentrale Kälte für Maschinenkreise, Prozessklimatisierung und Kaltwasserbereitung.</p>
+
+<p>Leistungen von wenigen Kilowatt bis in den Megawattbereich, mit oder ohne Free-Cooling-Register.</p>
+
+<h2>Ausstattung</h2>
+
+<p>Drehzahlgeregelte Verdichter, Pufferspeicher-Anbindung, Fernwartungsschnittstelle.</p>
+
+<p>Betrieb mit R290, R744 oder fluorierten Kältemitteln nach F-Gas-Verordnung.</p>]]></content:encoded>
+    <excerpt:encoded><![CDATA[Kaltwassersätze versorgen mehrere Verbraucher zentral mit präziser Kälteleistung.]]></excerpt:encoded>
+    <wp:post_id>107</wp:post_id>
+    <wp:post_date>2026-01-07 09:00:00</wp:post_date>
+    <wp:post_date_gmt>2026-01-07 08:00:00</wp:post_date_gmt>
+    <wp:comment_status>open</wp:comment_status>
+    <wp:ping_status>open</wp:ping_status>
+    <wp:post_name><![CDATA[produkte-kaltwassersaetze]]></wp:post_name>
+    <wp:status>publish</wp:status>
+    <wp:post_parent>0</wp:post_parent>
+    <wp:menu_order>0</wp:menu_order>
+    <wp:post_type>page</wp:post_type>
+    <wp:post_password></wp:post_password>
+    <wp:is_sticky>0</wp:is_sticky>
+  </item>
+  <item>
+    <title>Schaltschrankklimatisierung</title>
+    <link>http://127.0.0.1:8080/page/produkte-schaltschrankklimatisierung/</link>
+    <pubDate>Thu, 08 Jan 2026 09:00:00 +0100</pubDate>
+    <dc:creator><![CDATA[admin]]></dc:creator>
+    <guid isPermaLink="false">http://127.0.0.1:8080/?p=108</guid>
+    <description></description>
+    <content:encoded><![CDATA[<p>Schaltschrankklimatisierung schützt die Steuerungstechnik vor Überhitzung und Ausfall.</p>
+
+<h2>Einsatz</h2>
+
+<p>Steuerungsschränke in Produktion und Maschinenparks, bei denen Wärme die Lebensdauer verkürzt.</p>
+
+<p>Filterlüfter, Kompaktklimageräte oder Kältesysteme mit Wärmetauscher – je nach Verlustleistung.</p>
+
+<h2>Vorteile</h2>
+
+<p>Höhere Verfügbarkeit, längere Bauteillebensdauer, weniger Stillstand.</p>
+
+<p>Die Geräte werden auf die tatsächliche Verlustleistung des Schranks ausgelegt.</p>]]></content:encoded>
+    <excerpt:encoded><![CDATA[Schaltschrankklimatisierung schützt die Steuerungstechnik vor Überhitzung und Ausfall.]]></excerpt:encoded>
+    <wp:post_id>108</wp:post_id>
+    <wp:post_date>2026-01-08 09:00:00</wp:post_date>
+    <wp:post_date_gmt>2026-01-08 08:00:00</wp:post_date_gmt>
+    <wp:comment_status>open</wp:comment_status>
+    <wp:ping_status>open</wp:ping_status>
+    <wp:post_name><![CDATA[produkte-schaltschrankklimatisierung]]></wp:post_name>
+    <wp:status>publish</wp:status>
+    <wp:post_parent>0</wp:post_parent>
+    <wp:menu_order>0</wp:menu_order>
+    <wp:post_type>page</wp:post_type>
+    <wp:post_password></wp:post_password>
+    <wp:is_sticky>0</wp:is_sticky>
+  </item>
+  <item>
+    <title>Serverraum-Klimatisierung</title>
+    <link>http://127.0.0.1:8080/page/produkte-serverraum-klimatisierung/</link>
+    <pubDate>Fri, 09 Jan 2026 09:00:00 +0100</pubDate>
+    <dc:creator><![CDATA[admin]]></dc:creator>
+    <guid isPermaLink="false">http://127.0.0.1:8080/?p=109</guid>
+    <description></description>
+    <content:encoded><![CDATA[<p>Serverraum-Klimatisierung mit Free Cooling hält die IT kühl – effizient und redundant.</p>
+
+<h2>Einsatz</h2>
+
+<p>Serverräume, Rechenzentren, Container-Rechenzentren und Technikräume.</p>
+
+<p>Indirekte Free-Cooling-Systeme für stabile Luftfeuchte und saubere Trennung der Luftströme.</p>
+
+<h2>Redundanz</h2>
+
+<p>N+1- oder 2N-Auslegung mit Notkühlung, Fernwartung und Lasttests.</p>
+
+<p>Container-Klimatisierung als mobile Erweiterung oder Reserve.</p>]]></content:encoded>
+    <excerpt:encoded><![CDATA[Serverraum-Klimatisierung mit Free Cooling hält die IT kühl – effizient und redundant.]]></excerpt:encoded>
+    <wp:post_id>109</wp:post_id>
+    <wp:post_date>2026-01-09 09:00:00</wp:post_date>
+    <wp:post_date_gmt>2026-01-09 08:00:00</wp:post_date_gmt>
+    <wp:comment_status>open</wp:comment_status>
+    <wp:ping_status>open</wp:ping_status>
+    <wp:post_name><![CDATA[produkte-serverraum-klimatisierung]]></wp:post_name>
+    <wp:status>publish</wp:status>
+    <wp:post_parent>0</wp:post_parent>
+    <wp:menu_order>0</wp:menu_order>
+    <wp:post_type>page</wp:post_type>
+    <wp:post_password></wp:post_password>
+    <wp:is_sticky>0</wp:is_sticky>
+  </item>
+  <item>
+    <title>Mobile Klimageräte</title>
+    <link>http://127.0.0.1:8080/page/produkte-mobile-klimageraete/</link>
+    <pubDate>Sat, 10 Jan 2026 09:00:00 +0100</pubDate>
+    <dc:creator><![CDATA[admin]]></dc:creator>
+    <guid isPermaLink="false">http://127.0.0.1:8080/?p=110</guid>
+    <description></description>
+    <content:encoded><![CDATA[<p>Mobile Klimageräte liefern Kälte in Stunden – als Miete oder Kauf, ohne Umbau.</p>
+
+<h2>Einsatz</h2>
+
+<p>Notkühlung nach Ausfall, Überbrückung während Sanierungen, Zusatzkühlung für Lastspitzen.</p>
+
+<p>Leistungen bis in den Containerbereich für große Hallen und Rechenzentren.</p>
+
+<h2>Miete</h2>
+
+<p>Befristete Miete inklusive Wartung und Notdienst. Keine Kapitalbindung, flexible Laufzeiten.</p>
+
+<p>Ideal für das Notkühlkonzept: Geräte stehen auf Abruf bereit.</p>]]></content:encoded>
+    <excerpt:encoded><![CDATA[Mobile Klimageräte liefern Kälte in Stunden – als Miete oder Kauf, ohne Umbau.]]></excerpt:encoded>
+    <wp:post_id>110</wp:post_id>
+    <wp:post_date>2026-01-10 09:00:00</wp:post_date>
+    <wp:post_date_gmt>2026-01-10 08:00:00</wp:post_date_gmt>
+    <wp:comment_status>open</wp:comment_status>
+    <wp:ping_status>open</wp:ping_status>
+    <wp:post_name><![CDATA[produkte-mobile-klimageraete]]></wp:post_name>
+    <wp:status>publish</wp:status>
+    <wp:post_parent>0</wp:post_parent>
+    <wp:menu_order>0</wp:menu_order>
+    <wp:post_type>page</wp:post_type>
+    <wp:post_password></wp:post_password>
+    <wp:is_sticky>0</wp:is_sticky>
+  </item>
+  <item>
+    <title>Branche: Produktion</title>
+    <link>http://127.0.0.1:8080/page/branchen-produktion/</link>
+    <pubDate>Sun, 11 Jan 2026 09:00:00 +0100</pubDate>
+    <dc:creator><![CDATA[admin]]></dc:creator>
+    <guid isPermaLink="false">http://127.0.0.1:8080/?p=111</guid>
+    <description></description>
+    <content:encoded><![CDATA[<p>Produktionshallen brauchen Prozessklimatisierung, keine Komfortkühlung. Wir liefern beides.</p>
+
+<h2>Anforderungen</h2>
+
+<p>Stabile Temperaturen für Prozesse, Kühlung von Maschinen und Schaltschrankklimatisierung für die Steuerung.</p>
+
+<p>Branchenlösungen für Kunststoff, Metall, Elektronik und Lebensmittel.</p>
+
+<h2>Leistungen</h2>
+
+<p>Kältelastberechnung, Kaltwassersätze, Dachklimageräte, Wärmerückgewinnung und Notkühlung.</p>
+
+<p>Wartungsverträge mit kurzen Reaktionszeiten, damit der Stillstand ausbleibt.</p>]]></content:encoded>
+    <excerpt:encoded><![CDATA[Produktionshallen brauchen Prozessklimatisierung, keine Komfortkühlung. Wir liefern beides.]]></excerpt:encoded>
+    <wp:post_id>111</wp:post_id>
+    <wp:post_date>2026-01-11 09:00:00</wp:post_date>
+    <wp:post_date_gmt>2026-01-11 08:00:00</wp:post_date_gmt>
+    <wp:comment_status>open</wp:comment_status>
+    <wp:ping_status>open</wp:ping_status>
+    <wp:post_name><![CDATA[branchen-produktion]]></wp:post_name>
+    <wp:status>publish</wp:status>
+    <wp:post_parent>0</wp:post_parent>
+    <wp:menu_order>0</wp:menu_order>
+    <wp:post_type>page</wp:post_type>
+    <wp:post_password></wp:post_password>
+    <wp:is_sticky>0</wp:is_sticky>
+  </item>
+  <item>
+    <title>Branche: Logistik und Lager</title>
+    <link>http://127.0.0.1:8080/page/branchen-logistik/</link>
+    <pubDate>Mon, 12 Jan 2026 09:00:00 +0100</pubDate>
+    <dc:creator><![CDATA[admin]]></dc:creator>
+    <guid isPermaLink="false">http://127.0.0.1:8080/?p=112</guid>
+    <description></description>
+    <content:encoded><![CDATA[<p>Logistikzentren und Hochregallager werden mit Dachklimageräten effizient klimatisiert.</p>
+
+<h2>Anforderungen</h2>
+
+<p>Große Flächen, keine Stellfläche für Geräte, gleichmäßige Temperaturverteilung bis in die Regale.</p>
+
+<p>Berücksichtigung der Luftschichtung und der Abwärme der Fördertechnik.</p>
+
+<h2>Leistungen</h2>
+
+<p>Dachklimageräte mit textiler Luftverteilung, Kältelastberechnung und Sommer-Checklisten.</p>
+
+<p>Kopplung mit der Brandmeldeanlage gemäß Vorgabe.</p>]]></content:encoded>
+    <excerpt:encoded><![CDATA[Logistikzentren und Hochregallager werden mit Dachklimageräten effizient klimatisiert.]]></excerpt:encoded>
+    <wp:post_id>112</wp:post_id>
+    <wp:post_date>2026-01-12 09:00:00</wp:post_date>
+    <wp:post_date_gmt>2026-01-12 08:00:00</wp:post_date_gmt>
+    <wp:comment_status>open</wp:comment_status>
+    <wp:ping_status>open</wp:ping_status>
+    <wp:post_name><![CDATA[branchen-logistik]]></wp:post_name>
+    <wp:status>publish</wp:status>
+    <wp:post_parent>0</wp:post_parent>
+    <wp:menu_order>0</wp:menu_order>
+    <wp:post_type>page</wp:post_type>
+    <wp:post_password></wp:post_password>
+    <wp:is_sticky>0</wp:is_sticky>
+  </item>
+  <item>
+    <title>Branche: Rechenzentren</title>
+    <link>http://127.0.0.1:8080/page/branchen-rechenzentren/</link>
+    <pubDate>Tue, 13 Jan 2026 09:00:00 +0100</pubDate>
+    <dc:creator><![CDATA[admin]]></dc:creator>
+    <guid isPermaLink="false">http://127.0.0.1:8080/?p=113</guid>
+    <description></description>
+    <content:encoded><![CDATA[<p>Rechenzentren brauchen Kälte rund um die Uhr – effizient, redundant, überwacht.</p>
+
+<h2>Anforderungen</h2>
+
+<p>Serverraum-Klimatisierung mit Free Cooling, enge Temperaturfenster, Notkühlung als Pflicht.</p>
+
+<p>Container-Klimatisierung für mobile oder erweiterte Kapazität.</p>
+
+<h2>Leistungen</h2>
+
+<p>Kaltwassersätze mit Freikühlregister, Redundanzplanung N+1/2N, Fernwartung und Lasttests.</p>
+
+<p>Amortisationsrechnung für Free-Cooling-Nachrüstung an Bestandsanlagen.</p>]]></content:encoded>
+    <excerpt:encoded><![CDATA[Rechenzentren brauchen Kälte rund um die Uhr – effizient, redundant, überwacht.]]></excerpt:encoded>
+    <wp:post_id>113</wp:post_id>
+    <wp:post_date>2026-01-13 09:00:00</wp:post_date>
+    <wp:post_date_gmt>2026-01-13 08:00:00</wp:post_date_gmt>
+    <wp:comment_status>open</wp:comment_status>
+    <wp:ping_status>open</wp:ping_status>
+    <wp:post_name><![CDATA[branchen-rechenzentren]]></wp:post_name>
+    <wp:status>publish</wp:status>
+    <wp:post_parent>0</wp:post_parent>
+    <wp:menu_order>0</wp:menu_order>
+    <wp:post_type>page</wp:post_type>
+    <wp:post_password></wp:post_password>
+    <wp:is_sticky>0</wp:is_sticky>
+  </item>
+  <item>
+    <title>Branche: Lebensmittel und Pharma</title>
+    <link>http://127.0.0.1:8080/page/branchen-lebensmittel/</link>
+    <pubDate>Wed, 14 Jan 2026 09:00:00 +0100</pubDate>
+    <dc:creator><![CDATA[admin]]></dc:creator>
+    <guid isPermaLink="false">http://127.0.0.1:8080/?p=114</guid>
+    <description></description>
+    <content:encoded><![CDATA[<p>Lebensmittel- und Pharmaproduktion verlangen Kälte, die nie ausfällt – und dokumentiert ist.</p>
+
+<h2>Anforderungen</h2>
+
+<p>HACCP-konforme Temperaturbereiche, Redundanz, kurze Reaktionszeiten. Für Pharma zusätzlich Reinraumklimatisierung nach ISO 14644 und GMP-Dokumentation.</p>
+
+<p>Trennung von Prozessklimatisierung und Lagerkühlung.</p>
+
+<h2>Leistungen</h2>
+
+<p>Redundante Kältepfade, Notkühlung, Dichtigkeitsprüfungen und dokumentierte Wartung.</p>
+
+<p>Wartungsverträge mit garantierter Reaktionszeit von wenigen Stunden.</p>]]></content:encoded>
+    <excerpt:encoded><![CDATA[Lebensmittel- und Pharmaproduktion verlangen Kälte, die nie ausfällt – und dokumentiert ist.]]></excerpt:encoded>
+    <wp:post_id>114</wp:post_id>
+    <wp:post_date>2026-01-14 09:00:00</wp:post_date>
+    <wp:post_date_gmt>2026-01-14 08:00:00</wp:post_date_gmt>
+    <wp:comment_status>open</wp:comment_status>
+    <wp:ping_status>open</wp:ping_status>
+    <wp:post_name><![CDATA[branchen-lebensmittel]]></wp:post_name>
+    <wp:status>publish</wp:status>
+    <wp:post_parent>0</wp:post_parent>
+    <wp:menu_order>0</wp:menu_order>
+    <wp:post_type>page</wp:post_type>
+    <wp:post_password></wp:post_password>
+    <wp:is_sticky>0</wp:is_sticky>
+  </item>
+  <item>
+    <title>Über uns</title>
+    <link>http://127.0.0.1:8080/page/ueber-uns/</link>
+    <pubDate>Thu, 15 Jan 2026 09:00:00 +0100</pubDate>
+    <dc:creator><![CDATA[admin]]></dc:creator>
+    <guid isPermaLink="false">http://127.0.0.1:8080/?p=115</guid>
+    <description></description>
+    <content:encoded><![CDATA[<p>Wir sind ein Team aus Kältefachplanern, Monteuren und Servicetechnikern für Industriekälte.</p>
+
+<h2>Unsere Haltung</h2>
+
+<p>Jede Anlage beginnt mit einer Kältelastberechnung – nicht mit einem Angebot. Jede Anlage wird mit Redundanzkonzept geplant, nicht als Einzelgerät verkauft.</p>
+
+<p>Wir dokumentieren, was wir bauen, und warten, was wir dokumentieren.</p>
+
+<h2>Qualifikation</h2>
+
+<p>Zertifizierte Monteure nach F-Gas-Verordnung, Planung nach EN 378, Erfahrung in Produktion, Logistik und Rechenzentren.</p>]]></content:encoded>
+    <excerpt:encoded><![CDATA[Wir sind ein Team aus Kältefachplanern, Monteuren und Servicetechnikern für Industriekälte.]]></excerpt:encoded>
+    <wp:post_id>115</wp:post_id>
+    <wp:post_date>2026-01-15 09:00:00</wp:post_date>
+    <wp:post_date_gmt>2026-01-15 08:00:00</wp:post_date_gmt>
+    <wp:comment_status>open</wp:comment_status>
+    <wp:ping_status>open</wp:ping_status>
+    <wp:post_name><![CDATA[ueber-uns]]></wp:post_name>
+    <wp:status>publish</wp:status>
+    <wp:post_parent>0</wp:post_parent>
+    <wp:menu_order>0</wp:menu_order>
+    <wp:post_type>page</wp:post_type>
+    <wp:post_password></wp:post_password>
+    <wp:is_sticky>0</wp:is_sticky>
+  </item>
+  <item>
+    <title>Referenzen</title>
+    <link>http://127.0.0.1:8080/page/referenzen/</link>
+    <pubDate>Fri, 16 Jan 2026 09:00:00 +0100</pubDate>
+    <dc:creator><![CDATA[admin]]></dc:creator>
+    <guid isPermaLink="false">http://127.0.0.1:8080/?p=116</guid>
+    <description></description>
+    <content:encoded><![CDATA[<p>Ausgewählte Projekte aus Produktion, Logistik und Rechenzentren. (Demodaten)</p>
+
+<h2>Projektbeispiele</h2>
+
+<p>Produktionshalle: Kaltwassersatz mit Free Cooling und Wärmerückgewinnung, 24/7-Betrieb.</p>
+
+<p>Logistikzentrum: Dachklimageräte mit adiabatischer Zusatzkühlung für 12.000 Quadratmeter.</p>
+
+<p>Serverraum: N+1-Klimatisierung mit indirektem Free Cooling und Fernwartung.</p>
+
+<h2>Ihre Referenz</h2>
+
+<p>Referenzen auf Anfrage – wir zeigen gerne Anlagen mit laufender Wartung.</p>]]></content:encoded>
+    <excerpt:encoded><![CDATA[Ausgewählte Projekte aus Produktion, Logistik und Rechenzentren. (Demodaten)]]></excerpt:encoded>
+    <wp:post_id>116</wp:post_id>
+    <wp:post_date>2026-01-16 09:00:00</wp:post_date>
+    <wp:post_date_gmt>2026-01-16 08:00:00</wp:post_date_gmt>
+    <wp:comment_status>open</wp:comment_status>
+    <wp:ping_status>open</wp:ping_status>
+    <wp:post_name><![CDATA[referenzen]]></wp:post_name>
+    <wp:status>publish</wp:status>
+    <wp:post_parent>0</wp:post_parent>
+    <wp:menu_order>0</wp:menu_order>
+    <wp:post_type>page</wp:post_type>
+    <wp:post_password></wp:post_password>
+    <wp:is_sticky>0</wp:is_sticky>
+  </item>
+  <item>
+    <title>Kontakt</title>
+    <link>http://127.0.0.1:8080/page/kontakt/</link>
+    <pubDate>Sat, 17 Jan 2026 09:00:00 +0100</pubDate>
+    <dc:creator><![CDATA[admin]]></dc:creator>
+    <guid isPermaLink="false">http://127.0.0.1:8080/?p=117</guid>
+    <description></description>
+    <content:encoded><![CDATA[<p>Sprechen Sie mit uns über Ihre Kältelastberechnung, Ihre Bestandsanlage oder Ihren Wartungsvertrag.</p>
+
+<h2>Kontaktwege</h2>
+
+<p>Telefon, E-Mail oder das Kontaktformular – wir antworten innerhalb eines Arbeitstages.</p>
+
+<p>Für Notfälle: Notdienst 24/7 mit garantierter Reaktionszeit.</p>]]></content:encoded>
+    <excerpt:encoded><![CDATA[Sprechen Sie mit uns über Ihre Kältelastberechnung, Ihre Bestandsanlage oder Ihren Wartungsvertrag.]]></excerpt:encoded>
+    <wp:post_id>117</wp:post_id>
+    <wp:post_date>2026-01-17 09:00:00</wp:post_date>
+    <wp:post_date_gmt>2026-01-17 08:00:00</wp:post_date_gmt>
+    <wp:comment_status>open</wp:comment_status>
+    <wp:ping_status>open</wp:ping_status>
+    <wp:post_name><![CDATA[kontakt]]></wp:post_name>
+    <wp:status>publish</wp:status>
+    <wp:post_parent>0</wp:post_parent>
+    <wp:menu_order>0</wp:menu_order>
+    <wp:post_type>page</wp:post_type>
+    <wp:post_password></wp:post_password>
+    <wp:is_sticky>0</wp:is_sticky>
+  </item>
+  <item>
+    <title>Karriere</title>
+    <link>http://127.0.0.1:8080/page/karriere/</link>
+    <pubDate>Sun, 18 Jan 2026 09:00:00 +0100</pubDate>
+    <dc:creator><![CDATA[admin]]></dc:creator>
+    <guid isPermaLink="false">http://127.0.0.1:8080/?p=118</guid>
+    <description></description>
+    <content:encoded><![CDATA[<p>Werden Sie Teil des Teams: Kältefachplaner, Monteure und Servicetechniker gesucht.</p>
+
+<h2>Offene Stellen</h2>
+
+<p>Kältefachplaner für Kältelastberechnung und Projektdimensionierung.</p>
+
+<p>Servicetechniker für Wartung, Inbetriebnahme und Notdienst.</p>
+
+<p>Monteure für Installation und Umrüstung von Kälteanlagen.</p>
+
+<h2>Bewerbung</h2>
+
+<p>Bewerbungen mit Lebenslauf und Zeugnissen über das Kontaktformular.</p>]]></content:encoded>
+    <excerpt:encoded><![CDATA[Werden Sie Teil des Teams: Kältefachplaner, Monteure und Servicetechniker gesucht.]]></excerpt:encoded>
+    <wp:post_id>118</wp:post_id>
+    <wp:post_date>2026-01-18 09:00:00</wp:post_date>
+    <wp:post_date_gmt>2026-01-18 08:00:00</wp:post_date_gmt>
+    <wp:comment_status>open</wp:comment_status>
+    <wp:ping_status>open</wp:ping_status>
+    <wp:post_name><![CDATA[karriere]]></wp:post_name>
+    <wp:status>publish</wp:status>
+    <wp:post_parent>0</wp:post_parent>
+    <wp:menu_order>0</wp:menu_order>
+    <wp:post_type>page</wp:post_type>
+    <wp:post_password></wp:post_password>
+    <wp:is_sticky>0</wp:is_sticky>
+  </item>
+  <item>
+    <title>FAQ: Industrie-Klimageräte</title>
+    <link>http://127.0.0.1:8080/page/faq/</link>
+    <pubDate>Mon, 19 Jan 2026 09:00:00 +0100</pubDate>
+    <dc:creator><![CDATA[admin]]></dc:creator>
+    <guid isPermaLink="false">http://127.0.0.1:8080/?p=119</guid>
+    <description></description>
+    <content:encoded><![CDATA[<p>Die häufigsten Fragen zu Industrie-Klimageräten – kurz beantwortet.</p>
+
+<h2>Allgemein</h2>
+
+<p>Was kostet die Klimatisierung einer Produktionshalle? Die Kosten hängen von Kältelast, Technologie und Redundanz ab – die Kältelastberechnung liefert die belastbare Zahl.</p>
+
+<p>Wie lange hält ein Kaltwassersatz? Bei dokumentierter Wartung sind 15 bis 20 Jahre realistisch.</p>
+
+<p>Brauche ich eine Genehmigung? Für Anlagen mit fluorierten Kältemitteln greifen die Pflichten der F-Gas-Verordnung.</p>
+
+<h2>Betrieb</h2>
+
+<p>Wie oft muss eine Anlage gewartet werden? Mindestens zweimal jährlich, plus Dichtigkeitsprüfung nach F-Gas-Verordnung.</p>
+
+<p>Was tun bei Kältemittelleckage? Anlage abschalten, Fachbetrieb rufen, Leckage dokumentieren.</p>
+
+<p>Lohnt sich Free Cooling? In Deutschland fast immer – die Amortisationsrechnung zeigt es im Einzelfall.</p>]]></content:encoded>
+    <excerpt:encoded><![CDATA[Die häufigsten Fragen zu Industrie-Klimageräten – kurz beantwortet.]]></excerpt:encoded>
+    <wp:post_id>119</wp:post_id>
+    <wp:post_date>2026-01-19 09:00:00</wp:post_date>
+    <wp:post_date_gmt>2026-01-19 08:00:00</wp:post_date_gmt>
+    <wp:comment_status>open</wp:comment_status>
+    <wp:ping_status>open</wp:ping_status>
+    <wp:post_name><![CDATA[faq]]></wp:post_name>
+    <wp:status>publish</wp:status>
+    <wp:post_parent>0</wp:post_parent>
+    <wp:menu_order>0</wp:menu_order>
+    <wp:post_type>page</wp:post_type>
+    <wp:post_password></wp:post_password>
+    <wp:is_sticky>0</wp:is_sticky>
+  </item>
+  <item>
+    <title>Impressum und Datenschutz</title>
+    <link>http://127.0.0.1:8080/page/impressum/</link>
+    <pubDate>Tue, 20 Jan 2026 09:00:00 +0100</pubDate>
+    <dc:creator><![CDATA[admin]]></dc:creator>
+    <guid isPermaLink="false">http://127.0.0.1:8080/?p=120</guid>
+    <description></description>
+    <content:encoded><![CDATA[<p>Impressum und Hinweise zum Datenschutz. (Demodaten)</p>
+
+<h2>Impressum</h2>
+
+<p>Industrie-Klima Demo GmbH, Musterstraße 1, 00000 Musterstadt. Vertreten durch: Musterfrau Muster.</p>
+
+<p>Alle Inhalte dieser Demo-Website sind fiktive Beispieldaten.</p>
+
+<h2>Datenschutz</h2>
+
+<p>Diese Demo erhebt keine personenbezogenen Daten. Kontaktformulare existieren nur zu Demonstrationszwecken.</p>]]></content:encoded>
+    <excerpt:encoded><![CDATA[Impressum und Hinweise zum Datenschutz. (Demodaten)]]></excerpt:encoded>
+    <wp:post_id>120</wp:post_id>
+    <wp:post_date>2026-01-20 09:00:00</wp:post_date>
+    <wp:post_date_gmt>2026-01-20 08:00:00</wp:post_date_gmt>
+    <wp:comment_status>open</wp:comment_status>
+    <wp:ping_status>open</wp:ping_status>
+    <wp:post_name><![CDATA[impressum]]></wp:post_name>
+    <wp:status>publish</wp:status>
+    <wp:post_parent>0</wp:post_parent>
+    <wp:menu_order>0</wp:menu_order>
+    <wp:post_type>page</wp:post_type>
+    <wp:post_password></wp:post_password>
+    <wp:is_sticky>0</wp:is_sticky>
+  </item>
+  <item>
+    <title>Industrie-Klimageräte: Der Leitfaden für Produktionshallen</title>
+    <link>http://127.0.0.1:8080/post/industrie-klimageraete-leitfaden/</link>
+    <pubDate>Tue, 10 Feb 2026 09:00:00 +0100</pubDate>
+    <dc:creator><![CDATA[admin]]></dc:creator>
+    <guid isPermaLink="false">http://127.0.0.1:8080/?p=121</guid>
+    <description></description>
+    <content:encoded><![CDATA[<p>Industrie-Klimageräte kühlen nicht Menschen, sondern Prozesse. Wer in einer Produktionshalle stabile Temperaturen braucht, entscheidet sich zwischen Dachgeräten, Kaltwassersätzen und dezentralen Lösungen. Dieser Leitfaden zeigt, worauf es bei der Auswahl wirklich ankommt.</p>
+
+<h2>Zuerst die Last, dann das Gerät</h2>
+
+<p>Jede Planung beginnt mit der Kältelastberechnung. Ohne sie ist jedes Industrie-Klimagerät entweder zu groß, zu klein oder zur falschen Zeit am falschen Ort.</p>
+
+<p>Gemessen werden Maschinenabwärme, Beleuchtung, Personen und die Gebäudehülle. Bei Produktionshallen dominiert fast immer die Abwärme der Anlagen.</p>
+
+<h2>Technologien im Überblick</h2>
+
+<p>Dachklimageräte bringen die Kälte dorthin, wo sie entsteht, und sparen wertvolle Hallenfläche. Kaltwassersätze versorgen mehrere Verbraucher zentral und erlauben später eine Erweiterung.</p>
+
+<p>Für Einzelmaschinen lohnt sich oft die Schaltschrankklimatisierung statt einer kompletten Hallenklimatisierung.</p>
+
+<h2>Betriebskosten mitdenken</h2>
+
+<p>Der Kaufpreis ist nur ein Teil der Wahrheit. EER und SEER entscheiden über die Stromrechnung der nächsten fünfzehn Jahre.</p>
+
+<p>Wer heute plant, sollte die F-Gas-Verordnung und die ErP-Richtlinie bereits in die Technologieentscheidung einbeziehen.</p>]]></content:encoded>
+    <excerpt:encoded><![CDATA[Worauf es bei Industrie-Klimageräten ankommt: Last, Technologie, Betriebskosten.]]></excerpt:encoded>
+    <wp:post_id>121</wp:post_id>
+    <wp:post_date>2026-02-10 09:00:00</wp:post_date>
+    <wp:post_date_gmt>2026-02-10 08:00:00</wp:post_date_gmt>
+    <wp:comment_status>open</wp:comment_status>
+    <wp:ping_status>open</wp:ping_status>
+    <wp:post_name><![CDATA[industrie-klimageraete-leitfaden]]></wp:post_name>
+    <wp:status>publish</wp:status>
+    <wp:post_parent>0</wp:post_parent>
+    <wp:menu_order>0</wp:menu_order>
+    <wp:post_type>post</wp:post_type>
+    <wp:post_password></wp:post_password>
+    <wp:is_sticky>0</wp:is_sticky>
+    <category domain="category" nicename="planung"><![CDATA[Planung]]></category>
+    <category domain="post_tag" nicename="kuehlung"><![CDATA[kuehlung]]></category>
+    <category domain="post_tag" nicename="produktion"><![CDATA[produktion]]></category>
+  </item>
+  <item>
+    <title>Prozessklimatisierung: Klima, das der Produktion folgt</title>
+    <link>http://127.0.0.1:8080/post/prozessklimatisierung-produktionshallen/</link>
+    <pubDate>Thu, 22 Jan 2026 09:00:00 +0100</pubDate>
+    <dc:creator><![CDATA[admin]]></dc:creator>
+    <guid isPermaLink="false">http://127.0.0.1:8080/?p=122</guid>
+    <description></description>
+    <content:encoded><![CDATA[<p>Prozessklimatisierung bedeutet: Die Luft muss genau das können, was der Prozess verlangt. Eine Schweißnaht, eine Beschichtung oder eine Verpackungslinie reagiert empfindlich auf Temperaturschwankungen. Deshalb wird das Klima hier zum Qualitätsfaktor.</p>
+
+<h2>Temperaturfenster definieren</h2>
+
+<p>Der erste Schritt ist ein Lastenheft mit Ober- und Untergrenzen. Toleranzen von plus minus zwei Grad sind in der Prozessklimatisierung oft schon eng.</p>
+
+<p>Liegt das Fenster enger, steigen die Kosten überproportional. Deshalb gilt: So eng wie nötig, so weit wie möglich.</p>
+
+<h2>Dezentral oder zentral</h2>
+
+<p>Dezentrale Geräte reagieren schnell auf lokale Lastspitzen. Ein zentraler Kaltwassersatz glättet dagegen die Gesamtlast und läuft effizienter.</p>
+
+<p>Viele Hallen fahren eine Mischung: zentrale Kälte für die Grundlast, dezentrale Spitzenabdeckung.</p>
+
+<h2>Luftfeuchte nicht vergessen</h2>
+
+<p>Bei Trocknungs- oder Beschichtungsprozessen ist die relative Feuchte oft wichtiger als die Temperatur. Dann gehört die Befeuchtung in die Prozessklimatisierung hinein.</p>]]></content:encoded>
+    <excerpt:encoded><![CDATA[Prozessklimatisierung hält Temperatur und Feuchte stabil – nicht den Menschen, sondern das Produkt.]]></excerpt:encoded>
+    <wp:post_id>122</wp:post_id>
+    <wp:post_date>2026-01-22 09:00:00</wp:post_date>
+    <wp:post_date_gmt>2026-01-22 08:00:00</wp:post_date_gmt>
+    <wp:comment_status>open</wp:comment_status>
+    <wp:ping_status>open</wp:ping_status>
+    <wp:post_name><![CDATA[prozessklimatisierung-produktionshallen]]></wp:post_name>
+    <wp:status>publish</wp:status>
+    <wp:post_parent>0</wp:post_parent>
+    <wp:menu_order>0</wp:menu_order>
+    <wp:post_type>post</wp:post_type>
+    <wp:post_password></wp:post_password>
+    <wp:is_sticky>0</wp:is_sticky>
+    <category domain="category" nicename="planung"><![CDATA[Planung]]></category>
+    <category domain="post_tag" nicename="kuehlung"><![CDATA[kuehlung]]></category>
+    <category domain="post_tag" nicename="produktion"><![CDATA[produktion]]></category>
+  </item>
+  <item>
+    <title>Kaltwassersatz richtig dimensionieren</title>
+    <link>http://127.0.0.1:8080/post/kaltwassersatz-dimensionierung/</link>
+    <pubDate>Wed, 04 Mar 2026 09:00:00 +0100</pubDate>
+    <dc:creator><![CDATA[admin]]></dc:creator>
+    <guid isPermaLink="false">http://127.0.0.1:8080/?p=123</guid>
+    <description></description>
+    <content:encoded><![CDATA[<p>Ein Kaltwassersatz ist kein Regalartikel. Zu klein dimensioniert, schafft er die Spitzenlast nicht; zu groß, taktet er sich zu Tode und verschwendet Strom. Die Dimensionierung entscheidet über Effizienz und Lebensdauer.</p>
+
+<h2>Die Spitzenlast ist der Maßstab</h2>
+
+<p>Grundlast und Spitzenlast sind zwei verschiedene Welten. Ein Kaltwassersatz, der nur die mittlere Last deckt, kollabiert im Hochsommer genau dann, wenn er gebraucht wird.</p>
+
+<p>Die Kältelastberechnung liefert die Zahlen. Darauf aufbauend wird die Maschinenkombination geplant.</p>
+
+<h2>Teillastverhalten prüfen</h2>
+
+<p>Ein Kaltwassersatz läuft selten bei Volllast. Entscheidend ist der Teillastwirkungsgrad, den moderne Geräte über Drehzahlregelung erreichen.</p>
+
+<p>Vergleichen Sie SEER-Werte, nicht nur die Nennleistung im Datenblatt.</p>
+
+<h2>Pufferspeicher einplanen</h2>
+
+<p>Ein Pufferspeicher entkoppelt Erzeugung und Verbrauch. Damit kann der Kaltwassersatz länger in effizienten Lastbereichen laufen statt ständig zu takten.</p>]]></content:encoded>
+    <excerpt:encoded><![CDATA[Fünf Fehler, die bei der Dimensionierung von Kaltwassersätzen teuer werden.]]></excerpt:encoded>
+    <wp:post_id>123</wp:post_id>
+    <wp:post_date>2026-03-04 09:00:00</wp:post_date>
+    <wp:post_date_gmt>2026-03-04 08:00:00</wp:post_date_gmt>
+    <wp:comment_status>open</wp:comment_status>
+    <wp:ping_status>open</wp:ping_status>
+    <wp:post_name><![CDATA[kaltwassersatz-dimensionierung]]></wp:post_name>
+    <wp:status>publish</wp:status>
+    <wp:post_parent>0</wp:post_parent>
+    <wp:menu_order>0</wp:menu_order>
+    <wp:post_type>post</wp:post_type>
+    <wp:post_password></wp:post_password>
+    <wp:is_sticky>0</wp:is_sticky>
+    <category domain="category" nicename="planung"><![CDATA[Planung]]></category>
+    <category domain="post_tag" nicename="kuehlung"><![CDATA[kuehlung]]></category>
+  </item>
+  <item>
+    <title>Serverraum-Klimatisierung mit Free Cooling</title>
+    <link>http://127.0.0.1:8080/post/serverraum-free-cooling/</link>
+    <pubDate>Sun, 18 Jan 2026 09:00:00 +0100</pubDate>
+    <dc:creator><![CDATA[admin]]></dc:creator>
+    <guid isPermaLink="false">http://127.0.0.1:8080/?p=124</guid>
+    <description></description>
+    <content:encoded><![CDATA[<p>Serverräume produzieren das ganze Jahr Abwärme – auch im Winter. Genau da setzt Free Cooling an: Sobald die Außenluft kalt genug ist, übernimmt sie die Kühlung und der Kaltwassersatz geht in den Standby. Das ist die wirtschaftlichste Form der Serverraum-Klimatisierung.</p>
+
+<h2>Wann lohnt sich Free Cooling</h2>
+
+<p>In Deutschland liegen die Temperaturen die meiste Zeit des Jahres unter der Rücklauftemperatur des Kühlkreislaufs. Deshalb rechnet sich Free Cooling hier fast immer.</p>
+
+<p>Je höher die Vorlauftemperatur der Server (warm water cooling), desto mehr Stunden im Jahr kann frei gekühlt werden.</p>
+
+<h2>Direkt oder indirekt</h2>
+
+<p>Direkte Free-Cooling-Systeme führen Außenluft direkt in den Raum – günstig, aber luftfeuchteabhängig. Indirekte Systeme trennen die Luftströme über einen Wärmetauscher und sind robuster.</p>
+
+<p>Für Serverräume mit empfindlicher Elektronik ist die indirekte Variante der sichere Standard.</p>
+
+<h2>Redundanz nicht vergessen</h2>
+
+<p>Free Cooling ist ein Effizienzbaustein, kein Redundanzkonzept. Die Notkühlung muss auch bei Außentemperaturspitzen und Geräteausfall liefern.</p>]]></content:encoded>
+    <excerpt:encoded><![CDATA[Free Cooling nutzt Außenluft und spart bis zu 70 Prozent Kältestrom.]]></excerpt:encoded>
+    <wp:post_id>124</wp:post_id>
+    <wp:post_date>2026-01-18 09:00:00</wp:post_date>
+    <wp:post_date_gmt>2026-01-18 08:00:00</wp:post_date_gmt>
+    <wp:comment_status>open</wp:comment_status>
+    <wp:ping_status>open</wp:ping_status>
+    <wp:post_name><![CDATA[serverraum-free-cooling]]></wp:post_name>
+    <wp:status>publish</wp:status>
+    <wp:post_parent>0</wp:post_parent>
+    <wp:menu_order>0</wp:menu_order>
+    <wp:post_type>post</wp:post_type>
+    <wp:post_password></wp:post_password>
+    <wp:is_sticky>0</wp:is_sticky>
+    <category domain="category" nicename="produkte"><![CDATA[Produkte]]></category>
+    <category domain="post_tag" nicename="rechenzentrum"><![CDATA[rechenzentrum]]></category>
+    <category domain="post_tag" nicename="kuehlung"><![CDATA[kuehlung]]></category>
+  </item>
+  <item>
+    <title>Schaltschrankklimatisierung: Warum Steuerungen kühl bleiben müssen</title>
+    <link>http://127.0.0.1:8080/post/schaltschrankklimatisierung-warum/</link>
+    <pubDate>Mon, 02 Feb 2026 09:00:00 +0100</pubDate>
+    <dc:creator><![CDATA[admin]]></dc:creator>
+    <guid isPermaLink="false">http://127.0.0.1:8080/?p=125</guid>
+    <description></description>
+    <content:encoded><![CDATA[<p>In jedem Schaltschrank steckt Elektronik, die Wärme produziert: Frequenzumrichter, SPS, Servoverstärker. Ohne Schaltschrankklimatisierung steigt die Temperatur im Schrank auf Werte, die Ausfälle und Stillstände provozieren. Der Zusammenhang ist einfach: Wärme verkürzt die Lebensdauer von Bauteilen drastisch.</p>
+
+<h2>Die 10-Grad-Regel</h2>
+
+<p>Als Faustregel gilt: Jede Temperaturerhöhung um zehn Kelvin halbiert die Lebensdauer elektronischer Bauteile. Bei 50 Grad Innentemperatur arbeitet die Steuerung also mit einem Bruchteil ihrer erwarteten Lebensdauer.</p>
+
+<p>Deshalb ist ein Schaltschrankklimagerät keine Komfortfrage, sondern eine Verfügbarkeitsfrage.</p>
+
+<h2>Gerätetypen richtig wählen</h2>
+
+<p>Filterlüfter reichen nur bei geringer Verlustleistung. Sobald die Abwärme steigt, sind Kompaktklimageräte oder Kältesysteme mit Wärmetauscher gefragt.</p>
+
+<p>Wichtig ist die Auslegung auf die tatsächliche Verlustleistung des Schranks, nicht auf die Schrankgröße.</p>
+
+<h2>Wartung einplanen</h2>
+
+<p>Verstopfte Filter und verschmutzte Wärmetauscher senken die Kälteleistung schleichend. Die Schaltschrankklimatisierung gehört in den Wartungsvertrag.</p>]]></content:encoded>
+    <excerpt:encoded><![CDATA[Jede zehnte Grad über 35 Grad halbiert die Lebensdauer von Elektronik – Schaltschrankklimatisierung schützt die Steuerung.]]></excerpt:encoded>
+    <wp:post_id>125</wp:post_id>
+    <wp:post_date>2026-02-02 09:00:00</wp:post_date>
+    <wp:post_date_gmt>2026-02-02 08:00:00</wp:post_date_gmt>
+    <wp:comment_status>open</wp:comment_status>
+    <wp:ping_status>open</wp:ping_status>
+    <wp:post_name><![CDATA[schaltschrankklimatisierung-warum]]></wp:post_name>
+    <wp:status>publish</wp:status>
+    <wp:post_parent>0</wp:post_parent>
+    <wp:menu_order>0</wp:menu_order>
+    <wp:post_type>post</wp:post_type>
+    <wp:post_password></wp:post_password>
+    <wp:is_sticky>0</wp:is_sticky>
+    <category domain="category" nicename="produkte"><![CDATA[Produkte]]></category>
+    <category domain="post_tag" nicename="produktion"><![CDATA[produktion]]></category>
+    <category domain="post_tag" nicename="kuehlung"><![CDATA[kuehlung]]></category>
+  </item>
+  <item>
+    <title>F-Gas-Verordnung 2026: Was Betreiber jetzt wissen müssen</title>
+    <link>http://127.0.0.1:8080/post/f-gas-verordnung-2026/</link>
+    <pubDate>Sun, 12 Apr 2026 09:00:00 +0100</pubDate>
+    <dc:creator><![CDATA[admin]]></dc:creator>
+    <guid isPermaLink="false">http://127.0.0.1:8080/?p=126</guid>
+    <description></description>
+    <content:encoded><![CDATA[<p>Die F-Gas-Verordnung begrenzt schrittweise fluorierte Kältemittel. Für Betreiber von Industrie-Klimageräten bedeutet das: Bestandsanlagen mit hohem Treibhauspotenzial werden teurer, und neue Anlagen müssen frühzeitig auf klimafreundliche Kältemittel umgestellt werden.</p>
+
+<h2>Die neuen Stufen</h2>
+
+<p>Die Quoten für die Inverkehrbringung fluorierter Kältemittel sinken in mehreren Stufen. Das verteuert Wartung und Nachfüllung von Bestandsanlagen spürbar.</p>
+
+<p>Gleichzeitig gelten Verbote für neue Anlagen mit bestimmten Kältemitteln in immer mehr Anwendungen.</p>
+
+<h2>Was Betreiber jetzt tun sollten</h2>
+
+<p>Bestandsanalyse: Welche Kältemittel stecken in meinen Anlagen, und wie hoch ist das Treibhauspotenzial?</p>
+
+<p>Dann folgt eine Umstellungsplanung: Anlagen, die in den nächsten Jahren ersetzt werden, sollten heute schon auf R290, R744 oder andere natürliche Kältemittel ausgelegt werden.</p>
+
+<h2>Förderung nutzen</h2>
+
+<p>Die Umstellung auf klimafreundliche Kältetechnik wird über die BAFA-Förderung unterstützt. Der Antrag sollte vor der Angebotsphase gestellt werden.</p>]]></content:encoded>
+    <excerpt:encoded><![CDATA[Quoten, Verbote, Übergangsfristen: Die F-Gas-Verordnung verändert den Bestand an Klimaanlagen.]]></excerpt:encoded>
+    <wp:post_id>126</wp:post_id>
+    <wp:post_date>2026-04-12 09:00:00</wp:post_date>
+    <wp:post_date_gmt>2026-04-12 08:00:00</wp:post_date_gmt>
+    <wp:comment_status>open</wp:comment_status>
+    <wp:ping_status>open</wp:ping_status>
+    <wp:post_name><![CDATA[f-gas-verordnung-2026]]></wp:post_name>
+    <wp:status>publish</wp:status>
+    <wp:post_parent>0</wp:post_parent>
+    <wp:menu_order>0</wp:menu_order>
+    <wp:post_type>post</wp:post_type>
+    <wp:post_password></wp:post_password>
+    <wp:is_sticky>0</wp:is_sticky>
+    <category domain="category" nicename="kaeltemittel"><![CDATA[Kältemittel]]></category>
+    <category domain="post_tag" nicename="kuehlung"><![CDATA[kuehlung]]></category>
+    <category domain="post_tag" nicename="foerderung"><![CDATA[foerderung]]></category>
+  </item>
+  <item>
+    <title>Kältemittel R290: Propan in Industrieklimageräten</title>
+    <link>http://127.0.0.1:8080/post/kaeltemittel-r290/</link>
+    <pubDate>Fri, 20 Mar 2026 09:00:00 +0100</pubDate>
+    <dc:creator><![CDATA[admin]]></dc:creator>
+    <guid isPermaLink="false">http://127.0.0.1:8080/?p=127</guid>
+    <description></description>
+    <content:encoded><![CDATA[<p>Kältemittel R290 ist Propan: ein natürliches Kältemittel mit minimalem Treibhauspotenzial und hervorragenden thermodynamischen Eigenschaften. Für Industrie-Klimageräte wird es zur ersten Wahl, wenn die F-Gas-Verordnung die Alternativen verteuert.</p>
+
+<h2>Warum R290 gewinnt</h2>
+
+<p>R290 hat ein GWP von 3 und gehört damit nicht unter die Quote der F-Gas-Verordnung. Gleichzeitig sind die Wirkungsgrade in vielen Anwendungen besser als bei Fluorkohlenwasserstoffen.</p>
+
+<p>Die Kältemittelfüllmenge ist allerdings begrenzt, weil Propan brennbar ist.</p>
+
+<h2>Sicherheit nach EN 378</h2>
+
+<p>Die EN 378 legt fest, wie viel R290 in welchem Raum eingesetzt werden darf. Lüftung, Leckage-Erkennung und Aufstellort werden Teil der Planung.</p>
+
+<p>In Produktionshallen mit hohen Räumen sind die zulässigen Füllmengen meist unkritisch. In engen Technikräumen muss die Lüftung nachgerüstet werden.</p>
+
+<h2>Wartung braucht Qualifikation</h2>
+
+<p>Arbeiten an R290-Anlagen verlangen eine spezielle Zertifizierung. Der Wartungsvertrag sollte nachweisen, dass der Dienstleister dafür qualifiziert ist.</p>]]></content:encoded>
+    <excerpt:encoded><![CDATA[R290 ist effizient und klimafreundlich – verlangt aber mehr Sorgfalt bei Sicherheit und Aufstellung.]]></excerpt:encoded>
+    <wp:post_id>127</wp:post_id>
+    <wp:post_date>2026-03-20 09:00:00</wp:post_date>
+    <wp:post_date_gmt>2026-03-20 08:00:00</wp:post_date_gmt>
+    <wp:comment_status>open</wp:comment_status>
+    <wp:ping_status>open</wp:ping_status>
+    <wp:post_name><![CDATA[kaeltemittel-r290]]></wp:post_name>
+    <wp:status>publish</wp:status>
+    <wp:post_parent>0</wp:post_parent>
+    <wp:menu_order>0</wp:menu_order>
+    <wp:post_type>post</wp:post_type>
+    <wp:post_password></wp:post_password>
+    <wp:is_sticky>0</wp:is_sticky>
+    <category domain="category" nicename="kaeltemittel"><![CDATA[Kältemittel]]></category>
+    <category domain="post_tag" nicename="kuehlung"><![CDATA[kuehlung]]></category>
+    <category domain="post_tag" nicename="sicherheit"><![CDATA[sicherheit]]></category>
+  </item>
+  <item>
+    <title>Adiabatische Kühlung: Weniger Strom, weniger Wasser</title>
+    <link>http://127.0.0.1:8080/post/adiabatische-kuehlung/</link>
+    <pubDate>Wed, 06 May 2026 09:00:00 +0100</pubDate>
+    <dc:creator><![CDATA[admin]]></dc:creator>
+    <guid isPermaLink="false">http://127.0.0.1:8080/?p=128</guid>
+    <description></description>
+    <content:encoded><![CDATA[<p>Adiabatische Kühlung funktioniert nach einem einfachen Prinzip: Wasser verdunstet, entzieht der Luft Wärme und kühlt sie ab. In der Industriekälte wird dieser Effekt genutzt, um die Kondensationstemperatur zu senken und damit Strom zu sparen.</p>
+
+<h2>Wo die Einsparung herkommt</h2>
+
+<p>Je niedriger die Kondensationstemperatur, desto effizienter arbeitet der Kältekreislauf. Adiabatische Vorkühlung der Ansaugluft senkt diese Temperatur gezielt an heißen Tagen.</p>
+
+<p>In Spitzenlastzeiten können dadurch 20 bis 30 Prozent Kältestrom gespart werden.</p>
+
+<h2>Wasserbedarf realistisch planen</h2>
+
+<p>Adiabatische Kühlung braucht Wasser. Die Aufbereitung und der Verbrauch müssen in die Betriebskostenrechnung einfließen.</p>
+
+<p>Moderne Systeme regeln die Befeuchtung lastabhängig und minimieren so den Wasserbedarf.</p>
+
+<h2>Kombination mit Hybridkühlern</h2>
+
+<p>Hybridkühler fahren im Winter trocken, im Sommer adiabatisch. Diese Kombination deckt das ganze Jahr mit einem Gerät ab.</p>]]></content:encoded>
+    <excerpt:encoded><![CDATA[Adiabatische Kühlung nutzt Verdunstung und senkt den Strombedarf von Kälteanlagen deutlich.]]></excerpt:encoded>
+    <wp:post_id>128</wp:post_id>
+    <wp:post_date>2026-05-06 09:00:00</wp:post_date>
+    <wp:post_date_gmt>2026-05-06 08:00:00</wp:post_date_gmt>
+    <wp:comment_status>open</wp:comment_status>
+    <wp:ping_status>open</wp:ping_status>
+    <wp:post_name><![CDATA[adiabatische-kuehlung]]></wp:post_name>
+    <wp:status>publish</wp:status>
+    <wp:post_parent>0</wp:post_parent>
+    <wp:menu_order>0</wp:menu_order>
+    <wp:post_type>post</wp:post_type>
+    <wp:post_password></wp:post_password>
+    <wp:is_sticky>0</wp:is_sticky>
+    <category domain="category" nicename="effizienz"><![CDATA[Effizienz]]></category>
+    <category domain="post_tag" nicename="kuehlung"><![CDATA[kuehlung]]></category>
+    <category domain="post_tag" nicename="produktion"><![CDATA[produktion]]></category>
+  </item>
+  <item>
+    <title>Kältelastberechnung Schritt für Schritt</title>
+    <link>http://127.0.0.1:8080/post/kaeltelastberechnung/</link>
+    <pubDate>Thu, 26 Feb 2026 09:00:00 +0100</pubDate>
+    <dc:creator><![CDATA[admin]]></dc:creator>
+    <guid isPermaLink="false">http://127.0.0.1:8080/?p=129</guid>
+    <description></description>
+    <content:encoded><![CDATA[<p>Die Kältelastberechnung beantwortet eine einzige Frage: Wie viel Kälteleistung braucht dieser Raum wirklich? Alle Folgeentscheidungen – Gerätegröße, Kanalnetz, Betriebskosten – hängen an dieser Zahl.</p>
+
+<h2>Schritt 1: Lasten sammeln</h2>
+
+<p>Maschinenabwärme aus Datenblättern, Beleuchtung, Personen, Sonneneinstrahlung, Luftwechsel. Jede Lastquelle wird mit ihrer maximalen Leistung angesetzt.</p>
+
+<p>Bei Industriehallen dominiert fast immer die Maschinenabwärme.</p>
+
+<h2>Schritt 2: Gleichzeitigkeit bewerten</h2>
+
+<p>Nicht alle Lasten treten gleichzeitig auf. Der Gleichzeitigkeitsfaktor verhindert, dass die Anlage für ein Szenario ausgelegt wird, das nie eintritt.</p>
+
+<p>Das Ergebnis ist die maßgebliche Kühllast, auf die das Gerät dimensioniert wird.</p>
+
+<h2>Schritt 3: Sicherheitsreserve festlegen</h2>
+
+<p>Eine Reserve von 10 bis 15 Prozent deckt Planungsunsicherheit ab – mehr ist Verschwendung, weniger ist Risiko.</p>]]></content:encoded>
+    <excerpt:encoded><![CDATA[Die Kältelastberechnung ist das Fundament jeder Klimaplanung – Schritt für Schritt erklärt.]]></excerpt:encoded>
+    <wp:post_id>129</wp:post_id>
+    <wp:post_date>2026-02-26 09:00:00</wp:post_date>
+    <wp:post_date_gmt>2026-02-26 08:00:00</wp:post_date_gmt>
+    <wp:comment_status>open</wp:comment_status>
+    <wp:ping_status>open</wp:ping_status>
+    <wp:post_name><![CDATA[kaeltelastberechnung]]></wp:post_name>
+    <wp:status>publish</wp:status>
+    <wp:post_parent>0</wp:post_parent>
+    <wp:menu_order>0</wp:menu_order>
+    <wp:post_type>post</wp:post_type>
+    <wp:post_password></wp:post_password>
+    <wp:is_sticky>0</wp:is_sticky>
+    <category domain="category" nicename="planung"><![CDATA[Planung]]></category>
+    <category domain="post_tag" nicename="kuehlung"><![CDATA[kuehlung]]></category>
+  </item>
+  <item>
+    <title>Dachklimageräte für Logistikzentren</title>
+    <link>http://127.0.0.1:8080/post/dachklimageraete-logistik/</link>
+    <pubDate>Fri, 03 Apr 2026 09:00:00 +0100</pubDate>
+    <dc:creator><![CDATA[admin]]></dc:creator>
+    <guid isPermaLink="false">http://127.0.0.1:8080/?p=130</guid>
+    <description></description>
+    <content:encoded><![CDATA[<p>Logistikzentren haben ein besonderes Problem: Die Halle ist voll mit Regalen, Fördertechnik und Ware – für Klimageräte bleibt kein Platz. Dachklimageräte lösen das, indem sie die gesamte Technik auf dem Dach tragen und nur die Luftverteilung in die Halle führen.</p>
+
+<h2>Warum Dachgeräte in der Logistik dominieren</h2>
+
+<p>Sie belegen keine Hallenfläche, verteilen die Kälte gleichmäßig und lassen sich modular erweitern, wenn die Halle wächst.</p>
+
+<p>Für Hochregallager gilt: Die Kältelastberechnung muss die Höhe der Regale und die Luftschichtung berücksichtigen.</p>
+
+<h2>Anbindung und Verteilung</h2>
+
+<p>Die Luftverteilung über textile Schläuche oder Kanäle sorgt für eine gleichmäßige Temperatur ohne Zugluft an den Arbeitsplätzen.</p>
+
+<p>Moderne Dachgeräte arbeiten mit Wärmerückgewinnung und adiabatischer Zusatzkühlung.</p>
+
+<h2>Wartungszugang planen</h2>
+
+<p>Dachgeräte sind wartungsintensiver, weil sie der Witterung ausgesetzt sind. Der Wartungsvertrag sollte Dacharbeiten explizit abdecken.</p>]]></content:encoded>
+    <excerpt:encoded><![CDATA[Dachklimageräte kühlen große Hallen, ohne wertvolle Fläche zu belegen.]]></excerpt:encoded>
+    <wp:post_id>130</wp:post_id>
+    <wp:post_date>2026-04-03 09:00:00</wp:post_date>
+    <wp:post_date_gmt>2026-04-03 08:00:00</wp:post_date_gmt>
+    <wp:comment_status>open</wp:comment_status>
+    <wp:ping_status>open</wp:ping_status>
+    <wp:post_name><![CDATA[dachklimageraete-logistik]]></wp:post_name>
+    <wp:status>publish</wp:status>
+    <wp:post_parent>0</wp:post_parent>
+    <wp:menu_order>0</wp:menu_order>
+    <wp:post_type>post</wp:post_type>
+    <wp:post_password></wp:post_password>
+    <wp:is_sticky>0</wp:is_sticky>
+    <category domain="category" nicename="branchen"><![CDATA[Branchen]]></category>
+    <category domain="post_tag" nicename="logistik"><![CDATA[logistik]]></category>
+    <category domain="post_tag" nicename="kuehlung"><![CDATA[kuehlung]]></category>
+  </item>
+  <item>
+    <title>Wartungsvertrag für Klimaanlagen: Kosten und Leistungen</title>
+    <link>http://127.0.0.1:8080/post/wartungsvertrag-klimaanlagen/</link>
+    <pubDate>Sat, 14 Mar 2026 09:00:00 +0100</pubDate>
+    <dc:creator><![CDATA[admin]]></dc:creator>
+    <guid isPermaLink="false">http://127.0.0.1:8080/?p=131</guid>
+    <description></description>
+    <content:encoded><![CDATA[<p>Ein Wartungsvertrag für Klimaanlagen ist kein Nice-to-have, sondern die Versicherung gegen den teuersten Ausfall: den im Hochsommer. Wer wartet, verhindert Stillstände, hält die Effizienz und erfüllt zugleich die dokumentationspflichten der F-Gas-Verordnung.</p>
+
+<h2>Leistungen, die drin sein müssen</h2>
+
+<p>Mindestens zwei Wartungsdurchgänge pro Jahr, Dichtigkeitsprüfung nach F-Gas-Verordnung, Filterwechsel, Reinigung der Wärmetauscher und ein Protokoll je Durchgang.</p>
+
+<p>Optional kommen Fernwartung und eine garantierte Reaktionszeit im Notfall dazu.</p>
+
+<h2>Kosten einordnen</h2>
+
+<p>Die Kosten hängen von Gerätezahl, Leistungsklasse und Standort ab. Als Faustwert: ein bis zwei Prozent des Anlagenwertes pro Jahr sind ein realistischer Rahmen.</p>
+
+<p>Ein Vertrag, der deutlich darunter liegt, enthält meist versteckte Ausschlüsse.</p>
+
+<h2>Reaktionszeiten festlegen</h2>
+
+<p>Für Produktionshallen ist die garantierte Reaktionszeit wichtiger als der Preis. Jede Stunde Stillstand kostet mehr als ein Jahr Wartung.</p>]]></content:encoded>
+    <excerpt:encoded><![CDATA[Was ein Wartungsvertrag für Industrie-Klimageräte kosten darf und was er leisten muss.]]></excerpt:encoded>
+    <wp:post_id>131</wp:post_id>
+    <wp:post_date>2026-03-14 09:00:00</wp:post_date>
+    <wp:post_date_gmt>2026-03-14 08:00:00</wp:post_date_gmt>
+    <wp:comment_status>open</wp:comment_status>
+    <wp:ping_status>open</wp:ping_status>
+    <wp:post_name><![CDATA[wartungsvertrag-klimaanlagen]]></wp:post_name>
+    <wp:status>publish</wp:status>
+    <wp:post_parent>0</wp:post_parent>
+    <wp:menu_order>0</wp:menu_order>
+    <wp:post_type>post</wp:post_type>
+    <wp:post_password></wp:post_password>
+    <wp:is_sticky>0</wp:is_sticky>
+    <category domain="category" nicename="wartung"><![CDATA[Wartung]]></category>
+    <category domain="post_tag" nicename="kuehlung"><![CDATA[kuehlung]]></category>
+    <category domain="post_tag" nicename="saison"><![CDATA[saison]]></category>
+  </item>
+  <item>
+    <title>Miete oder Kauf von Industrie-Klimageräten</title>
+    <link>http://127.0.0.1:8080/post/miete-oder-kauf/</link>
+    <pubDate>Fri, 30 Jan 2026 09:00:00 +0100</pubDate>
+    <dc:creator><![CDATA[admin]]></dc:creator>
+    <guid isPermaLink="false">http://127.0.0.1:8080/?p=132</guid>
+    <description></description>
+    <content:encoded><![CDATA[<p>Industrie-Klimageräte sind Kapitalgüter mit langer Lebensdauer – aber nicht jede Situation rechtfertigt einen Kauf. Miete oder Kauf ist eine Finanzierungsfrage mit technischen Nebenwirkungen.</p>
+
+<h2>Kauf: klare Kosten, klare Verantwortung</h2>
+
+<p>Der Kauf rechnet sich ab einer Nutzungsdauer von mehreren Jahren. Dafür trägt der Betreiber das volle Wartungs- und Ersatzrisiko.</p>
+
+<p>Geförderte Maßnahmen nach der BAFA-Förderung setzen in der Regel einen Kauf voraus.</p>
+
+<h2>Miete: Flexibilität gegen Aufschlag</h2>
+
+<p>Miete lohnt sich bei befristeten Projekten, Standorterweiterungen oder als Mobile Klimageräte-Lösung während einer Sanierung.</p>
+
+<p>Der Mietpreis enthält Wartung und oft auch den Notdienst. Wer das auslagern will, mietet.</p>
+
+<h2>Entscheidungsmatrix</h2>
+
+<p>Nutzungsdauer unter zwei Jahren: mieten. Über fünf Jahre: kaufen. Dazwischen: Amortisationsrechnung mit Wartungskosten und Restwert.</p>]]></content:encoded>
+    <excerpt:encoded><![CDATA[Miete oder Kauf: Die Entscheidung hängt von Laufzeit, Liquidität und Flexibilität ab.]]></excerpt:encoded>
+    <wp:post_id>132</wp:post_id>
+    <wp:post_date>2026-01-30 09:00:00</wp:post_date>
+    <wp:post_date_gmt>2026-01-30 08:00:00</wp:post_date_gmt>
+    <wp:comment_status>open</wp:comment_status>
+    <wp:ping_status>open</wp:ping_status>
+    <wp:post_name><![CDATA[miete-oder-kauf]]></wp:post_name>
+    <wp:status>publish</wp:status>
+    <wp:post_parent>0</wp:post_parent>
+    <wp:menu_order>0</wp:menu_order>
+    <wp:post_type>post</wp:post_type>
+    <wp:post_password></wp:post_password>
+    <wp:is_sticky>0</wp:is_sticky>
+    <category domain="category" nicename="planung"><![CDATA[Planung]]></category>
+    <category domain="post_tag" nicename="kuehlung"><![CDATA[kuehlung]]></category>
+    <category domain="post_tag" nicename="foerderung"><![CDATA[foerderung]]></category>
+  </item>
+  <item>
+    <title>Mobile Klimageräte: Notkühlung, wenn es schnell gehen muss</title>
+    <link>http://127.0.0.1:8080/post/mobile-klimageraete-notkuehlung/</link>
+    <pubDate>Fri, 22 May 2026 09:00:00 +0100</pubDate>
+    <dc:creator><![CDATA[admin]]></dc:creator>
+    <guid isPermaLink="false">http://127.0.0.1:8080/?p=133</guid>
+    <description></description>
+    <content:encoded><![CDATA[<p>Wenn die Kälteanlage ausfällt oder eine Halle kurzfristig genutzt werden soll, zählt Geschwindigkeit. Mobile Klimageräte liefern innerhalb weniger Stunden Kälteleistung, ohne Installation und ohne Umbau. Sie sind das Notkühlkonzept für alle Fälle.</p>
+
+<h2>Einsatzszenarien</h2>
+
+<p>Notkühlung nach Ausfall der Bestandsanlage, Überbrückung während der Sanierung, Zusatzkühlung für Events oder Lastspitzen im Sommer.</p>
+
+<p>Auch für die Serverraum-Klimatisierung gibt es mobile Lösungen mit Redundanzanschluss.</p>
+
+<h2>Was mobile Geräte leisten</h2>
+
+<p>Leistungen von wenigen Kilowatt bis zu mehreren hundert Kilowatt über Containerlösungen. Der Anschluss braucht Strom und einen Abluftweg.</p>
+
+<p>Die Aufstellung im Freien mit Kondensatorlüftung ist meist die schnellste Variante.</p>
+
+<h2>Miete statt Kauf</h2>
+
+<p>Mobile Geräte sind ideal für die Miete: befristet, inklusive Wartung, ohne Kapitalbindung. Der Wartungsvertrag entfällt, der Service ist im Mietpreis.</p>]]></content:encoded>
+    <excerpt:encoded><![CDATA[Mobile Klimageräte überbrücken Ausfälle, Bauphasen und Lastspitzen – ohne Umbau.]]></excerpt:encoded>
+    <wp:post_id>133</wp:post_id>
+    <wp:post_date>2026-05-22 09:00:00</wp:post_date>
+    <wp:post_date_gmt>2026-05-22 08:00:00</wp:post_date_gmt>
+    <wp:comment_status>open</wp:comment_status>
+    <wp:ping_status>open</wp:ping_status>
+    <wp:post_name><![CDATA[mobile-klimageraete-notkuehlung]]></wp:post_name>
+    <wp:status>publish</wp:status>
+    <wp:post_parent>0</wp:post_parent>
+    <wp:menu_order>0</wp:menu_order>
+    <wp:post_type>post</wp:post_type>
+    <wp:post_password></wp:post_password>
+    <wp:is_sticky>0</wp:is_sticky>
+    <category domain="category" nicename="produkte"><![CDATA[Produkte]]></category>
+    <category domain="post_tag" nicename="kuehlung"><![CDATA[kuehlung]]></category>
+    <category domain="post_tag" nicename="notfall"><![CDATA[notfall]]></category>
+  </item>
+  <item>
+    <title>Free Cooling: Außenluft als kostenloses Kältemittel</title>
+    <link>http://127.0.0.1:8080/post/free-cooling-aussenluft/</link>
+    <pubDate>Mon, 12 Jan 2026 09:00:00 +0100</pubDate>
+    <dc:creator><![CDATA[admin]]></dc:creator>
+    <guid isPermaLink="false">http://127.0.0.1:8080/?p=134</guid>
+    <description></description>
+    <content:encoded><![CDATA[<p>Free Cooling ist die eleganteste Form der Energieeffizienz: Man nutzt die Kälte, die die Natur schon liefert. Sobald die Außentemperatur unter die Rücklauftemperatur des Kältekreislaufs fällt, übernimmt die Außenluft die Kühlung und der Verdichter kann pausieren.</p>
+
+<h2>Die Wirtschaftlichkeit</h2>
+
+<p>Die Einsparung hängt von den Betriebsstunden ab, in denen frei gekühlt werden kann. Je höher die Systemtemperaturen, desto länger das Fenster.</p>
+
+<p>Mit warmer Wasserkühlung (Vorlauf 18 Grad) sind in Mitteleuropa über 80 Prozent der Jahresstunden abgedeckt.</p>
+
+<h2>Technische Varianten</h2>
+
+<p>Direkte Free-Cooling-Systeme führen Außenluft in den Raum, indirekte trennen die Luftströme. Zusätzlich gibt es Kaltwassersätze mit integriertem Freikühlregister.</p>
+
+<p>Für Serverraum-Klimatisierung ist die indirekte Variante der Standard.</p>
+
+<h2>Grenzen einplanen</h2>
+
+<p>Free Cooling ist keine Notkühlung. An heißen Tagen und bei Ausfällen muss die mechanische Kälte die Last übernehmen – das gehört in das Redundanzkonzept.</p>]]></content:encoded>
+    <excerpt:encoded><![CDATA[Free Cooling nutzt die Außenluft als Kältequelle – und spart Strom, solange es draußen kalt ist.]]></excerpt:encoded>
+    <wp:post_id>134</wp:post_id>
+    <wp:post_date>2026-01-12 09:00:00</wp:post_date>
+    <wp:post_date_gmt>2026-01-12 08:00:00</wp:post_date_gmt>
+    <wp:comment_status>open</wp:comment_status>
+    <wp:ping_status>open</wp:ping_status>
+    <wp:post_name><![CDATA[free-cooling-aussenluft]]></wp:post_name>
+    <wp:status>publish</wp:status>
+    <wp:post_parent>0</wp:post_parent>
+    <wp:menu_order>0</wp:menu_order>
+    <wp:post_type>post</wp:post_type>
+    <wp:post_password></wp:post_password>
+    <wp:is_sticky>0</wp:is_sticky>
+    <category domain="category" nicename="effizienz"><![CDATA[Effizienz]]></category>
+    <category domain="post_tag" nicename="rechenzentrum"><![CDATA[rechenzentrum]]></category>
+    <category domain="post_tag" nicename="kuehlung"><![CDATA[kuehlung]]></category>
+  </item>
+  <item>
+    <title>Wärmerückgewinnung aus Kälteanlagen</title>
+    <link>http://127.0.0.1:8080/post/waermerueckgewinnung-kaelte/</link>
+    <pubDate>Sat, 18 Apr 2026 09:00:00 +0100</pubDate>
+    <dc:creator><![CDATA[admin]]></dc:creator>
+    <guid isPermaLink="false">http://127.0.0.1:8080/?p=135</guid>
+    <description></description>
+    <content:encoded><![CDATA[<p>Eine Kälteanlage produziert nicht nur Kälte, sondern auch Wärme. Die Wärmerückgewinnung aus Kälteanlagen nutzt diese Abwärme, statt sie ungenutzt an die Umwelt abzugeben. Damit wird aus einem Stromverbraucher eine doppelt genutzte Energiequelle.</p>
+
+<h2>Wo die Wärme herkommt</h2>
+
+<p>Am Kondensator einer Kälteanlage fallen je nach Betriebspunkt 20 bis 40 Prozent mehr Wärme an als Kälteleistung erzeugt wird.</p>
+
+<p>Diese Wärme hat in Produktionshallen viele Abnehmer: Raumheizung, Warmwasser, Vorwärmung von Prozessen.</p>
+
+<h2>Technische Anbindung</h2>
+
+<p>Wärmetauscher im Kältemittelkreis oder im Kühlwasserkreis geben die Wärme an das Heizsystem ab. Wichtig ist die Abstimmung der Temperaturniveaus.</p>
+
+<p>Abluft-Wärmepumpen und Hybridkühler ergänzen die Rückgewinnung in Hallen.</p>
+
+<h2>Wirtschaftlichkeit</h2>
+
+<p>Die Amortisationsrechnung verbucht die eingesparte Heizenergie gegen die Mehrkosten der Wärmetauscher. Bei dauerhaftem Wärmebedarf rechnet sich die Wärmerückgewinnung fast immer.</p>]]></content:encoded>
+    <excerpt:encoded><![CDATA[Abwärme aus Kälteanlagen heizt Hallen, Wasser und Prozesse – doppelt genutzte Energie.]]></excerpt:encoded>
+    <wp:post_id>135</wp:post_id>
+    <wp:post_date>2026-04-18 09:00:00</wp:post_date>
+    <wp:post_date_gmt>2026-04-18 08:00:00</wp:post_date_gmt>
+    <wp:comment_status>open</wp:comment_status>
+    <wp:ping_status>open</wp:ping_status>
+    <wp:post_name><![CDATA[waermerueckgewinnung-kaelte]]></wp:post_name>
+    <wp:status>publish</wp:status>
+    <wp:post_parent>0</wp:post_parent>
+    <wp:menu_order>0</wp:menu_order>
+    <wp:post_type>post</wp:post_type>
+    <wp:post_password></wp:post_password>
+    <wp:is_sticky>0</wp:is_sticky>
+    <category domain="category" nicename="effizienz"><![CDATA[Effizienz]]></category>
+    <category domain="post_tag" nicename="kuehlung"><![CDATA[kuehlung]]></category>
+    <category domain="post_tag" nicename="produktion"><![CDATA[produktion]]></category>
+  </item>
+  <item>
+    <title>Reinraumklimatisierung nach ISO 14644</title>
+    <link>http://127.0.0.1:8080/post/reinraumklimatisierung-iso-14644/</link>
+    <pubDate>Sat, 14 Feb 2026 09:00:00 +0100</pubDate>
+    <dc:creator><![CDATA[admin]]></dc:creator>
+    <guid isPermaLink="false">http://127.0.0.1:8080/?p=136</guid>
+    <description></description>
+    <content:encoded><![CDATA[<p>In Reinräumen entscheidet die Luftqualität über die Produktqualität. Die Reinraumklimatisierung nach ISO 14644 hält Partikelkonzentration, Temperatur und relative Feuchte in engen Grenzen – für Pharma, Elektronik und Medizintechnik.</p>
+
+<h2>Klassen verstehen</h2>
+
+<p>ISO 14644 definiert Reinheitsklassen über die zulässige Partikelzahl je Kubikmeter. Je strenger die Klasse, desto höher der Luftwechsel und der Filteraufwand.</p>
+
+<p>Die Klimatisierung muss den Luftstrom so führen, dass Partikel aus dem Produktbereich abtransportiert werden.</p>
+
+<h2>Temperatur und Feuchte</h2>
+
+<p>Neben der Partikelreinheit sind Temperatur und Feuchte prozesskritisch. Schwankungen verändern Materialeigenschaften und Messergebnisse.</p>
+
+<p>Die Prozessklimatisierung liefert dafür die präzise Regelung.</p>
+
+<h2>Druckverhältnisse</h2>
+
+<p>Reinräume werden über Druckstufen gegen Verunreinigung geschützt. Die Lüftungsgeräte müssen diesen Differenzdruck stabil halten.</p>]]></content:encoded>
+    <excerpt:encoded><![CDATA[Reinraumklimatisierung kontrolliert Partikel, Temperatur und Feuchte – nach ISO 14644.]]></excerpt:encoded>
+    <wp:post_id>136</wp:post_id>
+    <wp:post_date>2026-02-14 09:00:00</wp:post_date>
+    <wp:post_date_gmt>2026-02-14 08:00:00</wp:post_date_gmt>
+    <wp:comment_status>open</wp:comment_status>
+    <wp:ping_status>open</wp:ping_status>
+    <wp:post_name><![CDATA[reinraumklimatisierung-iso-14644]]></wp:post_name>
+    <wp:status>publish</wp:status>
+    <wp:post_parent>0</wp:post_parent>
+    <wp:menu_order>0</wp:menu_order>
+    <wp:post_type>post</wp:post_type>
+    <wp:post_password></wp:post_password>
+    <wp:is_sticky>0</wp:is_sticky>
+    <category domain="category" nicename="branchen"><![CDATA[Branchen]]></category>
+    <category domain="post_tag" nicename="produktion"><![CDATA[produktion]]></category>
+    <category domain="post_tag" nicename="pharma"><![CDATA[pharma]]></category>
+  </item>
+  <item>
+    <title>Spritzguss kühlen: Kältetechnik für die Kunststoffindustrie</title>
+    <link>http://127.0.0.1:8080/post/spritzguss-kuehlung-kunststoff/</link>
+    <pubDate>Sat, 28 Mar 2026 09:00:00 +0100</pubDate>
+    <dc:creator><![CDATA[admin]]></dc:creator>
+    <guid isPermaLink="false">http://127.0.0.1:8080/?p=137</guid>
+    <description></description>
+    <content:encoded><![CDATA[<p>Beim Spritzguss bestimmt die Kühlung die Taktzeit: Je schneller das Werkzeug die Wärme abführt, desto schneller kann die nächste Spritze starten. Gleichzeitig beeinflusst die Kühltemperatur die Maßhaltigkeit der Teile. Kältetechnik ist hier Produktionsfaktor Nummer eins.</p>
+
+<h2>Kühlwassertemperatur als Stellgröße</h2>
+
+<p>Die Werkzeugtemperatur wird über das Kühlwasser geführt. Ein Kaltwassersatz mit präziser Regelung hält sie stabil, auch wenn mehrere Maschinen parallel laufen.</p>
+
+<p>Unterschiedliche Werkzeuge brauchen unterschiedliche Temperaturen – das spricht für getrennte Kühlkreise.</p>
+
+<h2>Lastspitzen puffern</h2>
+
+<p>Beim Maschinenwechsel entstehen Kältelastspitzen. Ein Pufferspeicher glättet sie und verhindert, dass der Kaltwassersatz ständig hoch- und runterfährt.</p>
+
+<p>Die Kältelastberechnung muss die gleichzeitige Nutzung aller Werkzeuge abbilden.</p>
+
+<h2>Wartung der Kühlkreise</h2>
+
+<p>Verschmutzte Wärmetauscher und falsche Glykoldosierung senken die Kälteleistung. Die Kühlkreisläufe gehören in den Wartungsvertrag.</p>]]></content:encoded>
+    <excerpt:encoded><![CDATA[Kühlung entscheidet über Taktzeit und Qualität beim Spritzguss.]]></excerpt:encoded>
+    <wp:post_id>137</wp:post_id>
+    <wp:post_date>2026-03-28 09:00:00</wp:post_date>
+    <wp:post_date_gmt>2026-03-28 08:00:00</wp:post_date_gmt>
+    <wp:comment_status>open</wp:comment_status>
+    <wp:ping_status>open</wp:ping_status>
+    <wp:post_name><![CDATA[spritzguss-kuehlung-kunststoff]]></wp:post_name>
+    <wp:status>publish</wp:status>
+    <wp:post_parent>0</wp:post_parent>
+    <wp:menu_order>0</wp:menu_order>
+    <wp:post_type>post</wp:post_type>
+    <wp:post_password></wp:post_password>
+    <wp:is_sticky>0</wp:is_sticky>
+    <category domain="category" nicename="branchen"><![CDATA[Branchen]]></category>
+    <category domain="post_tag" nicename="produktion"><![CDATA[produktion]]></category>
+    <category domain="post_tag" nicename="kuehlung"><![CDATA[kuehlung]]></category>
+  </item>
+  <item>
+    <title>Lebensmittelproduktion: Kühlen ohne Stillstand</title>
+    <link>http://127.0.0.1:8080/post/lebensmittelproduktion-kuehlen/</link>
+    <pubDate>Sat, 25 Apr 2026 09:00:00 +0100</pubDate>
+    <dc:creator><![CDATA[admin]]></dc:creator>
+    <guid isPermaLink="false">http://127.0.0.1:8080/?p=138</guid>
+    <description></description>
+    <content:encoded><![CDATA[<p>Lebensmittelproduktion stellt höchste Ansprüche an die Kältetechnik: Temperaturen im HACCP-Bereich, kurze Reaktionszeiten und null Toleranz für Ausfälle. Ein Kälteausfall bedeutet in der Regel Wareneinsatz in Millionenhöhe.</p>
+
+<h2>Kritische Temperaturbereiche</h2>
+
+<p>Jeder Produktionsschritt hat sein eigenes Temperaturfenster. Die Klimatisierung der Hallen und die Kühlung der Prozesse müssen getrennt geregelt werden.</p>
+
+<p>Prozessklimatisierung und Lagerkühlung dürfen nicht an derselben Anlage hängen.</p>
+
+<h2>Redundanz ist Pflicht</h2>
+
+<p>In der Lebensmittelindustrie gehört die Notkühlung zur Grundausstattung. Zwei unabhängige Kältepfade verhindern den Totalausfall.</p>
+
+<p>Der Wartungsvertrag sollte eine garantierte Reaktionszeit von wenigen Stunden enthalten.</p>
+
+<h2>Reinigung und Wartung</h2>
+
+<p>Kältemittelleckagen sind in Lebensmittelbetrieben doppelt kritisch: Sie gefährden die Anlage und das Produkt. Dichtigkeitsprüfungen gehören in den festen Rhythmus.</p>]]></content:encoded>
+    <excerpt:encoded><![CDATA[In der Lebensmittelproduktion ist Kälte Hygiene, Qualität und Stillstandsrisiko zugleich.]]></excerpt:encoded>
+    <wp:post_id>138</wp:post_id>
+    <wp:post_date>2026-04-25 09:00:00</wp:post_date>
+    <wp:post_date_gmt>2026-04-25 08:00:00</wp:post_date_gmt>
+    <wp:comment_status>open</wp:comment_status>
+    <wp:ping_status>open</wp:ping_status>
+    <wp:post_name><![CDATA[lebensmittelproduktion-kuehlen]]></wp:post_name>
+    <wp:status>publish</wp:status>
+    <wp:post_parent>0</wp:post_parent>
+    <wp:menu_order>0</wp:menu_order>
+    <wp:post_type>post</wp:post_type>
+    <wp:post_password></wp:post_password>
+    <wp:is_sticky>0</wp:is_sticky>
+    <category domain="category" nicename="branchen"><![CDATA[Branchen]]></category>
+    <category domain="post_tag" nicename="lebensmittel"><![CDATA[lebensmittel]]></category>
+    <category domain="post_tag" nicename="kuehlung"><![CDATA[kuehlung]]></category>
+  </item>
+  <item>
+    <title>Bestandsanlage nachrüsten statt neu kaufen</title>
+    <link>http://127.0.0.1:8080/post/bestandsanlage-nachruesten/</link>
+    <pubDate>Fri, 15 May 2026 09:00:00 +0100</pubDate>
+    <dc:creator><![CDATA[admin]]></dc:creator>
+    <guid isPermaLink="false">http://127.0.0.1:8080/?p=139</guid>
+    <description></description>
+    <content:encoded><![CDATA[<p>Nicht jede alte Kälteanlage muss ersetzt werden. Häufig lassen sich mit überschaubarem Aufwand große Effizienzsprünge erzielen: Drehzahlregelung, bessere Regelung, Wärmerückgewinnung oder Free-Cooling-Nachrüstung. Die Bestandsanlage wird so zur modernen Anlage.</p>
+
+<h2>Die Potenzialanalyse</h2>
+
+<p>Zuerst wird der Ist-Zustand gemessen: Teillastverhalten, Kältemittel, Verschaltung. Daraus entsteht ein Maßnahmenpaket mit Amortisationsrechnung.</p>
+
+<p>Die F-Gas-Verordnung gibt dabei den Zeithorizont vor: Anlagen, die bald ohnehin umgestellt werden müssen, gehören eher ersetzt als nachgerüstet.</p>
+
+<h2>Typische Nachrüstmaßnahmen</h2>
+
+<p>Drehzahlgeregelte Ventilatoren und Verdichter, elektronische Expansionsventile, Pufferspeicher, Freikühlregister und Wärmetauscher für die Wärmerückgewinnung.</p>
+
+<p>Jede Maßnahme wird einzeln bewertet, nicht als Paket verkauft.</p>
+
+<h2>Förderung mitnehmen</h2>
+
+<p>Auch Nachrüstmaßnahmen sind über die BAFA-Förderung förderfähig. Der Antrag lohnt sich, weil er die Amortisation verkürzt.</p>]]></content:encoded>
+    <excerpt:encoded><![CDATA[Nachrüsten ist oft günstiger als Erneuern – wenn die Anlage es hergibt.]]></excerpt:encoded>
+    <wp:post_id>139</wp:post_id>
+    <wp:post_date>2026-05-15 09:00:00</wp:post_date>
+    <wp:post_date_gmt>2026-05-15 08:00:00</wp:post_date_gmt>
+    <wp:comment_status>open</wp:comment_status>
+    <wp:ping_status>open</wp:ping_status>
+    <wp:post_name><![CDATA[bestandsanlage-nachruesten]]></wp:post_name>
+    <wp:status>publish</wp:status>
+    <wp:post_parent>0</wp:post_parent>
+    <wp:menu_order>0</wp:menu_order>
+    <wp:post_type>post</wp:post_type>
+    <wp:post_password></wp:post_password>
+    <wp:is_sticky>0</wp:is_sticky>
+    <category domain="category" nicename="effizienz"><![CDATA[Effizienz]]></category>
+    <category domain="post_tag" nicename="kuehlung"><![CDATA[kuehlung]]></category>
+    <category domain="post_tag" nicename="foerderung"><![CDATA[foerderung]]></category>
+  </item>
+  <item>
+    <title>ErP-Richtlinie: Effizienzklassen richtig lesen</title>
+    <link>http://127.0.0.1:8080/post/erp-richtlinie-effizienzklassen/</link>
+    <pubDate>Fri, 20 Feb 2026 09:00:00 +0100</pubDate>
+    <dc:creator><![CDATA[admin]]></dc:creator>
+    <guid isPermaLink="false">http://127.0.0.1:8080/?p=140</guid>
+    <description></description>
+    <content:encoded><![CDATA[<p>Die ErP-Richtlinie setzt Mindesteffizienzstandards für Klimageräte und verpflichtet Hersteller zu Effizienzklassen. Wer Industrie-Klimageräte beschafft, muss diese Klassen lesen können, sonst kauft er teure Betriebskosten.</p>
+
+<h2>Was die Klassen aussagen</h2>
+
+<p>Die Klasse sagt, wie effizient das Gerät unter Normbedingungen arbeitet – nicht, wie effizient es in Ihrer Halle sein wird.</p>
+
+<p>Die realen Betriebskosten hängen von Teillastverhalten, Einbau und Regelung ab.</p>
+
+<h2>SEER statt Nennleistung</h2>
+
+<p>Der SEER-Wert (Seasonal Energy Efficiency Ratio) bildet das Jahresverhalten ab und ist aussagekräftiger als der Nenn-EER.</p>
+
+<p>Für Kaltwassersätze gelten eigene Normen und Kennzahlen.</p>
+
+<h2>ErP und Förderung</h2>
+
+<p>Viele Förderprogramme verlangen Effizienzklassen über dem Mindeststandard. Die ErP-Einstufung ist damit auch ein Förderkriterium.</p>]]></content:encoded>
+    <excerpt:encoded><![CDATA[Die ErP-Richtlinie regelt, wie effizient Klimageräte sein dürfen – und was die Klassen bedeuten.]]></excerpt:encoded>
+    <wp:post_id>140</wp:post_id>
+    <wp:post_date>2026-02-20 09:00:00</wp:post_date>
+    <wp:post_date_gmt>2026-02-20 08:00:00</wp:post_date_gmt>
+    <wp:comment_status>open</wp:comment_status>
+    <wp:ping_status>open</wp:ping_status>
+    <wp:post_name><![CDATA[erp-richtlinie-effizienzklassen]]></wp:post_name>
+    <wp:status>publish</wp:status>
+    <wp:post_parent>0</wp:post_parent>
+    <wp:menu_order>0</wp:menu_order>
+    <wp:post_type>post</wp:post_type>
+    <wp:post_password></wp:post_password>
+    <wp:is_sticky>0</wp:is_sticky>
+    <category domain="category" nicename="effizienz"><![CDATA[Effizienz]]></category>
+    <category domain="post_tag" nicename="kuehlung"><![CDATA[kuehlung]]></category>
+  </item>
+  <item>
+    <title>CO2-Kältemittel R744 in der Industrie</title>
+    <link>http://127.0.0.1:8080/post/co2-kaeltemittel-r744/</link>
+    <pubDate>Sat, 30 May 2026 09:00:00 +0100</pubDate>
+    <dc:creator><![CDATA[admin]]></dc:creator>
+    <guid isPermaLink="false">http://127.0.0.1:8080/?p=141</guid>
+    <description></description>
+    <content:encoded><![CDATA[<p>CO2-Kältemittel R744 ist ungiftig, nicht brennbar und hat ein GWP von 1. Es arbeitet aber bei deutlich höheren Drücken als klassische Kältemittel. Für Industriekälte und Wärmepumpen wird R744 trotzdem immer attraktiver, weil die F-Gas-Verordnung Alternativen verteuert.</p>
+
+<h2>Wo R744 stark ist</h2>
+
+<p>In der Kaltwasserbereitung und bei Wärmepumpen mit hohen Vorlauftemperaturen zeigt R744 hervorragende Wirkungsgrade.</p>
+
+<p>Besonders im transkritischen Betrieb lassen sich hohe Temperaturhübe realisieren.</p>
+
+<h2>Die Technik ist anspruchsvoller</h2>
+
+<p>Die Drücke liegen deutlich über denen konventioneller Kältemittel. Rohrleitungen, Armaturen und Verdichter müssen dafür ausgelegt sein.</p>
+
+<p>Die EN 378 klassifiziert R744 als A1 – ungefährlich für Menschen, aber mit hohen Systemdrücken.</p>
+
+<h2>Planung und Wartung</h2>
+
+<p>Wer auf R744 umstellt, braucht spezialisierte Planung und Wartung. Die Kältelastberechnung bleibt gleich, die Anlagentechnik ist eine andere.</p>]]></content:encoded>
+    <excerpt:encoded><![CDATA[R744 ist das natürliche Kältemittel mit den härtesten Randbedingungen – und großem Potenzial.]]></excerpt:encoded>
+    <wp:post_id>141</wp:post_id>
+    <wp:post_date>2026-05-30 09:00:00</wp:post_date>
+    <wp:post_date_gmt>2026-05-30 08:00:00</wp:post_date_gmt>
+    <wp:comment_status>open</wp:comment_status>
+    <wp:ping_status>open</wp:ping_status>
+    <wp:post_name><![CDATA[co2-kaeltemittel-r744]]></wp:post_name>
+    <wp:status>publish</wp:status>
+    <wp:post_parent>0</wp:post_parent>
+    <wp:menu_order>0</wp:menu_order>
+    <wp:post_type>post</wp:post_type>
+    <wp:post_password></wp:post_password>
+    <wp:is_sticky>0</wp:is_sticky>
+    <category domain="category" nicename="kaeltemittel"><![CDATA[Kältemittel]]></category>
+    <category domain="post_tag" nicename="kuehlung"><![CDATA[kuehlung]]></category>
+    <category domain="post_tag" nicename="sicherheit"><![CDATA[sicherheit]]></category>
+  </item>
+  <item>
+    <title>Hybridkühler: Trocken- und Verdunstungsbetrieb kombinieren</title>
+    <link>http://127.0.0.1:8080/post/hybridkuehler-trocken-verdunstung/</link>
+    <pubDate>Sun, 08 Mar 2026 09:00:00 +0100</pubDate>
+    <dc:creator><![CDATA[admin]]></dc:creator>
+    <guid isPermaLink="false">http://127.0.0.1:8080/?p=142</guid>
+    <description></description>
+    <content:encoded><![CDATA[<p>Ein Hybridkühler vereint zwei Betriebsarten in einem Gerät: Im Winter kühlt er trocken über die Außenluft, im Sommer unterstützt die adiabatische Kühlung über Verdunstung. Damit deckt er das ganze Jahr ab und senkt den Strombedarf genau in den Spitzenzeiten.</p>
+
+<h2>Die zwei Betriebsarten</h2>
+
+<p>Im Trockenbetrieb arbeitet der Hybridkühler wie ein klassischer Trockenkühler. Sobald die Außentemperatur steigt, befeuchtet er die Ansaugluft und nutzt die Verdunstungskälte.</p>
+
+<p>Der Übergang ist stufenlos geregelt und für den Betreiber unsichtbar.</p>
+
+<h2>Wasser und Wartung</h2>
+
+<p>Der Verdunstungsbetrieb braucht aufbereitetes Wasser. Die Befeuchtungspads müssen regelmäßig getauscht werden, sonst sinkt die Leistung.</p>
+
+<p>Die Wasserqualität ist ein Wartungsthema, das in den Wartungsvertrag gehört.</p>
+
+<h2>Einsatz als Rückkühler</h2>
+
+<p>Hybridkühler ersetzen oft Rückkühler von Kaltwassersätzen und senken deren Kondensationstemperatur – mit direktem Effekt auf den Stromverbrauch.</p>]]></content:encoded>
+    <excerpt:encoded><![CDATA[Hybridkühler fahren trocken im Winter und adiabatisch im Sommer – ein Gerät für das ganze Jahr.]]></excerpt:encoded>
+    <wp:post_id>142</wp:post_id>
+    <wp:post_date>2026-03-08 09:00:00</wp:post_date>
+    <wp:post_date_gmt>2026-03-08 08:00:00</wp:post_date_gmt>
+    <wp:comment_status>open</wp:comment_status>
+    <wp:ping_status>open</wp:ping_status>
+    <wp:post_name><![CDATA[hybridkuehler-trocken-verdunstung]]></wp:post_name>
+    <wp:status>publish</wp:status>
+    <wp:post_parent>0</wp:post_parent>
+    <wp:menu_order>0</wp:menu_order>
+    <wp:post_type>post</wp:post_type>
+    <wp:post_password></wp:post_password>
+    <wp:is_sticky>0</wp:is_sticky>
+    <category domain="category" nicename="effizienz"><![CDATA[Effizienz]]></category>
+    <category domain="post_tag" nicename="kuehlung"><![CDATA[kuehlung]]></category>
+  </item>
+  <item>
+    <title>Kaltwasserbereitung mit Wärmepumpe</title>
+    <link>http://127.0.0.1:8080/post/kaltwasser-waermepumpe/</link>
+    <pubDate>Thu, 04 Jun 2026 09:00:00 +0100</pubDate>
+    <dc:creator><![CDATA[admin]]></dc:creator>
+    <guid isPermaLink="false">http://127.0.0.1:8080/?p=143</guid>
+    <description></description>
+    <content:encoded><![CDATA[<p>Eine Wärmepumpe kann beides: Kaltwasser für Prozesse und Wärme für die Halle. In der Kaltwasserbereitung ersetzt sie klassische Kaltwassersätze und liefert nebenbei Heizenergie. Für Betriebe mit gleichzeitigem Kälte- und Wärmebedarf ist das die wirtschaftlichste Lösung.</p>
+
+<h2>Wirkungsweise</h2>
+
+<p>Die Wärmepumpe entzieht dem Prozesskreis Wärme und gibt sie auf höherem Temperaturniveau an das Heizsystem ab. Kälte und Wärme entstehen immer gemeinsam.</p>
+
+<p>Je besser die Temperaturniveaus zusammenpassen, desto höher die Jahresarbeitszahl.</p>
+
+<h2>Kaskaden für große Leistungen</h2>
+
+<p>Für große Industriebetriebe werden mehrere Wärmepumpen kaskadiert. Die Steuerung verteilt die Last auf die effizientesten Betriebspunkte.</p>
+
+<p>Ein Pufferspeicher entkoppelt Erzeugung und Verbrauch.</p>
+
+<h2>Förderung</h2>
+
+<p>Wärmepumpen in Bestandsgebäuden und Industrieanlagen sind förderfähig. Die Kombination mit der BAFA-Förderung verkürzt die Amortisation deutlich.</p>]]></content:encoded>
+    <excerpt:encoded><![CDATA[Wärmepumpen erzeugen Kaltwasser und Wärme zugleich – das neue Doppelspiel in der Industrie.]]></excerpt:encoded>
+    <wp:post_id>143</wp:post_id>
+    <wp:post_date>2026-06-04 09:00:00</wp:post_date>
+    <wp:post_date_gmt>2026-06-04 08:00:00</wp:post_date_gmt>
+    <wp:comment_status>open</wp:comment_status>
+    <wp:ping_status>open</wp:ping_status>
+    <wp:post_name><![CDATA[kaltwasser-waermepumpe]]></wp:post_name>
+    <wp:status>publish</wp:status>
+    <wp:post_parent>0</wp:post_parent>
+    <wp:menu_order>0</wp:menu_order>
+    <wp:post_type>post</wp:post_type>
+    <wp:post_password></wp:post_password>
+    <wp:is_sticky>0</wp:is_sticky>
+    <category domain="category" nicename="effizienz"><![CDATA[Effizienz]]></category>
+    <category domain="post_tag" nicename="kuehlung"><![CDATA[kuehlung]]></category>
+    <category domain="post_tag" nicename="smart"><![CDATA[smart]]></category>
+  </item>
+  <item>
+    <title>Temperaturregelung in der Metallverarbeitung</title>
+    <link>http://127.0.0.1:8080/post/metallverarbeitung-temperatur/</link>
+    <pubDate>Thu, 09 Apr 2026 09:00:00 +0100</pubDate>
+    <dc:creator><![CDATA[admin]]></dc:creator>
+    <guid isPermaLink="false">http://127.0.0.1:8080/?p=144</guid>
+    <description></description>
+    <content:encoded><![CDATA[<p>In der Metallverarbeitung entscheidet die Temperatur über Maßhaltigkeit und Werkzeugstandzeit. Eine ungleichmäßig gekühlte Maschine produziert Ausschuss, lange bevor jemand die Ursache sieht. Die Temperaturregelung ist deshalb ein zentraler Qualitätsfaktor.</p>
+
+<h2>Wo Kälte gebraucht wird</h2>
+
+<p>Spindeln, Hydraulik, Schweißprozesse und Messtechnik haben unterschiedliche Kühlbedarfe. Die Prozessklimatisierung führt sie in getrennten Kreisen.</p>
+
+<p>Kaltwassersätze liefern die präzise Kühlwassertemperatur für die Maschinenkreise.</p>
+
+<h2>Mess- und Prüftechnik</h2>
+
+<p>Messräume brauchen ein besonders stabiles Klima, weil Temperaturschwankungen die Messergebnisse verfälschen. Hier zählt die Genauigkeit der Regelung mehr als die Leistung.</p>
+
+<h2>Stillstand vermeiden</h2>
+
+<p>Ein Kälteausfall stoppt die gesamte Fertigung. Die Notkühlung gehört deshalb in die Risikoplanung der Metallverarbeitung.</p>]]></content:encoded>
+    <excerpt:encoded><![CDATA[Maßhaltigkeit beginnt bei der Temperatur – Kühlung in der Metallverarbeitung.]]></excerpt:encoded>
+    <wp:post_id>144</wp:post_id>
+    <wp:post_date>2026-04-09 09:00:00</wp:post_date>
+    <wp:post_date_gmt>2026-04-09 08:00:00</wp:post_date_gmt>
+    <wp:comment_status>open</wp:comment_status>
+    <wp:ping_status>open</wp:ping_status>
+    <wp:post_name><![CDATA[metallverarbeitung-temperatur]]></wp:post_name>
+    <wp:status>publish</wp:status>
+    <wp:post_parent>0</wp:post_parent>
+    <wp:menu_order>0</wp:menu_order>
+    <wp:post_type>post</wp:post_type>
+    <wp:post_password></wp:post_password>
+    <wp:is_sticky>0</wp:is_sticky>
+    <category domain="category" nicename="branchen"><![CDATA[Branchen]]></category>
+    <category domain="post_tag" nicename="produktion"><![CDATA[produktion]]></category>
+    <category domain="post_tag" nicename="kuehlung"><![CDATA[kuehlung]]></category>
+  </item>
+  <item>
+    <title>Abluft-Wärmepumpen für Produktionshallen</title>
+    <link>http://127.0.0.1:8080/post/abluft-waermepumpen-hallen/</link>
+    <pubDate>Sun, 10 May 2026 09:00:00 +0100</pubDate>
+    <dc:creator><![CDATA[admin]]></dc:creator>
+    <guid isPermaLink="false">http://127.0.0.1:8080/?p=145</guid>
+    <description></description>
+    <content:encoded><![CDATA[<p>Produktionshallen blasen permanent warme Abluft ins Freie. Abluft-Wärmepumpen fangen diese Wärme ab, heben sie auf Heizniveau und speisen sie in das Heizsystem zurück. Die Halle heizt sich damit gewissermaßen selbst.</p>
+
+<h2>Die Technik</h2>
+
+<p>Die Wärmepumpe entzieht der Abluft Wärme, bevor sie ins Freie geht. Über einen Wärmetauscher wird die gewonnene Energie auf den Heizkreis übertragen.</p>
+
+<p>Je wärmer die Abluft und je niedriger die Vorlauftemperatur, desto besser die Effizienz.</p>
+
+<h2>Kombination mit der Lüftung</h2>
+
+<p>Idealerweise wird die Abluft-Wärmepumpe mit dem Lüftungsgerät der Halle gekoppelt. So entsteht ein System aus Lüftung, Wärmerückgewinnung und Heizung.</p>
+
+<p>Die Luftmengen müssen zur Heizlast passen – die Planung beginnt mit der Lastberechnung.</p>
+
+<h2>Wirtschaftlichkeit</h2>
+
+<p>Die Amortisation hängt von den Betriebsstunden der Lüftung ab. Hallen mit 24-Stunden-Betrieb amortisieren Abluft-Wärmepumpen in wenigen Jahren.</p>]]></content:encoded>
+    <excerpt:encoded><![CDATA[Abluft-Wärmepumpen heben Wärme aus der Hallenabluf – für Heizung und Warmwasser.]]></excerpt:encoded>
+    <wp:post_id>145</wp:post_id>
+    <wp:post_date>2026-05-10 09:00:00</wp:post_date>
+    <wp:post_date_gmt>2026-05-10 08:00:00</wp:post_date_gmt>
+    <wp:comment_status>open</wp:comment_status>
+    <wp:ping_status>open</wp:ping_status>
+    <wp:post_name><![CDATA[abluft-waermepumpen-hallen]]></wp:post_name>
+    <wp:status>publish</wp:status>
+    <wp:post_parent>0</wp:post_parent>
+    <wp:menu_order>0</wp:menu_order>
+    <wp:post_type>post</wp:post_type>
+    <wp:post_password></wp:post_password>
+    <wp:is_sticky>0</wp:is_sticky>
+    <category domain="category" nicename="effizienz"><![CDATA[Effizienz]]></category>
+    <category domain="post_tag" nicename="produktion"><![CDATA[produktion]]></category>
+    <category domain="post_tag" nicename="smart"><![CDATA[smart]]></category>
+  </item>
+  <item>
+    <title>Lüftungsgeräte mit Wärmerückgewinnung</title>
+    <link>http://127.0.0.1:8080/post/lueftungsgeraete-wrg/</link>
+    <pubDate>Sun, 25 Jan 2026 09:00:00 +0100</pubDate>
+    <dc:creator><![CDATA[admin]]></dc:creator>
+    <guid isPermaLink="false">http://127.0.0.1:8080/?p=146</guid>
+    <description></description>
+    <content:encoded><![CDATA[<p>Moderne Lüftungsgeräte machen aus Abluft eine Energiequelle: Wärmerückgewinnung überträgt bis zu 80 Prozent der Abwärme auf die Zuluft. Für Industriehallen mit hohem Luftwechsel ist das der größte einzelne Hebel zur Senkung des Heizbedarfs.</p>
+
+<h2>Funktionsweise</h2>
+
+<p>Im Wärmetauscher des Lüftungsgeräts gibt die warme Abluft ihre Energie an die kalte Zuluft ab – ohne dass die Luftströme sich vermischen.</p>
+
+<p>Im Sommer kann das System umgekehrt arbeiten und die Zuluft kühlen.</p>
+
+<h2>Planungsgrößen</h2>
+
+<p>Luftwechselrate, Ablufttemperatur und Feuchte bestimmen die Rückgewinnungsleistung. Die Kältelastberechnung der Halle bleibt davon unabhängig.</p>
+
+<p>Bei hoher Luftfeuchte lohnt sich eine Feuchterückgewinnung als Ergänzung.</p>
+
+<h2>Integration in die Kältetechnik</h2>
+
+<p>Lüftung und Kälte sollten gemeinsam geplant werden. Ein Kaltwassersatz, der nur die Zuluftkühlung übernimmt, ist oft günstiger als eine komplette Hallenklimatisierung.</p>]]></content:encoded>
+    <excerpt:encoded><![CDATA[Lüftungsgeräte mit Wärmerückgewinnung senken den Energiebedarf von Hallen spürbar.]]></excerpt:encoded>
+    <wp:post_id>146</wp:post_id>
+    <wp:post_date>2026-01-25 09:00:00</wp:post_date>
+    <wp:post_date_gmt>2026-01-25 08:00:00</wp:post_date_gmt>
+    <wp:comment_status>open</wp:comment_status>
+    <wp:ping_status>open</wp:ping_status>
+    <wp:post_name><![CDATA[lueftungsgeraete-wrg]]></wp:post_name>
+    <wp:status>publish</wp:status>
+    <wp:post_parent>0</wp:post_parent>
+    <wp:menu_order>0</wp:menu_order>
+    <wp:post_type>post</wp:post_type>
+    <wp:post_password></wp:post_password>
+    <wp:is_sticky>0</wp:is_sticky>
+    <category domain="category" nicename="effizienz"><![CDATA[Effizienz]]></category>
+    <category domain="post_tag" nicename="kuehlung"><![CDATA[kuehlung]]></category>
+    <category domain="post_tag" nicename="smart"><![CDATA[smart]]></category>
+  </item>
+  <item>
+    <title>EN 378: Sicherheit von Kälteanlagen</title>
+    <link>http://127.0.0.1:8080/post/en-378-sicherheit/</link>
+    <pubDate>Mon, 02 Mar 2026 09:00:00 +0100</pubDate>
+    <dc:creator><![CDATA[admin]]></dc:creator>
+    <guid isPermaLink="false">http://127.0.0.1:8080/?p=147</guid>
+    <description></description>
+    <content:encoded><![CDATA[<p>Die EN 378 ist die zentrale Norm für die Sicherheit von Kälteanlagen. Sie regelt, welche Kältemittel in welchen Räumen verwendet werden dürfen, wie Füllmengen begrenzt werden und welche Schutzmaßnahmen Pflicht sind. Wer Industrie-Klimageräte plant, kommt an ihr nicht vorbei.</p>
+
+<h2>Kältemittelklassen</h2>
+
+<p>Kältemittel werden nach Toxizität und Brennbarkeit klassifiziert. R290 ist beispielsweise A3 – nicht toxisch, aber brennbar.</p>
+
+<p>Die Klasse bestimmt die zulässige Füllmenge je Raumvolumen und die erforderliche Lüftung.</p>
+
+<h2>Füllmengengrenzen</h2>
+
+<p>Die EN 378 definiert maximale Füllmengen in Abhängigkeit von Raumgröße, Aufstellhöhe und Kältemittelklasse. Bei Überschreitung sind technische Maßnahmen wie Leckage-Erkennung vorgeschrieben.</p>
+
+<p>Für die Kältelastberechnung ändert das nichts, wohl aber für die Gerätewahl.</p>
+
+<h2>Dokumentation</h2>
+
+<p>Die Norm verlangt eine nachvollziehbare Dokumentation der Anlage. Zusammen mit der F-Gas-Verordnung entsteht daraus das Sicherheitsdossier des Betreibers.</p>]]></content:encoded>
+    <excerpt:encoded><![CDATA[Die EN 378 regelt Aufstellung, Füllmengen und Sicherheit von Kälteanlagen.]]></excerpt:encoded>
+    <wp:post_id>147</wp:post_id>
+    <wp:post_date>2026-03-02 09:00:00</wp:post_date>
+    <wp:post_date_gmt>2026-03-02 08:00:00</wp:post_date_gmt>
+    <wp:comment_status>open</wp:comment_status>
+    <wp:ping_status>open</wp:ping_status>
+    <wp:post_name><![CDATA[en-378-sicherheit]]></wp:post_name>
+    <wp:status>publish</wp:status>
+    <wp:post_parent>0</wp:post_parent>
+    <wp:menu_order>0</wp:menu_order>
+    <wp:post_type>post</wp:post_type>
+    <wp:post_password></wp:post_password>
+    <wp:is_sticky>0</wp:is_sticky>
+    <category domain="category" nicename="sicherheit"><![CDATA[Sicherheit]]></category>
+    <category domain="post_tag" nicename="kuehlung"><![CDATA[kuehlung]]></category>
+  </item>
+  <item>
+    <title>ATEX-Klimageräte für explosionsgefährdete Bereiche</title>
+    <link>http://127.0.0.1:8080/post/atex-klimageraete/</link>
+    <pubDate>Mon, 20 Apr 2026 09:00:00 +0100</pubDate>
+    <dc:creator><![CDATA[admin]]></dc:creator>
+    <guid isPermaLink="false">http://127.0.0.1:8080/?p=148</guid>
+    <description></description>
+    <content:encoded><![CDATA[<p>In Bereichen mit brennbaren Gasen oder Stäuben darf keine normale Klimaanlage laufen. ATEX-Klimageräte sind für explosionsgefährdete Zonen gebaut: sämtliche elektrischen Bauteile sind gekapselt, Funkenbildung ist ausgeschlossen. Die EN 378 und die ATEX-Richtlinie bestimmen die Auslegung.</p>
+
+<h2>Zonen verstehen</h2>
+
+<p>ATEX unterscheidet Zonen nach der Wahrscheinlichkeit explosionsfähiger Atmosphäre. Je gefährlicher die Zone, desto höher die Anforderungen an das Gerät.</p>
+
+<p>Die Zone muss in der Ausschreibung stehen – die Geräte sind zonenspezifisch.</p>
+
+<h2>Gerätetechnik</h2>
+
+<p>Gekapselte Motoren, explosionsgeschützte Schaltkästen, geerdete Bauteile: ATEX-Klimageräte sind in der Anschaffung deutlich teurer, dafür sicher.</p>
+
+<p>Die Wartung verlangt speziell geschultes Personal und dokumentierte Prüfungen.</p>
+
+<h2>Kombination mit Prozessklimatisierung</h2>
+
+<p>Auch in Ex-Bereichen brauchen Prozesse stabile Temperaturen. Die Prozessklimatisierung übernimmt das mit ATEX-zertifizierten Geräten – bis zur Schaltschrankklimatisierung in der Steuerungstechnik.</p>]]></content:encoded>
+    <excerpt:encoded><![CDATA[Explosionsgeschützte Klimageräte kühlen dort, wo Funken tödlich sein können.]]></excerpt:encoded>
+    <wp:post_id>148</wp:post_id>
+    <wp:post_date>2026-04-20 09:00:00</wp:post_date>
+    <wp:post_date_gmt>2026-04-20 08:00:00</wp:post_date_gmt>
+    <wp:comment_status>open</wp:comment_status>
+    <wp:ping_status>open</wp:ping_status>
+    <wp:post_name><![CDATA[atex-klimageraete]]></wp:post_name>
+    <wp:status>publish</wp:status>
+    <wp:post_parent>0</wp:post_parent>
+    <wp:menu_order>0</wp:menu_order>
+    <wp:post_type>post</wp:post_type>
+    <wp:post_password></wp:post_password>
+    <wp:is_sticky>0</wp:is_sticky>
+    <category domain="category" nicename="sicherheit"><![CDATA[Sicherheit]]></category>
+    <category domain="post_tag" nicename="produktion"><![CDATA[produktion]]></category>
+    <category domain="post_tag" nicename="kuehlung"><![CDATA[kuehlung]]></category>
+  </item>
+  <item>
+    <title>Container-Klimatisierung für mobile Rechenzentren</title>
+    <link>http://127.0.0.1:8080/post/container-klimatisierung-rechenzentren/</link>
+    <pubDate>Fri, 12 Jun 2026 09:00:00 +0100</pubDate>
+    <dc:creator><![CDATA[admin]]></dc:creator>
+    <guid isPermaLink="false">http://127.0.0.1:8080/?p=149</guid>
+    <description></description>
+    <content:encoded><![CDATA[<p>Container-Rechenzentren stehen dort, wo Rechenleistung kurzfristig gebraucht wird: auf Baustellen, in Katastrophengebieten, hinter Rechenzentren im Ausbau. Die Container-Klimatisierung muss kompakt, effizient und absolut zuverlässig sein – bei begrenztem Platz für die Technik.</p>
+
+<h2>Herausforderungen im Container</h2>
+
+<p>Auf engstem Raum wird die Abwärme mehrerer Racks konzentriert. Die Luftführung muss die Kaltgänge sauber von den Warmsgängen trennen.</p>
+
+<p>Free Cooling ist im Container besonders wertvoll, weil der Platz für mechanische Kälte begrenzt ist.</p>
+
+<h2>Redundanz im Kleinen</h2>
+
+<p>Ein Container ohne Notkühlung ist ein Ausfallrisiko. Zwei unabhängige Kältepfade müssen auch im Container Platz finden.</p>
+
+<p>Die Fernwartung überwacht Temperatur und Kälteleistung in Echtzeit.</p>
+
+<h2>Mobile Anbindung</h2>
+
+<p>Container-Klimatisierung wird häufig als Komplettlösung gemietet: Gerät, Anschlüsse, Wartung aus einer Hand.</p>]]></content:encoded>
+    <excerpt:encoded><![CDATA[Container-Rechenzentren brauchen Klimatisierung, die mobil und trotzdem redundant ist.]]></excerpt:encoded>
+    <wp:post_id>149</wp:post_id>
+    <wp:post_date>2026-06-12 09:00:00</wp:post_date>
+    <wp:post_date_gmt>2026-06-12 08:00:00</wp:post_date_gmt>
+    <wp:comment_status>open</wp:comment_status>
+    <wp:ping_status>open</wp:ping_status>
+    <wp:post_name><![CDATA[container-klimatisierung-rechenzentren]]></wp:post_name>
+    <wp:status>publish</wp:status>
+    <wp:post_parent>0</wp:post_parent>
+    <wp:menu_order>0</wp:menu_order>
+    <wp:post_type>post</wp:post_type>
+    <wp:post_password></wp:post_password>
+    <wp:is_sticky>0</wp:is_sticky>
+    <category domain="category" nicename="branchen"><![CDATA[Branchen]]></category>
+    <category domain="post_tag" nicename="rechenzentrum"><![CDATA[rechenzentrum]]></category>
+    <category domain="post_tag" nicename="kuehlung"><![CDATA[kuehlung]]></category>
+  </item>
+  <item>
+    <title>Befeuchtung in der Produktion: Luftfeuchte stabilisieren</title>
+    <link>http://127.0.0.1:8080/post/befeuchtung-produktion/</link>
+    <pubDate>Sun, 08 Feb 2026 09:00:00 +0100</pubDate>
+    <dc:creator><![CDATA[admin]]></dc:creator>
+    <guid isPermaLink="false">http://127.0.0.1:8080/?p=150</guid>
+    <description></description>
+    <content:encoded><![CDATA[<p>Temperatur ist nur die halbe Geschichte. In vielen Produktionen ist die relative Luftfeuchte der kritischere Parameter: zu trocken lädt sich Material statisch auf, zu feucht quillt Papier oder Holz. Die Befeuchtung in der Produktion hält die Feuchte im Prozessfenster.</p>
+
+<h2>Feuchte als Prozessparameter</h2>
+
+<p>In der Elektronikfertigung verursacht statische Aufladung durch trockene Luft Ausschuss. In der Holz- und Papierindustrie führen Feuchteschwankungen zu Maßabweichungen.</p>
+
+<p>Die Prozessklimatisierung regelt Feuchte und Temperatur gemeinsam.</p>
+
+<h2>Befeuchtungstechniken</h2>
+
+<p>Dampfbefeuchter, Verdunstungsbefeuchter und Ultraschallbefeuchter unterscheiden sich in Energiebedarf, Hygiene und Regelgeschwindigkeit.</p>
+
+<p>Die Wahl hängt vom geforderten Feuchtefenster und der Luftmenge ab.</p>
+
+<h2>Kälte und Feuchte koppeln</h2>
+
+<p>Klimageräte, die kühlen, entfeuchten automatisch. Wer beides braucht – kühlen und befeuchten –, plant die Entfeuchtung und die Befeuchtung in einem System.</p>]]></content:encoded>
+    <excerpt:encoded><![CDATA[Zu trockene Luft kostet Qualität: Befeuchtung stabilisiert Prozesse und Material.]]></excerpt:encoded>
+    <wp:post_id>150</wp:post_id>
+    <wp:post_date>2026-02-08 09:00:00</wp:post_date>
+    <wp:post_date_gmt>2026-02-08 08:00:00</wp:post_date_gmt>
+    <wp:comment_status>open</wp:comment_status>
+    <wp:ping_status>open</wp:ping_status>
+    <wp:post_name><![CDATA[befeuchtung-produktion]]></wp:post_name>
+    <wp:status>publish</wp:status>
+    <wp:post_parent>0</wp:post_parent>
+    <wp:menu_order>0</wp:menu_order>
+    <wp:post_type>post</wp:post_type>
+    <wp:post_password></wp:post_password>
+    <wp:is_sticky>0</wp:is_sticky>
+    <category domain="category" nicename="branchen"><![CDATA[Branchen]]></category>
+    <category domain="post_tag" nicename="produktion"><![CDATA[produktion]]></category>
+    <category domain="post_tag" nicename="kuehlung"><![CDATA[kuehlung]]></category>
+  </item>
+  <item>
+    <title>EER und SEER: Effizienzkennzahlen richtig lesen</title>
+    <link>http://127.0.0.1:8080/post/eer-seer-verstehen/</link>
+    <pubDate>Thu, 08 Jan 2026 09:00:00 +0100</pubDate>
+    <dc:creator><![CDATA[admin]]></dc:creator>
+    <guid isPermaLink="false">http://127.0.0.1:8080/?p=151</guid>
+    <description></description>
+    <content:encoded><![CDATA[<p>EER und SEER sagen, wie effizient ein Klimagerät arbeitet. Der EER beschreibt den Wirkungsgrad bei Nennbedingungen, der SEER über die gesamte Kühlsaison. Für Industrie-Klimageräte zählt der SEER, weil er das Teillastverhalten abbildet.</p>
+
+<h2>Die Kennzahlen im Detail</h2>
+
+<p>EER = Kälteleistung geteilt durch elektrische Leistung bei Normbedingungen. Ein EER von 3,5 bedeutet: ein Kilowatt Strom erzeugt 3,5 Kilowatt Kälte.</p>
+
+<p>Der SEER gewichtet die Betriebspunkte über das Jahr. Je höher der SEER, desto niedriger die Stromrechnung.</p>
+
+<h2>Datenblatt vs. Realität</h2>
+
+<p>Die Normbedingungen entsprechen selten der eigenen Halle. Faktoren wie Außentemperatur, Teillast und Regelung verschieben die realen Werte.</p>
+
+<p>Deshalb: Kennzahlen vergleichen, aber die Auslegung auf die eigene Kältelastberechnung stützen.</p>
+
+<h2>Förderung und Ausschreibung</h2>
+
+<p>Viele Förderprogramme und Ausschreibungen fordern Mindest-SEER-Werte. Die ErP-Richtlinie setzt den gesetzlichen Rahmen.</p>]]></content:encoded>
+    <excerpt:encoded><![CDATA[EER und SEER sind die wichtigsten Kennzahlen für Klimageräte – und werden oft falsch gelesen.]]></excerpt:encoded>
+    <wp:post_id>151</wp:post_id>
+    <wp:post_date>2026-01-08 09:00:00</wp:post_date>
+    <wp:post_date_gmt>2026-01-08 08:00:00</wp:post_date_gmt>
+    <wp:comment_status>open</wp:comment_status>
+    <wp:ping_status>open</wp:ping_status>
+    <wp:post_name><![CDATA[eer-seer-verstehen]]></wp:post_name>
+    <wp:status>publish</wp:status>
+    <wp:post_parent>0</wp:post_parent>
+    <wp:menu_order>0</wp:menu_order>
+    <wp:post_type>post</wp:post_type>
+    <wp:post_password></wp:post_password>
+    <wp:is_sticky>0</wp:is_sticky>
+    <category domain="category" nicename="effizienz"><![CDATA[Effizienz]]></category>
+    <category domain="post_tag" nicename="kuehlung"><![CDATA[kuehlung]]></category>
+  </item>
+  <item>
+    <title>Kälteleistung berechnen: Formeln und Beispiele</title>
+    <link>http://127.0.0.1:8080/post/kaelteleistung-berechnen/</link>
+    <pubDate>Wed, 18 Feb 2026 09:00:00 +0100</pubDate>
+    <dc:creator><![CDATA[admin]]></dc:creator>
+    <guid isPermaLink="false">http://127.0.0.1:8080/?p=152</guid>
+    <description></description>
+    <content:encoded><![CDATA[<p>Kälteleistung berechnen klingt kompliziert, ist aber überschaubares Handwerk. Im Kern geht es um drei Formeln: Wärme über Masse, Wärme über Luft und Wärme über Wasser. Wer sie beherrscht, kann die meisten Kühllasten selbst abschätzen, bevor der Fachplaner die Kältelastberechnung übernimmt.</p>
+
+<h2>Die Grundformel</h2>
+
+<p>Q = m × c × ΔT: Wärmeleistung gleich Masse mal spezifische Wärmekapazität mal Temperaturdifferenz.</p>
+
+<p>Für Wasser gilt vereinfacht: Ein Kubikmeter pro Stunde mit einem Kelvin Differenz entspricht 1,16 Kilowatt Kälteleistung.</p>
+
+<h2>Luftkühlung abschätzen</h2>
+
+<p>Für Luft: 1.000 Kubikmeter pro Stunde mit 10 Kelvin Abkühlung entsprechen rund 3,3 Kilowatt.</p>
+
+<p>Damit lassen sich Hallenlasten grob abschätzen – die genaue Rechnung übernimmt die Kältelastberechnung.</p>
+
+<h2>Wärmequellen addieren</h2>
+
+<p>Maschinenabwärme, Personen, Beleuchtung und Transmission werden addiert. Die Summe ist die Kühllast, auf die der Kaltwassersatz oder das Dachklimagerät dimensioniert wird.</p>]]></content:encoded>
+    <excerpt:encoded><![CDATA[Kälteleistung berechnen ist Handwerk: die wichtigsten Formeln für die Praxis.]]></excerpt:encoded>
+    <wp:post_id>152</wp:post_id>
+    <wp:post_date>2026-02-18 09:00:00</wp:post_date>
+    <wp:post_date_gmt>2026-02-18 08:00:00</wp:post_date_gmt>
+    <wp:comment_status>open</wp:comment_status>
+    <wp:ping_status>open</wp:ping_status>
+    <wp:post_name><![CDATA[kaelteleistung-berechnen]]></wp:post_name>
+    <wp:status>publish</wp:status>
+    <wp:post_parent>0</wp:post_parent>
+    <wp:menu_order>0</wp:menu_order>
+    <wp:post_type>post</wp:post_type>
+    <wp:post_password></wp:post_password>
+    <wp:is_sticky>0</wp:is_sticky>
+    <category domain="category" nicename="planung"><![CDATA[Planung]]></category>
+    <category domain="post_tag" nicename="kuehlung"><![CDATA[kuehlung]]></category>
+  </item>
+  <item>
+    <title>Kältemittelleckagen: Erkennen und vermeiden</title>
+    <link>http://127.0.0.1:8080/post/kaeltemittelleckagen-erkennen/</link>
+    <pubDate>Wed, 18 Mar 2026 09:00:00 +0100</pubDate>
+    <dc:creator><![CDATA[admin]]></dc:creator>
+    <guid isPermaLink="false">http://127.0.0.1:8080/?p=153</guid>
+    <description></description>
+    <content:encoded><![CDATA[<p>Eine Kältemittelleckage ist der häufigste Grund für schleichenden Leistungsverlust bei Klimaanlagen. Das Gerät kühlt immer schlechter, der Verdichter arbeitet immer länger, und der Stromverbrauch steigt. Wer Leckagen früh erkennt, spart Geld und erfüllt die F-Gas-Verordnung.</p>
+
+<h2>Symptome einer Leckage</h2>
+
+<p>Sinkende Kälteleistung, steigende Laufzeiten, Eisbildung am Verdampfer und zischende Geräusche sind typische Anzeichen.</p>
+
+<p>Der erste Verdacht gehört in ein Messprotokoll: Kältemittelfüllstand und Überhitzung dokumentieren.</p>
+
+<h2>Dichtigkeitsprüfung nach F-Gas</h2>
+
+<p>Die F-Gas-Verordnung schreibt regelmäßige Dichtigkeitsprüfungen vor – abhängig von Kältemittelmenge und Treibhauspotenzial.</p>
+
+<p>Prüfungen werden dokumentiert; die Unterlagen sind im Zweifel das erste, was der Prüfer verlangt.</p>
+
+<h2>Leckagen vermeiden</h2>
+
+<p>Saubere Verschraubungen, qualifizierte Monteure und Vibrationsentkopplung verhindern die meisten Leckagen. Die Wartung ist hier günstiger als die Reparatur.</p>]]></content:encoded>
+    <excerpt:encoded><![CDATA[Kältemittelleckagen kosten Leistung, Geld und die Umwelt – so erkennt man sie früh.]]></excerpt:encoded>
+    <wp:post_id>153</wp:post_id>
+    <wp:post_date>2026-03-18 09:00:00</wp:post_date>
+    <wp:post_date_gmt>2026-03-18 08:00:00</wp:post_date_gmt>
+    <wp:comment_status>open</wp:comment_status>
+    <wp:ping_status>open</wp:ping_status>
+    <wp:post_name><![CDATA[kaeltemittelleckagen-erkennen]]></wp:post_name>
+    <wp:status>publish</wp:status>
+    <wp:post_parent>0</wp:post_parent>
+    <wp:menu_order>0</wp:menu_order>
+    <wp:post_type>post</wp:post_type>
+    <wp:post_password></wp:post_password>
+    <wp:is_sticky>0</wp:is_sticky>
+    <category domain="category" nicename="wartung"><![CDATA[Wartung]]></category>
+    <category domain="post_tag" nicename="kaeltemittel"><![CDATA[kaeltemittel]]></category>
+    <category domain="post_tag" nicename="kuehlung"><![CDATA[kuehlung]]></category>
+  </item>
+  <item>
+    <title>Hochregallager klimatisieren: Anforderungen und Lösungen</title>
+    <link>http://127.0.0.1:8080/post/hochregallager-klimatisierung/</link>
+    <pubDate>Mon, 18 May 2026 09:00:00 +0100</pubDate>
+    <dc:creator><![CDATA[admin]]></dc:creator>
+    <guid isPermaLink="false">http://127.0.0.1:8080/?p=154</guid>
+    <description></description>
+    <content:encoded><![CDATA[<p>Hochregallager sind keine normalen Hallen: Die Regale reichen bis unter die Decke, die Luftschichtung ist extrem, und die Kältelast kommt aus dem Betrieb der Fördertechnik. Die Klimatisierung muss diese Besonderheiten abbilden.</p>
+
+<h2>Luftschichtung beachten</h2>
+
+<p>Warme Luft steigt nach oben – in Hochregallagern entsteht eine ausgeprägte Temperaturschichtung. Die Messung an einem Punkt reicht nicht aus.</p>
+
+<p>Umluftsysteme mit Luftauslass in Regalhöhe verteilen die Temperatur gleichmäßiger.</p>
+
+<h2>Fördertechnik als Wärmequelle</h2>
+
+<p>Shuttles, Stetigförderer und Automatiklager erzeugen Abwärme, die in die Kältelastberechnung einfließt. Der Gleichzeitigkeitsfaktor ist hier besonders wichtig.</p>
+
+<p>Dachklimageräte sind die häufigste Lösung, weil sie keine Regalfläche belegen.</p>
+
+<h2>Brandschutzkopplung</h2>
+
+<p>Die Klimatisierung muss mit der Brandmeldeanlage gekoppelt sein, damit sie im Alarmfall abschaltet. Das ist ein Planungsthema, kein Wartungsthema.</p>]]></content:encoded>
+    <excerpt:encoded><![CDATA[Hochregallager stellen besondere Anforderungen an die Klimatisierung – von der Luftschichtung bis zur Brandschutzkopplung.]]></excerpt:encoded>
+    <wp:post_id>154</wp:post_id>
+    <wp:post_date>2026-05-18 09:00:00</wp:post_date>
+    <wp:post_date_gmt>2026-05-18 08:00:00</wp:post_date_gmt>
+    <wp:comment_status>open</wp:comment_status>
+    <wp:ping_status>open</wp:ping_status>
+    <wp:post_name><![CDATA[hochregallager-klimatisierung]]></wp:post_name>
+    <wp:status>publish</wp:status>
+    <wp:post_parent>0</wp:post_parent>
+    <wp:menu_order>0</wp:menu_order>
+    <wp:post_type>post</wp:post_type>
+    <wp:post_password></wp:post_password>
+    <wp:is_sticky>0</wp:is_sticky>
+    <category domain="category" nicename="branchen"><![CDATA[Branchen]]></category>
+    <category domain="post_tag" nicename="logistik"><![CDATA[logistik]]></category>
+    <category domain="post_tag" nicename="kuehlung"><![CDATA[kuehlung]]></category>
+  </item>
+  <item>
+    <title>Pharmaproduktion: Klima nach GMP</title>
+    <link>http://127.0.0.1:8080/post/pharma-gmp-klima/</link>
+    <pubDate>Sat, 20 Jun 2026 09:00:00 +0100</pubDate>
+    <dc:creator><![CDATA[admin]]></dc:creator>
+    <guid isPermaLink="false">http://127.0.0.1:8080/?p=155</guid>
+    <description></description>
+    <content:encoded><![CDATA[<p>In der Pharmaproduktion ist das Klima Teil der Produktqualität. GMP (Good Manufacturing Practice) verlangt, dass Temperatur, Feuchte und Partikelreinheit dokumentiert eingehalten werden. Die Klimatisierung ist damit ein validierungspflichtiges System.</p>
+
+<h2>Was GMP fordert</h2>
+
+<p>Stabile Klimabedingungen mit dokumentierter Einhaltung, qualifizierte Anlagen und regelmäßige Revalidierung.</p>
+
+<p>Die Messdaten müssen über Jahre zurückverfolgbar sein – die Steuerung braucht entsprechenden Speicher.</p>
+
+<h2>Reinraumklimatisierung und Druckstufen</h2>
+
+<p>In Reinräumen kommen Reinraumklimatisierung nach ISO 14644 und Druckstufen zusammen. Die Lüftungsgeräte müssen den Differenzdruck halten.</p>
+
+<p>Die Prozessklimatisierung regelt Feuchte und Temperatur in engen Fenstern.</p>
+
+<h2>Qualifizierung einplanen</h2>
+
+<p>Die Anlage wird nach IQ/OQ/PQ qualifiziert. Das kostet Zeit und Geld, gehört aber zur GMP-Pflicht.</p>]]></content:encoded>
+    <excerpt:encoded><![CDATA[GMP verlangt dokumentierte Klimakonstanz – die Pharmaklimatisierung liefert sie.]]></excerpt:encoded>
+    <wp:post_id>155</wp:post_id>
+    <wp:post_date>2026-06-20 09:00:00</wp:post_date>
+    <wp:post_date_gmt>2026-06-20 08:00:00</wp:post_date_gmt>
+    <wp:comment_status>open</wp:comment_status>
+    <wp:ping_status>open</wp:ping_status>
+    <wp:post_name><![CDATA[pharma-gmp-klima]]></wp:post_name>
+    <wp:status>publish</wp:status>
+    <wp:post_parent>0</wp:post_parent>
+    <wp:menu_order>0</wp:menu_order>
+    <wp:post_type>post</wp:post_type>
+    <wp:post_password></wp:post_password>
+    <wp:is_sticky>0</wp:is_sticky>
+    <category domain="category" nicename="branchen"><![CDATA[Branchen]]></category>
+    <category domain="post_tag" nicename="pharma"><![CDATA[pharma]]></category>
+    <category domain="post_tag" nicename="kuehlung"><![CDATA[kuehlung]]></category>
+  </item>
+  <item>
+    <title>Elektroindustrie: Saubere Klimatisierung für die Fertigung</title>
+    <link>http://127.0.0.1:8080/post/elektroindustrie-klima/</link>
+    <pubDate>Thu, 26 Mar 2026 09:00:00 +0100</pubDate>
+    <dc:creator><![CDATA[admin]]></dc:creator>
+    <guid isPermaLink="false">http://127.0.0.1:8080/?p=156</guid>
+    <description></description>
+    <content:encoded><![CDATA[<p>In der Elektroindustrie ist Staub der Feind Nummer eins und Feuchte der zweite. Die Klimatisierung muss beides beherrschen: Partikel aus der Luft halten und die relative Feuchte im Prozessfenster stabilisieren. Ein Ausfall kostet Ausschuss und Messwiederholungen.</p>
+
+<h2>Reinheit sicherstellen</h2>
+
+<p>Je nach Produktstufe greift die Reinraumklimatisierung nach ISO 14644. Schon einfache Filterstufen reduzieren Ausschuss durch Staubpartikel.</p>
+
+<p>Die Luftführung übernimmt die Partikelabfuhr aus dem kritischen Bereich.</p>
+
+<h2>Feuchte als Ausschussfaktor</h2>
+
+<p>Statische Aufladung durch trockene Luft zerstört empfindliche Bauteile. Die Befeuchtung hält die Feuchte im definierten Fenster.</p>
+
+<p>Sensoren und Regelung müssen schnell reagieren, weil Prozesse auf Feuchtesprünge sofort antworten.</p>
+
+<h2>Präzise Kälte für Maschinen</h2>
+
+<p>Bestückungsautomaten und Messplätze brauchen stabile Temperaturen. Die Schaltschrankklimatisierung schützt die Steuerungstechnik der Anlagen.</p>]]></content:encoded>
+    <excerpt:encoded><![CDATA[Elektronikfertigung verlangt saubere, feuchtestabile Luft – Klimatisierung als Qualitätsfaktor.]]></excerpt:encoded>
+    <wp:post_id>156</wp:post_id>
+    <wp:post_date>2026-03-26 09:00:00</wp:post_date>
+    <wp:post_date_gmt>2026-03-26 08:00:00</wp:post_date_gmt>
+    <wp:comment_status>open</wp:comment_status>
+    <wp:ping_status>open</wp:ping_status>
+    <wp:post_name><![CDATA[elektroindustrie-klima]]></wp:post_name>
+    <wp:status>publish</wp:status>
+    <wp:post_parent>0</wp:post_parent>
+    <wp:menu_order>0</wp:menu_order>
+    <wp:post_type>post</wp:post_type>
+    <wp:post_password></wp:post_password>
+    <wp:is_sticky>0</wp:is_sticky>
+    <category domain="category" nicename="branchen"><![CDATA[Branchen]]></category>
+    <category domain="post_tag" nicename="produktion"><![CDATA[produktion]]></category>
+    <category domain="post_tag" nicename="kuehlung"><![CDATA[kuehlung]]></category>
+  </item>
+  <item>
+    <title>Druckluftkühler für Maschinenparks</title>
+    <link>http://127.0.0.1:8080/post/druckluftkuehler-maschinenparks/</link>
+    <pubDate>Thu, 16 Apr 2026 09:00:00 +0100</pubDate>
+    <dc:creator><![CDATA[admin]]></dc:creator>
+    <guid isPermaLink="false">http://127.0.0.1:8080/?p=157</guid>
+    <description></description>
+    <content:encoded><![CDATA[<p>Druckluft ist in vielen Betrieben die vierte Versorgungssparte – und sie ist heiß. Druckluftkühler senken die Temperatur nach der Verdichtung, trocknen die Luft und schützen Ventile, Zylinder und Werkzeuge vor Verschleiß. Die Kühlung der Druckluft ist Wartung an der Quelle.</p>
+
+<h2>Warum Druckluft gekühlt werden muss</h2>
+
+<p>Verdichtung erhitzt Luft auf über 100 Grad. Ohne Nachkühlung wandert die Wärme in die Leitungen und die Feuchte kondensiert an den ungünstigsten Stellen.</p>
+
+<p>Kälte senkt den Drucktaupunkt und damit die Korrosion im Netz.</p>
+
+<h2>Technische Lösung</h2>
+
+<p>Nachkühler, Kältetrockner oder Kaltwassersätze mit Druckluftanbindung: Die Variante hängt von Luftmenge und Drucktaupunkt ab.</p>
+
+<p>Die Kältelastberechnung berücksichtigt die Abwärme der Kompressoren.</p>
+
+<h2>Energieeffizienz</h2>
+
+<p>Moderne Kompressoren geben Abwärme ab, die über Wärmerückgewinnung nutzbar ist. Druckluftkühlung und Hallenheizung lassen sich so koppeln.</p>]]></content:encoded>
+    <excerpt:encoded><![CDATA[Druckluftkühler senken die Temperatur der Druckluft und schützen die gesamte Maschinenperipherie.]]></excerpt:encoded>
+    <wp:post_id>157</wp:post_id>
+    <wp:post_date>2026-04-16 09:00:00</wp:post_date>
+    <wp:post_date_gmt>2026-04-16 08:00:00</wp:post_date_gmt>
+    <wp:comment_status>open</wp:comment_status>
+    <wp:ping_status>open</wp:ping_status>
+    <wp:post_name><![CDATA[druckluftkuehler-maschinenparks]]></wp:post_name>
+    <wp:status>publish</wp:status>
+    <wp:post_parent>0</wp:post_parent>
+    <wp:menu_order>0</wp:menu_order>
+    <wp:post_type>post</wp:post_type>
+    <wp:post_password></wp:post_password>
+    <wp:is_sticky>0</wp:is_sticky>
+    <category domain="category" nicename="branchen"><![CDATA[Branchen]]></category>
+    <category domain="post_tag" nicename="produktion"><![CDATA[produktion]]></category>
+    <category domain="post_tag" nicename="kuehlung"><![CDATA[kuehlung]]></category>
+  </item>
+  <item>
+    <title>Sommer-Checkliste für Kälteanlagen</title>
+    <link>http://127.0.0.1:8080/post/sommer-wartungscheckliste/</link>
+    <pubDate>Sat, 02 May 2026 09:00:00 +0100</pubDate>
+    <dc:creator><![CDATA[admin]]></dc:creator>
+    <guid isPermaLink="false">http://127.0.0.1:8080/?p=158</guid>
+    <description></description>
+    <content:encoded><![CDATA[<p>Kälteanlagen fallen nie im Januar aus, sondern immer in der ersten Hitzewelle. Die Sommer-Checkliste nimmt die Schwachstellen vorweg: Filter, Wärmetauscher, Kältemittel und Regelung werden geprüft, bevor die Last kommt.</p>
+
+<h2>Die wichtigsten Punkte</h2>
+
+<p>Filter und Wärmetauscher reinigen, Kältemittelfüllstand prüfen, Kondensatorlüfter testen, Regelung und Sollwerte kontrollieren.</p>
+
+<p>Dazu gehört die Dichtigkeitsprüfung nach der F-Gas-Verordnung.</p>
+
+<h2>Messprotokoll führen</h2>
+
+<p>Vor und nach der Wartung werden Drücke, Temperaturen und Ströme gemessen. Der Vergleich zeigt, ob die Anlage tatsächlich wieder auf Soll arbeitet.</p>
+
+<p>Das Protokoll ist gleichzeitig die Dokumentationsgrundlage für den Wartungsvertrag.</p>
+
+<h2>Saisonstart früh planen</h2>
+
+<p>Der Wartungstermin sollte vor der ersten Hitzewelle liegen, nicht während sie tobt. Die saisonale Inbetriebnahme im Frühjahr ist der richtige Zeitpunkt.</p>]]></content:encoded>
+    <excerpt:encoded><![CDATA[Die Sommer-Checkliste verhindert Ausfälle genau dann, wenn die Kälte am meisten gebraucht wird.]]></excerpt:encoded>
+    <wp:post_id>158</wp:post_id>
+    <wp:post_date>2026-05-02 09:00:00</wp:post_date>
+    <wp:post_date_gmt>2026-05-02 08:00:00</wp:post_date_gmt>
+    <wp:comment_status>open</wp:comment_status>
+    <wp:ping_status>open</wp:ping_status>
+    <wp:post_name><![CDATA[sommer-wartungscheckliste]]></wp:post_name>
+    <wp:status>publish</wp:status>
+    <wp:post_parent>0</wp:post_parent>
+    <wp:menu_order>0</wp:menu_order>
+    <wp:post_type>post</wp:post_type>
+    <wp:post_password></wp:post_password>
+    <wp:is_sticky>0</wp:is_sticky>
+    <category domain="category" nicename="wartung"><![CDATA[Wartung]]></category>
+    <category domain="post_tag" nicename="saison"><![CDATA[saison]]></category>
+    <category domain="post_tag" nicename="kuehlung"><![CDATA[kuehlung]]></category>
+  </item>
+  <item>
+    <title>Saisonale Inbetriebnahme von Kälteanlagen</title>
+    <link>http://127.0.0.1:8080/post/saisonale-inbetriebnahme/</link>
+    <pubDate>Thu, 02 Apr 2026 09:00:00 +0100</pubDate>
+    <dc:creator><![CDATA[admin]]></dc:creator>
+    <guid isPermaLink="false">http://127.0.0.1:8080/?p=159</guid>
+    <description></description>
+    <content:encoded><![CDATA[<p>Nach der Winterpause laufen Kälteanlagen nicht einfach wieder an. Die saisonale Inbetriebnahme prüft jeden Baustein – vom Kältemittel über die Regelung bis zur Luftseite – bevor die Last steigt. Wer das überspringt, riskiert den Ausfall in der ersten Hitzewelle.</p>
+
+<h2>Ablauf der Inbetriebnahme</h2>
+
+<p>Sichtprüfung, Dichtigkeitsprüfung, Füllstand, elektrische Anschlüsse, Funktionstest der Ventilatoren und der Regelung.</p>
+
+<p>Danach folgt der Probebetrieb über mehrere Stunden mit Messprotokoll.</p>
+
+<h2>Kältemittel und Öl</h2>
+
+<p>Nach der Standzeit müssen Füllstand und Ölzustand geprüft werden. Bei Bestandsanlagen mit fluorierten Kältemitteln ist die F-Gas-Dokumentation Pflicht.</p>
+
+<p>Leckagen aus dem Winter werden bei der Inbetriebnahme sichtbar – besser jetzt als im Sommer.</p>
+
+<h2>Dokumentation</h2>
+
+<p>Das Inbetriebnahmeprotokoll ist die Basis für den Vergleich mit späteren Messungen. Es gehört in das Anlagendossier des Betreibers.</p>]]></content:encoded>
+    <excerpt:encoded><![CDATA[Die saisonale Inbetriebnahme bringt Kälteanlagen sicher und effizient in die Saison.]]></excerpt:encoded>
+    <wp:post_id>159</wp:post_id>
+    <wp:post_date>2026-04-02 09:00:00</wp:post_date>
+    <wp:post_date_gmt>2026-04-02 08:00:00</wp:post_date_gmt>
+    <wp:comment_status>open</wp:comment_status>
+    <wp:ping_status>open</wp:ping_status>
+    <wp:post_name><![CDATA[saisonale-inbetriebnahme]]></wp:post_name>
+    <wp:status>publish</wp:status>
+    <wp:post_parent>0</wp:post_parent>
+    <wp:menu_order>0</wp:menu_order>
+    <wp:post_type>post</wp:post_type>
+    <wp:post_password></wp:post_password>
+    <wp:is_sticky>0</wp:is_sticky>
+    <category domain="category" nicename="wartung"><![CDATA[Wartung]]></category>
+    <category domain="post_tag" nicename="saison"><![CDATA[saison]]></category>
+    <category domain="post_tag" nicename="kuehlung"><![CDATA[kuehlung]]></category>
+  </item>
+  <item>
+    <title>Fernwartung von Kälteanlagen</title>
+    <link>http://127.0.0.1:8080/post/fernwartung-kaelteanlagen/</link>
+    <pubDate>Mon, 08 Jun 2026 09:00:00 +0100</pubDate>
+    <dc:creator><![CDATA[admin]]></dc:creator>
+    <guid isPermaLink="false">http://127.0.0.1:8080/?p=160</guid>
+    <description></description>
+    <content:encoded><![CDATA[<p>Fernwartung macht aus einer Kälteanlage ein meldendes System: Drücke, Temperaturen und Betriebsstunden fließen in Echtzeit an den Dienstleister. Abweichungen werden erkannt, bevor sie zum Ausfall werden. Für Produktionsbetriebe ist das die günstigste Form der Ausfallversicherung.</p>
+
+<h2>Was überwacht wird</h2>
+
+<p>Kältemitteldruck, Verdichterstrom, Vor- und Rücklauftemperaturen, Laufzeiten und Alarme der Regelung.</p>
+
+<p>Aus den Verläufen lassen sich Verschleiß und Leistungsabfall prognostizieren.</p>
+
+<h2>Wirtschaftlichkeit</h2>
+
+<p>Die Fernwartung kostet einen Bruchteil eines ungeplanten Stillstands. Sie verlängert die Intervalle der Vor-Ort-Wartung nicht, ergänzt sie aber.</p>
+
+<p>Im Wartungsvertrag wird die Fernwartung meist als Option angeboten.</p>
+
+<h2>Daten und Sicherheit</h2>
+
+<p>Die Daten bleiben beim Betreiber oder werden verschlüsselt an den Dienstleister übertragen. Die Anbindung an die Gebäudeautomation erfolgt über standardisierte Schnittstellen.</p>]]></content:encoded>
+    <excerpt:encoded><![CDATA[Fernwartung überwacht Kälteanlagen in Echtzeit und verhindert Ausfälle, bevor sie entstehen.]]></excerpt:encoded>
+    <wp:post_id>160</wp:post_id>
+    <wp:post_date>2026-06-08 09:00:00</wp:post_date>
+    <wp:post_date_gmt>2026-06-08 08:00:00</wp:post_date_gmt>
+    <wp:comment_status>open</wp:comment_status>
+    <wp:ping_status>open</wp:ping_status>
+    <wp:post_name><![CDATA[fernwartung-kaelteanlagen]]></wp:post_name>
+    <wp:status>publish</wp:status>
+    <wp:post_parent>0</wp:post_parent>
+    <wp:menu_order>0</wp:menu_order>
+    <wp:post_type>post</wp:post_type>
+    <wp:post_password></wp:post_password>
+    <wp:is_sticky>0</wp:is_sticky>
+    <category domain="category" nicename="wartung"><![CDATA[Wartung]]></category>
+    <category domain="post_tag" nicename="smart"><![CDATA[smart]]></category>
+    <category domain="post_tag" nicename="kuehlung"><![CDATA[kuehlung]]></category>
+  </item>
+  <item>
+    <title>Smarte Steuerung: Klimaanlagen im IoT-Netz</title>
+    <link>http://127.0.0.1:8080/post/iot-klimasteuerung/</link>
+    <pubDate>Fri, 26 Jun 2026 09:00:00 +0100</pubDate>
+    <dc:creator><![CDATA[admin]]></dc:creator>
+    <guid isPermaLink="false">http://127.0.0.1:8080/?p=161</guid>
+    <description></description>
+    <content:encoded><![CDATA[<p>Eine Klimaanlage, die immer auf Volllast läuft, verschwendet Energie. Die smarte Steuerung im IoT-Netz passt die Kälteleistung an die tatsächliche Last an: Außentemperatur, Belegung und Strompreis fließen in die Regelung ein. Das Ergebnis sind Einsparungen von 10 bis 20 Prozent ohne Komfortverlust.</p>
+
+<h2>Daten statt Schätzwerte</h2>
+
+<p>Sensoren messen Temperatur, Feuchte und Belegung in Echtzeit. Die Steuerung fährt die Anlage nur so hoch, wie es die Last verlangt.</p>
+
+<p>Die Verbrauchsdaten liefern zugleich die Grundlage für die Amortisationsrechnung.</p>
+
+<h2>Lastmanagement</h2>
+
+<p>In Zeiten hoher Strompreise kann die Kälteanlage Lastspitzen glätten, indem sie Pufferspeicher nutzt. Das senkt die Leistungspreise des Netzbetreibers.</p>
+
+<p>Die Nachtspeicher-Kühlung ist eine Variante dieses Prinzips.</p>
+
+<h2>Integration</h2>
+
+<p>Die IoT-Steuerung integriert Kältemaschinen, Lüftung und Befeuchtung zu einem System. Die Fernwartung nutzt dieselben Daten.</p>]]></content:encoded>
+    <excerpt:encoded><![CDATA[IoT-Steuerung optimiert Klimaanlagen in Echtzeit – und spart Energie, ohne Komfort zu kosten.]]></excerpt:encoded>
+    <wp:post_id>161</wp:post_id>
+    <wp:post_date>2026-06-26 09:00:00</wp:post_date>
+    <wp:post_date_gmt>2026-06-26 08:00:00</wp:post_date_gmt>
+    <wp:comment_status>open</wp:comment_status>
+    <wp:ping_status>open</wp:ping_status>
+    <wp:post_name><![CDATA[iot-klimasteuerung]]></wp:post_name>
+    <wp:status>publish</wp:status>
+    <wp:post_parent>0</wp:post_parent>
+    <wp:menu_order>0</wp:menu_order>
+    <wp:post_type>post</wp:post_type>
+    <wp:post_password></wp:post_password>
+    <wp:is_sticky>0</wp:is_sticky>
+    <category domain="category" nicename="effizienz"><![CDATA[Effizienz]]></category>
+    <category domain="post_tag" nicename="smart"><![CDATA[smart]]></category>
+    <category domain="post_tag" nicename="kuehlung"><![CDATA[kuehlung]]></category>
+  </item>
+  <item>
+    <title>Amortisationsrechnung für Effizienzmaßnahmen</title>
+    <link>http://127.0.0.1:8080/post/amortisation-effizienz/</link>
+    <pubDate>Tue, 26 May 2026 09:00:00 +0100</pubDate>
+    <dc:creator><![CDATA[admin]]></dc:creator>
+    <guid isPermaLink="false">http://127.0.0.1:8080/?p=162</guid>
+    <description></description>
+    <content:encoded><![CDATA[<p>Jede Effizienzmaßnahme an einer Kälteanlage hat einen Preis und eine Einsparung. Die Amortisationsrechnung stellt beide gegenüber: Investition, jährliche Einsparung, Förderung und Lebensdauer ergeben zusammen die Antwort auf die Frage, ob sich die Maßnahme lohnt.</p>
+
+<h2>Die Rechnung</h2>
+
+<p>Amortisationszeit = (Investition minus Förderung) geteilt durch jährliche Einsparung.</p>
+
+<p>Die Einsparung wird aus den Verbrauchsdaten vor der Maßnahme hochgerechnet – nicht aus Herstellerangaben.</p>
+
+<h2>Nicht nur den Strompreis rechnen</h2>
+
+<p>Einsparungen entstehen auch durch weniger Wartung, längere Lebensdauer und geringere Ausfallrisiken. Diese Posten machen oft ein Drittel der Amortisation aus.</p>
+
+<p>Die BAFA-Förderung verkürzt die Amortisationszeit zusätzlich.</p>
+
+<h2>Vergleich mit der Erneuerung</h2>
+
+<p>Die Amortisationsrechnung der Nachrüstung wird mit der Ersatzinvestition verglichen. Bei alten Anlagen gewinnt oft der Neubau, bei jungen die Nachrüstung.</p>]]></content:encoded>
+    <excerpt:encoded><![CDATA[Amortisationsrechnung: Wann sich Effizienzmaßnahmen an Kälteanlagen wirklich rechnen.]]></excerpt:encoded>
+    <wp:post_id>162</wp:post_id>
+    <wp:post_date>2026-05-26 09:00:00</wp:post_date>
+    <wp:post_date_gmt>2026-05-26 08:00:00</wp:post_date_gmt>
+    <wp:comment_status>open</wp:comment_status>
+    <wp:ping_status>open</wp:ping_status>
+    <wp:post_name><![CDATA[amortisation-effizienz]]></wp:post_name>
+    <wp:status>publish</wp:status>
+    <wp:post_parent>0</wp:post_parent>
+    <wp:menu_order>0</wp:menu_order>
+    <wp:post_type>post</wp:post_type>
+    <wp:post_password></wp:post_password>
+    <wp:is_sticky>0</wp:is_sticky>
+    <category domain="category" nicename="foerderung"><![CDATA[Förderung]]></category>
+    <category domain="post_tag" nicename="kuehlung"><![CDATA[kuehlung]]></category>
+    <category domain="post_tag" nicename="smart"><![CDATA[smart]]></category>
+  </item>
+  <item>
+    <title>BAFA-Förderung für Kälteanlagen 2026</title>
+    <link>http://127.0.0.1:8080/post/bafa-foerderung-kaelteanlagen/</link>
+    <pubDate>Tue, 16 Jun 2026 09:00:00 +0100</pubDate>
+    <dc:creator><![CDATA[admin]]></dc:creator>
+    <guid isPermaLink="false">http://127.0.0.1:8080/?p=163</guid>
+    <description></description>
+    <content:encoded><![CDATA[<p>Die BAFA-Förderung unterstützt Unternehmen bei der Umstellung auf energieeffiziente Kältetechnik. Bezuschusst werden unter anderem neue Kaltwassersätze, Wärmerückgewinnung und die Umstellung auf natürliche Kältemittel. Der Zuschuss senkt die Investition deutlich – wenn der Antrag vor dem Kauf gestellt wird.</p>
+
+<h2>Was gefördert wird</h2>
+
+<p>Effiziente Kälteanlagen, Kaltwassersätze mit hohem SEER, Wärmerückgewinnung, Free-Cooling-Nachrüstung und Umstellungen auf R290 oder R744.</p>
+
+<p>Die genauen Konditionen ändern sich regelmäßig – der Antrag sollte auf den aktuellen Förderaufruf abgestimmt sein.</p>
+
+<h2>Antrag vor der Bestellung</h2>
+
+<p>Die BAFA-Förderung wird vor der Auftragsvergabe beantragt. Nachträgliche Anträge scheitern.</p>
+
+<p>Das Angebot des Dienstleisters sollte bereits die förderfähigen Positionen ausweisen.</p>
+
+<h2>Förderung und Amortisation</h2>
+
+<p>Der Zuschuss fließt direkt in die Amortisationsrechnung ein. In Kombination mit der KfW-Finanzierung sinkt die Investitionshürde deutlich.</p>]]></content:encoded>
+    <excerpt:encoded><![CDATA[Die BAFA-Förderung bezuschusst effiziente Kälteanlagen – so kommt man an das Geld.]]></excerpt:encoded>
+    <wp:post_id>163</wp:post_id>
+    <wp:post_date>2026-06-16 09:00:00</wp:post_date>
+    <wp:post_date_gmt>2026-06-16 08:00:00</wp:post_date_gmt>
+    <wp:comment_status>open</wp:comment_status>
+    <wp:ping_status>open</wp:ping_status>
+    <wp:post_name><![CDATA[bafa-foerderung-kaelteanlagen]]></wp:post_name>
+    <wp:status>publish</wp:status>
+    <wp:post_parent>0</wp:post_parent>
+    <wp:menu_order>0</wp:menu_order>
+    <wp:post_type>post</wp:post_type>
+    <wp:post_password></wp:post_password>
+    <wp:is_sticky>0</wp:is_sticky>
+    <category domain="category" nicename="foerderung"><![CDATA[Förderung]]></category>
+    <category domain="post_tag" nicename="kuehlung"><![CDATA[kuehlung]]></category>
+    <category domain="post_tag" nicename="saison"><![CDATA[saison]]></category>
+  </item>
+  <item>
+    <title>KfW-Kredit für energetische Sanierung</title>
+    <link>http://127.0.0.1:8080/post/kfw-energetische-sanierung/</link>
+    <pubDate>Thu, 02 Jul 2026 09:00:00 +0100</pubDate>
+    <dc:creator><![CDATA[admin]]></dc:creator>
+    <guid isPermaLink="false">http://127.0.0.1:8080/?p=164</guid>
+    <description></description>
+    <content:encoded><![CDATA[<p>Die KfW unterstützt energetische Sanierungen mit zinsgünstigen Krediten. Auch Maßnahmen an der Kältetechnik – effizientere Kaltwassersätze, Wärmerückgewinnung, Dämmung der Kälteverteilung – sind förderfähig. Die Kombination aus KfW-Kredit und BAFA-Förderung senkt die Finanzierungskosten doppelt.</p>
+
+<h2>Voraussetzungen</h2>
+
+<p>Die Maßnahme muss zu einer messbaren Energieeinsparung führen. Energieberater und Fachplaner erstellen die Nachweise.</p>
+
+<p>Die Kältelastberechnung und die Amortisationsrechnung gehören zur Antragsunterlage.</p>
+
+<h2>Kombination mit BAFA</h2>
+
+<p>KfW und BAFA lassen sich kombinieren: Der Zuschuss senkt die Investitionssumme, der Kredit finanziert den Rest. Die Anträge laufen getrennt.</p>
+
+<p>Die Reihenfolge ist wichtig: erst die Förderung, dann die Finanzierung.</p>
+
+<h2>Dokumentation</h2>
+
+<p>Nach der Umsetzung wird die Einsparung nachgewiesen. Die Verbrauchsdaten der Fernwartung eignen sich dafür ideal.</p>]]></content:encoded>
+    <excerpt:encoded><![CDATA[Der KfW-Kredit finanziert energetische Sanierung – auch Kältetechnik gehört dazu.]]></excerpt:encoded>
+    <wp:post_id>164</wp:post_id>
+    <wp:post_date>2026-07-02 09:00:00</wp:post_date>
+    <wp:post_date_gmt>2026-07-02 08:00:00</wp:post_date_gmt>
+    <wp:comment_status>open</wp:comment_status>
+    <wp:ping_status>open</wp:ping_status>
+    <wp:post_name><![CDATA[kfw-energetische-sanierung]]></wp:post_name>
+    <wp:status>publish</wp:status>
+    <wp:post_parent>0</wp:post_parent>
+    <wp:menu_order>0</wp:menu_order>
+    <wp:post_type>post</wp:post_type>
+    <wp:post_password></wp:post_password>
+    <wp:is_sticky>0</wp:is_sticky>
+    <category domain="category" nicename="foerderung"><![CDATA[Förderung]]></category>
+    <category domain="post_tag" nicename="foerderung"><![CDATA[foerderung]]></category>
+    <category domain="post_tag" nicename="kuehlung"><![CDATA[kuehlung]]></category>
+  </item>
+  <item>
+    <title>Notkühlung bei Ausfall: Redundanz planen</title>
+    <link>http://127.0.0.1:8080/post/notkuehlung-redundanz/</link>
+    <pubDate>Fri, 10 Jul 2026 09:00:00 +0100</pubDate>
+    <dc:creator><![CDATA[admin]]></dc:creator>
+    <guid isPermaLink="false">http://127.0.0.1:8080/?p=165</guid>
+    <description></description>
+    <content:encoded><![CDATA[<p>Jede Kälteanlage fällt irgendwann aus. Die Notkühlung beantwortet die Frage, wie lange der Betrieb ohne sie weiterlaufen darf. Für Rechenzentren sind das Minuten, für Produktionshallen Stunden. Die Redundanzplanung richtet die Investition an dieser Zahl aus.</p>
+
+<h2>Die Risikoanalyse</h2>
+
+<p>Ausfallkosten je Stunde, Wiederanlaufzeit und Wartungsfenster bestimmen das Redundanzniveau. Ein Serverraum ohne Redundanz ist keine Planung, sondern ein Glücksspiel.</p>
+
+<p>Klassische Stufen: N (keine Redundanz), N+1 (ein Ersatzgerät), 2N (doppelte Auslegung).</p>
+
+<h2>Technische Optionen</h2>
+
+<p>Mobile Klimageräte als flexible Reserve, fest installierte Reservegeräte oder ein zweiter unabhängiger Kältepfad.</p>
+
+<p>Die Container-Klimatisierung liefert Notkühlung als Mietlösung für den Ernstfall.</p>
+
+<h2>Redundanz testen</h2>
+
+<p>Eine Redundanz, die nie getestet wird, existiert nicht. Der jährliche Lasttest gehört in den Wartungsvertrag.</p>]]></content:encoded>
+    <excerpt:encoded><![CDATA[Redundanz ist keine Technikfrage, sondern eine Risikofrage: Wie lange darf die Kälte ausfallen?]]></excerpt:encoded>
+    <wp:post_id>165</wp:post_id>
+    <wp:post_date>2026-07-10 09:00:00</wp:post_date>
+    <wp:post_date_gmt>2026-07-10 08:00:00</wp:post_date_gmt>
+    <wp:comment_status>open</wp:comment_status>
+    <wp:ping_status>open</wp:ping_status>
+    <wp:post_name><![CDATA[notkuehlung-redundanz]]></wp:post_name>
+    <wp:status>publish</wp:status>
+    <wp:post_parent>0</wp:post_parent>
+    <wp:menu_order>0</wp:menu_order>
+    <wp:post_type>post</wp:post_type>
+    <wp:post_password></wp:post_password>
+    <wp:is_sticky>0</wp:is_sticky>
+    <category domain="category" nicename="planung"><![CDATA[Planung]]></category>
+    <category domain="post_tag" nicename="notfall"><![CDATA[notfall]]></category>
+    <category domain="post_tag" nicename="rechenzentrum"><![CDATA[rechenzentrum]]></category>
+    <category domain="post_tag" nicename="kuehlung"><![CDATA[kuehlung]]></category>
+  </item>
+  <item>
+    <title>Winterbetrieb von Kaltwassersätzen</title>
+    <link>http://127.0.0.1:8080/post/winterbetrieb-kaltwassersaetze/</link>
+    <pubDate>Mon, 05 Jan 2026 09:00:00 +0100</pubDate>
+    <dc:creator><![CDATA[admin]]></dc:creator>
+    <guid isPermaLink="false">http://127.0.0.1:8080/?p=166</guid>
+    <description></description>
+    <content:encoded><![CDATA[<p>Kaltwassersätze arbeiten auch im Winter – nur unter anderen Bedingungen. Frostschutz, minimaler Volumenstrom und die Grenzen der Freikühlung bestimmen den Winterbetrieb. Wer diese Stolperfallen kennt, spart Energie und verhindert Frostschäden.</p>
+
+<h2>Frostschutz</h2>
+
+<p>Außen aufgestellte Geräte brauchen Glykol im Kühlkreis oder eine Beheizung. Die Glykolkonzentration wird vor dem Winter geprüft.</p>
+
+<p>Frostschäden an Verdampfern sind teurer als jede Wartung.</p>
+
+<h2>Freikühlung nutzen</h2>
+
+<p>Bei niedrigen Außentemperaturen übernimmt die Freikühlung die Kälteerzeugung. Der Verdichter schaltet ab, der Stromverbrauch sinkt.</p>
+
+<p>Die Umschaltung muss sauber geregelt sein, sonst taktet der Kaltwassersatz im ineffizienten Bereich.</p>
+
+<h2>Teillast im Winter</h2>
+
+<p>Im Winter läuft die Anlage meist bei minimaler Last. Der Pufferspeicher verhindert, dass der Verdichter ständig startet und stoppt.</p>]]></content:encoded>
+    <excerpt:encoded><![CDATA[Kaltwassersätze im Winter: Frostschutz, Freikühlung und Teillast – die Stolperfallen.]]></excerpt:encoded>
+    <wp:post_id>166</wp:post_id>
+    <wp:post_date>2026-01-05 09:00:00</wp:post_date>
+    <wp:post_date_gmt>2026-01-05 08:00:00</wp:post_date_gmt>
+    <wp:comment_status>open</wp:comment_status>
+    <wp:ping_status>open</wp:ping_status>
+    <wp:post_name><![CDATA[winterbetrieb-kaltwassersaetze]]></wp:post_name>
+    <wp:status>publish</wp:status>
+    <wp:post_parent>0</wp:post_parent>
+    <wp:menu_order>0</wp:menu_order>
+    <wp:post_type>post</wp:post_type>
+    <wp:post_password></wp:post_password>
+    <wp:is_sticky>0</wp:is_sticky>
+    <category domain="category" nicename="wartung"><![CDATA[Wartung]]></category>
+    <category domain="post_tag" nicename="saison"><![CDATA[saison]]></category>
+    <category domain="post_tag" nicename="kuehlung"><![CDATA[kuehlung]]></category>
+  </item>
+  <item>
+    <title>Glykol in Kühlkreisläufen: Dosierung und Wartung</title>
+    <link>http://127.0.0.1:8080/post/glykol-kuehlkreislaeufe/</link>
+    <pubDate>Sun, 01 Feb 2026 09:00:00 +0100</pubDate>
+    <dc:creator><![CDATA[admin]]></dc:creator>
+    <guid isPermaLink="false">http://127.0.0.1:8080/?p=167</guid>
+    <description></description>
+    <content:encoded><![CDATA[<p>Glykol senkt den Gefrierpunkt des Kühlwassers und schützt Anlagen im Winterbetrieb. Falsch dosiert, kostet es aber Leistung: Zu viel Glykol erhöht die Viskosität, die Pumpe verbraucht mehr Strom, und die Wärmeübertragung verschlechtert sich.</p>
+
+<h2>Die richtige Dosierung</h2>
+
+<p>Die Glykolkonzentration richtet sich nach der tiefsten zu erwartenden Außentemperatur. Ein Frostschutz bis minus 20 Grad reicht für Mitteleuropa meist aus.</p>
+
+<p>Die Konzentration wird mit einem Refraktometer gemessen – nicht geschätzt.</p>
+
+<h2>Wirkung auf die Leistung</h2>
+
+<p>Glykol reduziert die Wärmeübertragung im Vergleich zu reinem Wasser. Die Kältelastberechnung und die Pumpenauslegung müssen diesen Faktor berücksichtigen.</p>
+
+<p>Nach Jahren im Kreis baut sich Glykol ab – der Zustand gehört in die Wartung.</p>
+
+<h2>Korrosionsschutz</h2>
+
+<p>Glykolkreisläufe enthalten Inhibitoren gegen Korrosion. Nach langer Standzeit oder bei Verfärbung wird die Konzentration geprüft und aufgefrischt.</p>]]></content:encoded>
+    <excerpt:encoded><![CDATA[Glykol schützt den Kühlkreislauf im Winter – falsch dosiert kostet es Leistung und Pumpe.]]></excerpt:encoded>
+    <wp:post_id>167</wp:post_id>
+    <wp:post_date>2026-02-01 09:00:00</wp:post_date>
+    <wp:post_date_gmt>2026-02-01 08:00:00</wp:post_date_gmt>
+    <wp:comment_status>open</wp:comment_status>
+    <wp:ping_status>open</wp:ping_status>
+    <wp:post_name><![CDATA[glykol-kuehlkreislaeufe]]></wp:post_name>
+    <wp:status>publish</wp:status>
+    <wp:post_parent>0</wp:post_parent>
+    <wp:menu_order>0</wp:menu_order>
+    <wp:post_type>post</wp:post_type>
+    <wp:post_password></wp:post_password>
+    <wp:is_sticky>0</wp:is_sticky>
+    <category domain="category" nicename="wartung"><![CDATA[Wartung]]></category>
+    <category domain="post_tag" nicename="kuehlung"><![CDATA[kuehlung]]></category>
+    <category domain="post_tag" nicename="saison"><![CDATA[saison]]></category>
+  </item>
+  <item>
+    <title>Pufferspeicher für Kälteanlagen</title>
+    <link>http://127.0.0.1:8080/post/pufferspeicher-kaelte/</link>
+    <pubDate>Thu, 12 Mar 2026 09:00:00 +0100</pubDate>
+    <dc:creator><![CDATA[admin]]></dc:creator>
+    <guid isPermaLink="false">http://127.0.0.1:8080/?p=168</guid>
+    <description></description>
+    <content:encoded><![CDATA[<p>Ein Pufferspeicher ist der Puffer zwischen Kälteerzeugung und Kälteverbrauch. Er gleicht Lastspitzen aus, reduziert Takten und erlaubt es dem Kaltwassersatz, in effizienten Betriebspunkten zu laufen. Für Prozesse mit schwankender Last ist er fast immer wirtschaftlich.</p>
+
+<h2>Warum Puffern</h2>
+
+<p>Ohne Puffer folgt der Kaltwassersatz jeder Lastspitze – ineffizient und verschleißintensiv. Mit Puffer läuft er stabil in einem günstigen Betriebspunkt.</p>
+
+<p>Die Nachtspeicher-Kühlung nutzt den Puffer zusätzlich zur Lastverschiebung.</p>
+
+<h2>Dimensionierung</h2>
+
+<p>Die Puffergröße richtet sich nach Lastspitze, Dauer und erlaubter Temperaturdifferenz. Die Kältelastberechnung liefert die Randbedingungen.</p>
+
+<p>Faustformel: Je größer die Lastspitzen, desto größer der Speicher.</p>
+
+<h2>Hydraulik</h2>
+
+<p>Die Einbindung erfolgt über eine hydraulische Weiche oder ein separates Speicherbecken. Die Schaltung bestimmt, wie viel des Speichers tatsächlich nutzbar ist.</p>]]></content:encoded>
+    <excerpt:encoded><![CDATA[Pufferspeicher entkoppeln Erzeugung und Verbrauch – und machen Kälteanlagen effizienter.]]></excerpt:encoded>
+    <wp:post_id>168</wp:post_id>
+    <wp:post_date>2026-03-12 09:00:00</wp:post_date>
+    <wp:post_date_gmt>2026-03-12 08:00:00</wp:post_date_gmt>
+    <wp:comment_status>open</wp:comment_status>
+    <wp:ping_status>open</wp:ping_status>
+    <wp:post_name><![CDATA[pufferspeicher-kaelte]]></wp:post_name>
+    <wp:status>publish</wp:status>
+    <wp:post_parent>0</wp:post_parent>
+    <wp:menu_order>0</wp:menu_order>
+    <wp:post_type>post</wp:post_type>
+    <wp:post_password></wp:post_password>
+    <wp:is_sticky>0</wp:is_sticky>
+    <category domain="category" nicename="planung"><![CDATA[Planung]]></category>
+    <category domain="post_tag" nicename="kuehlung"><![CDATA[kuehlung]]></category>
+  </item>
+  <item>
+    <title>Nachtspeicher-Kühlung: Spitzenlast glätten</title>
+    <link>http://127.0.0.1:8080/post/nachtspeicher-kuehlung/</link>
+    <pubDate>Sat, 18 Jul 2026 09:00:00 +0100</pubDate>
+    <dc:creator><![CDATA[admin]]></dc:creator>
+    <guid isPermaLink="false">http://127.0.0.1:8080/?p=169</guid>
+    <description></description>
+    <content:encoded><![CDATA[<p>Nachtspeicher-Kühlung folgt einer einfachen Logik: Nachts, wenn Strom günstig und die Außentemperatur niedrig ist, wird Kälte erzeugt und gespeichert. Tagsüber deckt der Speicher die Last, ohne dass die Kältemaschine in der teuren Spitzenzeit läuft. Das glättet Last und Kosten.</p>
+
+<h2>Speichertechnologien</h2>
+
+<p>Eisspeicher, Kaltwasserspeicher oder Betonkernaktivierung: Die Technologie bestimmt, wie viel Kälte pro Kubikmeter gespeichert wird.</p>
+
+<p>Eisspeicher haben die höchste Energiedichte, weil die Schmelzwärme genutzt wird.</p>
+
+<h2>Wirtschaftlichkeit</h2>
+
+<p>Die Ersparnis entsteht durch günstigere Nachtstrompreise und niedrigere Leistungspreise. Die Amortisationsrechnung vergleicht beide Effekte mit den Investitionskosten.</p>
+
+<p>Die smarte Steuerung optimiert den Ladezeitpunkt anhand des aktuellen Strompreises.</p>
+
+<h2>Kombination mit Free Cooling</h2>
+
+<p>Nachts ist es kalt genug für Free Cooling – die Speicherladung kann also nahezu kostenlos erfolgen. Die Kombination senkt die Betriebskosten weiter.</p>]]></content:encoded>
+    <excerpt:encoded><![CDATA[Nachtspeicher-Kühlung erzeugt Kälte, wenn der Strom günstig ist – und nutzt sie am Tag.]]></excerpt:encoded>
+    <wp:post_id>169</wp:post_id>
+    <wp:post_date>2026-07-18 09:00:00</wp:post_date>
+    <wp:post_date_gmt>2026-07-18 08:00:00</wp:post_date_gmt>
+    <wp:comment_status>open</wp:comment_status>
+    <wp:ping_status>open</wp:ping_status>
+    <wp:post_name><![CDATA[nachtspeicher-kuehlung]]></wp:post_name>
+    <wp:status>publish</wp:status>
+    <wp:post_parent>0</wp:post_parent>
+    <wp:menu_order>0</wp:menu_order>
+    <wp:post_type>post</wp:post_type>
+    <wp:post_password></wp:post_password>
+    <wp:is_sticky>0</wp:is_sticky>
+    <category domain="category" nicename="effizienz"><![CDATA[Effizienz]]></category>
+    <category domain="post_tag" nicename="smart"><![CDATA[smart]]></category>
+    <category domain="post_tag" nicename="kuehlung"><![CDATA[kuehlung]]></category>
+  </item>
+  <item>
+    <title>Branchenlösungen: Klima für jede Industrie</title>
+    <link>http://127.0.0.1:8080/post/branchenloesungen-industrie/</link>
+    <pubDate>Sat, 25 Jul 2026 09:00:00 +0100</pubDate>
+    <dc:creator><![CDATA[admin]]></dc:creator>
+    <guid isPermaLink="false">http://127.0.0.1:8080/?p=170</guid>
+    <description></description>
+    <content:encoded><![CDATA[<p>Eine Kunststofffabrik braucht andere Kälte als ein Rechenzentrum, eine Lebensmittelproduktion andere als eine Metallbearbeitung. Branchenlösungen übersetzen die Prozessanforderungen in konkrete Kältetechnik: Temperaturfenster, Redundanz, Hygiene und Wartung werden branchenspezifisch ausgelegt.</p>
+
+<h2>Die Branchen im Überblick</h2>
+
+<p>Kunststoff: präzise Werkzeugkühlung über Kaltwassersätze. Rechenzentren: Serverraum-Klimatisierung mit Free Cooling und Redundanz. Logistik: Dachklimageräte für große Hallen. Pharma: Reinraumklimatisierung nach GMP.</p>
+
+<p>Jede Branche hat eigene Normen und eigene kritische Prozesse.</p>
+
+<h2>Der Weg zur Lösung</h2>
+
+<p>Der Einstieg ist immer dieselbe Kältelastberechnung. Daraus entsteht das Lastenheft, auf dessen Basis Geräte, Kreise und Redundanz dimensioniert werden.</p>
+
+<p>Wer die Branchenlogik versteht, spart bei der Planung – nicht bei den Geräten.</p>
+
+<h2>Betrieb und Wartung</h2>
+
+<p>Branchenlösungen enden nicht bei der Montage. Der Wartungsvertrag bildet die branchenspezifischen Intervalle und Dokumentationspflichten ab.</p>]]></content:encoded>
+    <excerpt:encoded><![CDATA[Industrie-Klimageräte sind keine Standardware: Jede Branche stellt eigene Anforderungen.]]></excerpt:encoded>
+    <wp:post_id>170</wp:post_id>
+    <wp:post_date>2026-07-25 09:00:00</wp:post_date>
+    <wp:post_date_gmt>2026-07-25 08:00:00</wp:post_date_gmt>
+    <wp:comment_status>open</wp:comment_status>
+    <wp:ping_status>open</wp:ping_status>
+    <wp:post_name><![CDATA[branchenloesungen-industrie]]></wp:post_name>
+    <wp:status>publish</wp:status>
+    <wp:post_parent>0</wp:post_parent>
+    <wp:menu_order>0</wp:menu_order>
+    <wp:post_type>post</wp:post_type>
+    <wp:post_password></wp:post_password>
+    <wp:is_sticky>0</wp:is_sticky>
+    <category domain="category" nicename="branchen"><![CDATA[Branchen]]></category>
+    <category domain="post_tag" nicename="produktion"><![CDATA[produktion]]></category>
+    <category domain="post_tag" nicename="kuehlung"><![CDATA[kuehlung]]></category>
+  </item>
+</channel>
+</rss>

@@ -1,0 +1,49 @@
+/* Entity Link Engine — admin styles. */
+
+.ele-cards {
+	display: flex;
+	gap: 16px;
+	margin: 16px 0 24px;
+	flex-wrap: wrap;
+}
+
+.ele-card {
+	background: #fff;
+	border: 1px solid #dcdcde;
+	border-radius: 4px;
+	padding: 16px 20px;
+	min-width: 160px;
+	display: flex;
+	flex-direction: column;
+}
+
+.ele-card-num {
+	font-size: 28px;
+	font-weight: 600;
+	line-height: 1.2;
+	color: #1d2327;
+}
+
+.ele-card-label {
+	color: #646970;
+	font-size: 13px;
+}
+
+#ele-meta .ele-results ul {
+	margin: 0 0 8px;
+	list-style: disc;
+	padding-left: 18px;
+}
+
+#ele-meta .ele-results .ele-score {
+	background: #f0f0f1;
+	border-radius: 10px;
+	padding: 1px 8px;
+	font-size: 11px;
+	margin-left: 4px;
+}
+
+#ele-meta .ele-status {
+	margin-top: 0;
+	color: #646970;
+}

@@ -1,0 +1,11 @@
+# WordPress build artifacts
+dist/
+node_modules/
+*.zip
+
+# OS / editor
+.DS_Store
+Thumbs.db
+
+# Local test installs
+wp-test/

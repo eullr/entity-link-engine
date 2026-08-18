@@ -1,0 +1,367 @@
+# Copyright (C) 2026 Eugen Ullrich
+# This file is distributed under the GPLv2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Entity Link Engine 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/entity-link-engine\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-08-15T18:10:51+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: entity-link-engine\n"
+
+#. Plugin Name of the plugin
+#: entity-link-engine.php
+#: includes/class-admin.php:34
+#: includes/class-admin.php:189
+msgid "Entity Link Engine"
+msgstr ""
+
+#. Plugin URI of the plugin
+#: entity-link-engine.php
+msgid "https://eullrich.com/entity-link-engine/"
+msgstr ""
+
+#. Description of the plugin
+#: entity-link-engine.php
+msgid "Automatic internal linking with entity mapping and fan-out query retrieval. Maps entities in your content to existing posts, generates fan-out retrieval queries and inserts score-ranked internal links — not just random links."
+msgstr ""
+
+#. Author of the plugin
+#: entity-link-engine.php
+msgid "Eugen Ullrich"
+msgstr ""
+
+#. Author URI of the plugin
+#: entity-link-engine.php
+msgid "https://eullrich.com"
+msgstr ""
+
+#: includes/class-admin.php:35
+msgid "Entity Links"
+msgstr ""
+
+#: includes/class-admin.php:44
+#: includes/class-admin.php:45
+msgid "Dashboard"
+msgstr ""
+
+#: includes/class-admin.php:52
+#: includes/class-admin.php:53
+msgid "Settings"
+msgstr ""
+
+#: includes/class-admin.php:60
+#: includes/class-admin.php:61
+msgid "Entity vocabulary"
+msgstr ""
+
+#: includes/class-admin.php:68
+#: includes/class-admin.php:69
+msgid "Bulk run"
+msgstr ""
+
+#: includes/class-admin.php:166
+msgid "Running…"
+msgstr ""
+
+#: includes/class-admin.php:167
+#: includes/class-admin.php:221
+msgid "Suggest links"
+msgstr ""
+
+#: includes/class-admin.php:168
+#: includes/class-admin.php:222
+msgid "Insert links"
+msgstr ""
+
+#: includes/class-admin.php:169
+#: includes/class-admin.php:223
+msgid "Undo last run"
+msgstr ""
+
+#: includes/class-admin.php:170
+msgid "No candidates above the score threshold."
+msgstr ""
+
+#: includes/class-admin.php:171
+msgid "already linked"
+msgstr ""
+
+#: includes/class-admin.php:172
+msgid "Request failed."
+msgstr ""
+
+#: includes/class-admin.php:173
+msgid "Links inserted."
+msgstr ""
+
+#: includes/class-admin.php:174
+msgid "Undo complete."
+msgstr ""
+
+#: includes/class-admin.php:211
+msgid "Auto-linking is disabled for this post (post meta _ele_auto_links)."
+msgstr ""
+
+#. translators: %d: number of inserted links.
+#: includes/class-admin.php:215
+#, php-format
+msgid "Last run: %d link(s) inserted."
+msgstr ""
+
+#: includes/class-admin.php:242
+msgid "Entity Link Engine — Dashboard"
+msgstr ""
+
+#: includes/class-admin.php:247
+#: includes/class-admin.php:268
+msgid "Posts"
+msgstr ""
+
+#: includes/class-admin.php:251
+msgid "Auto links"
+msgstr ""
+
+#: includes/class-admin.php:255
+msgid "Orphans (no incoming links)"
+msgstr ""
+
+#. translators: %s: date/time the index was built.
+#: includes/class-admin.php:263
+#, php-format
+msgid "Entity index last rebuilt: %s."
+msgstr ""
+
+#: includes/class-admin.php:272
+msgid "Post"
+msgstr ""
+
+#: includes/class-admin.php:273
+msgid "Outgoing auto links"
+msgstr ""
+
+#: includes/class-admin.php:274
+msgid "Incoming links"
+msgstr ""
+
+#: includes/class-admin.php:275
+msgid "Orphan"
+msgstr ""
+
+#: includes/class-admin.php:304
+msgid "Entity Link Engine — Settings"
+msgstr ""
+
+#: includes/class-admin.php:309
+msgid "Post types"
+msgstr ""
+
+#: includes/class-admin.php:318
+msgid "Content types the engine scans and links."
+msgstr ""
+
+#: includes/class-admin.php:322
+msgid "Max links per post"
+msgstr ""
+
+#: includes/class-admin.php:325
+msgid "Default 3, same as the reference implementation. Per-post override via post meta _ele_max_links."
+msgstr ""
+
+#: includes/class-admin.php:329
+msgid "Min score"
+msgstr ""
+
+#: includes/class-admin.php:332
+msgid "Candidates below this score are not linked. Default 2.5."
+msgstr ""
+
+#: includes/class-admin.php:336
+msgid "Automatic run on publish"
+msgstr ""
+
+#: includes/class-admin.php:340
+msgid "Run the engine automatically when a post is published."
+msgstr ""
+
+#: includes/class-admin.php:345
+msgid "Link markup"
+msgstr ""
+
+#: includes/class-admin.php:349
+msgid "Add CSS class to inserted links"
+msgstr ""
+
+#: includes/class-admin.php:352
+msgid "Class:"
+msgstr ""
+
+#: includes/class-admin.php:358
+msgid "Skip blocks"
+msgstr ""
+
+#: includes/class-admin.php:370
+msgid "Block types that never receive auto links (headings, code, tables, quotes…)."
+msgstr ""
+
+#: includes/class-admin.php:374
+msgid "Semantic layer (optional)"
+msgstr ""
+
+#: includes/class-admin.php:378
+msgid "Enable embeddings API (OpenAI-compatible)"
+msgstr ""
+
+#: includes/class-admin.php:380
+msgid "When enabled, this plugin sends text excerpts to the configured embeddings endpoint. This is an external service call; see readme for details."
+msgstr ""
+
+#: includes/class-admin.php:382
+msgid "API URL:"
+msgstr ""
+
+#: includes/class-admin.php:386
+msgid "API key:"
+msgstr ""
+
+#: includes/class-admin.php:390
+msgid "Model:"
+msgstr ""
+
+#: includes/class-admin.php:394
+msgid "Blend weight (0–1):"
+msgstr ""
+
+#: includes/class-admin.php:397
+msgid "Final score = lexical score + blend × 5 × mean cosine similarity."
+msgstr ""
+
+#: includes/class-admin.php:426
+msgid "Entity Link Engine — Entity vocabulary"
+msgstr ""
+
+#: includes/class-admin.php:427
+msgid "Manual entities always win over auto-extracted ones. Each entity maps a phrase (plus aliases) to one target post. Aliases are matched with word boundaries, longest first."
+msgstr ""
+
+#: includes/class-admin.php:429
+#: includes/class-admin.php:457
+msgid "Add entity"
+msgstr ""
+
+#: includes/class-admin.php:435
+msgid "Entity name"
+msgstr ""
+
+#: includes/class-admin.php:439
+msgid "Aliases (comma separated)"
+msgstr ""
+
+#: includes/class-admin.php:443
+msgid "Target post"
+msgstr ""
+
+#: includes/class-admin.php:453
+#: includes/class-admin.php:467
+msgid "Priority"
+msgstr ""
+
+#: includes/class-admin.php:460
+msgid "Existing entities"
+msgstr ""
+
+#: includes/class-admin.php:464
+msgid "Entity"
+msgstr ""
+
+#: includes/class-admin.php:465
+msgid "Aliases"
+msgstr ""
+
+#: includes/class-admin.php:466
+msgid "Target"
+msgstr ""
+
+#: includes/class-admin.php:473
+msgid "No manual entities yet."
+msgstr ""
+
+#: includes/class-admin.php:482
+msgid "(missing)"
+msgstr ""
+
+#: includes/class-admin.php:487
+msgid "Delete this entity?"
+msgstr ""
+
+#: includes/class-admin.php:491
+msgid "Delete"
+msgstr ""
+
+#: includes/class-admin.php:515
+msgid "Entity Link Engine — Bulk run"
+msgstr ""
+
+#: includes/class-admin.php:517
+msgid "Entity index"
+msgstr ""
+
+#. translators: %s: date/time.
+#: includes/class-admin.php:522
+#, php-format
+msgid "Index built: %s."
+msgstr ""
+
+#: includes/class-admin.php:524
+msgid "Index not built yet."
+msgstr ""
+
+#: includes/class-admin.php:531
+msgid "Rebuild entity index"
+msgstr ""
+
+#: includes/class-admin.php:533
+msgid "Rebuild scans all posts and re-extracts entities (titles, headings, tags, categories). Run after adding or editing posts if auto-run is off."
+msgstr ""
+
+#: includes/class-admin.php:535
+msgid "Run engine on all posts"
+msgstr ""
+
+#: includes/class-admin.php:537
+msgid "A bulk run is in progress."
+msgstr ""
+
+#: includes/class-admin.php:539
+msgid "posts processed."
+msgstr ""
+
+#. translators: 1: post id, 2: number of links.
+#: includes/class-admin.php:545
+#, php-format
+msgid "Last tick: post %1$d, %2$d link(s) inserted."
+msgstr ""
+
+#: includes/class-admin.php:553
+msgid "Start bulk run"
+msgstr ""
+
+#: includes/class-admin.php:555
+msgid "Processes posts in batches via WP-Cron (5 per tick). Snapshots are kept per post, so each run can be undone in the post editor."
+msgstr ""
+
+#: includes/class-admin.php:566
+#: includes/class-admin.php:601
+#: includes/class-admin.php:625
+#: includes/class-admin.php:638
+msgid "Permission denied."
+msgstr ""
+
+#: includes/class-engine.php:26
+msgid "Post not found."
+msgstr ""
