@@ -23,6 +23,26 @@ Scoring  → taxonomy, terms, entity overlap, fan-out coverage, editorial links
 Insertion  → word boundaries, no headings/code/tables, one link per paragraph
 ```
 
+## Download
+
+The ready-to-install plugin ZIP is attached to every
+[GitHub Release](https://github.com/eullr/entity-link-engine/releases/latest)
+(`entity-link-engine.zip`). Install it under
+`/wp-content/plugins/entity-link-engine/` and activate it in WordPress.
+
+## Screenshots
+
+| | |
+|---|---|
+| ![Link intelligence dashboard](assets/screenshots/entity-link-engine-dashboard.webp) | ![Settings](assets/screenshots/entity-link-engine-settings.webp) |
+| ![Entity vocabulary](assets/screenshots/entity-link-engine-vocabulary.webp) | ![Bulk workflow](assets/screenshots/entity-link-engine-bulk.webp) |
+| ![Help and documentation](assets/screenshots/entity-link-engine-help.webp) | |
+
+The dashboard leads through a four-step workflow (configure → build index →
+review entities → suggest in the editor), the settings stay grouped and
+readable, and the integrated help explains mapping, retrieval, scoring and
+the undo workflow on one page.
+
 ## Why not just a keyword list?
 
 A keyword list finds a phrase. It doesn't know whether the link makes sense.
@@ -47,8 +67,12 @@ suggestion is better than a weak link.
   behind it (shared tags, term overlap, fan-out coverage, link signals).
 - **Preview → apply → undo** — editor meta box suggests, you approve; a
   snapshot restores the exact previous content.
+- **Onboarding dashboard** — a four-step workflow that shows exactly where
+  you are: settings, index, vocabulary, editor.
 - **Bulk run** — process all posts via WP-Cron batches.
 - **Link report** — dashboard with outgoing/incoming links and orphans.
+- **Integrated help** — documentation for mapping, retrieval, scoring,
+  insertion safeguards, undo, bulk workflow and privacy.
 - **Optional semantic layer** — opt-in embeddings via any OpenAI-compatible
   endpoint; disabled by default, fully local otherwise.
 - **Local by default** — no external service, no account, no data leaves the
@@ -61,7 +85,10 @@ suggestion is better than a weak link.
 
 ## Installation
 
-1. Copy this repository's plugin files into `/wp-content/plugins/entity-link-engine/`.
+1. Download `entity-link-engine.zip` from the
+   [latest release](https://github.com/eullr/entity-link-engine/releases/latest),
+   or copy this repository's plugin files into
+   `/wp-content/plugins/entity-link-engine/`.
 2. Activate the plugin.
 3. Go to **Entity Links → Bulk run** and click **Rebuild entity index**.
 4. Optionally add manual entities under **Entity Links → Entity vocabulary**.
@@ -91,7 +118,8 @@ The plugin is verified against a local WordPress 7.0.4 (SQLite) install:
 
 - `tests/test-engine.php` — 30 functional checks (mapping, scoring, insertion,
   undo, auto-run, report)
-- `tests/test-admin.php` — 18 admin/REST/sanitization checks
+- `tests/test-admin.php` — 27 admin/REST/UX checks (screens, settings,
+  sanitization, onboarding, help, author attribution)
 
 ```bash
 wp eval-file tests/test-engine.php
@@ -106,6 +134,7 @@ Official [Plugin Check](https://wordpress.org/plugins/plugin-check/):
 | Path | Purpose |
 |---|---|
 | `entity-link-engine.php`, `includes/`, `assets/admin.*`, `readme.txt`, `uninstall.php` | Plugin code (the WP.org zip = exactly these files) |
+| `assets/screenshots/` | Admin screenshots (WebP) |
 | `docs/` | Documentation (EN + DE) |
 | `demo/` | Demo content + entity importer |
 | `tests/` | Functional + admin test suites |
