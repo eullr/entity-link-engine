@@ -14,17 +14,17 @@ defined( 'ABSPATH' ) || exit;
 /**
  * Fan-out queries.
  */
-class ELE_Fanout_Query {
+class ELINK_Fanout_Query {
 
 	/**
 	 * Generate fan-out queries for a post.
 	 *
 	 * @param WP_Post $post      Post.
-	 * @param array   $mentions  Entity mentions (from ELE_Entity_Map::find_mentions).
+	 * @param array   $mentions  Entity mentions (from ELINK_Entity_Map::find_mentions).
 	 * @return array List of array( 'type', 'text', 'weight', 'terms' ).
 	 */
 	public function generate( $post, $mentions = array() ) {
-		$map = new ELE_Entity_Map();
+		$map = new ELINK_Entity_Map();
 		$queries = array();
 
 		$title = trim( $post->post_title );
@@ -128,7 +128,7 @@ class ELE_Fanout_Query {
 	 * @return array
 	 */
 	private function title_ngrams( $title ) {
-		$map   = new ELE_Entity_Map();
+		$map   = new ELINK_Entity_Map();
 		$terms = $map->tokens( $title );
 		$out   = array();
 		for ( $i = 0; $i < count( $terms ) - 1; $i++ ) {

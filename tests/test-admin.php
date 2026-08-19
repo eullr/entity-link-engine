@@ -22,7 +22,7 @@ function a_check( $cond, $label ) {
 wp_set_current_user( 1 );
 
 // --- Render each admin page (catch notices/warnings) ------------------------
-$admin = new ELE_Admin();
+$admin = new ELINK_Admin();
 $pages = array(
 	'render_dashboard'  => array(),
 	'render_settings'   => array(),
@@ -51,8 +51,8 @@ foreach ( $pages as $method => $args ) {
 ob_start();
 $admin->render_dashboard();
 $dashboard_html = ob_get_clean();
-a_check( false !== strpos( $dashboard_html, 'data-ele-onboarding="true"' ), 'dashboard has first-run onboarding' );
-a_check( false !== strpos( $dashboard_html, 'data-ele-step="build-index"' ), 'onboarding contains index step' );
+a_check( false !== strpos( $dashboard_html, 'data-elink-onboarding="true"' ), 'dashboard has first-run onboarding' );
+a_check( false !== strpos( $dashboard_html, 'data-elink-step="build-index"' ), 'onboarding contains index step' );
 a_check( false !== strpos( $dashboard_html, 'https://eullrich.com/' ), 'dashboard has author link' );
 a_check( false !== strpos( $dashboard_html, 'noopener noreferrer' ), 'author link uses safe rel attributes' );
 
@@ -70,17 +70,17 @@ if ( $posts ) {
 	ob_start();
 	$admin->render_meta_box( $posts[0] );
 	$meta_html = ob_get_clean();
-	a_check( false !== strpos( $meta_html, 'ele-meta' ), 'meta box renders with container' );
-	a_check( false !== strpos( $meta_html, 'ele-suggest' ), 'meta box has suggest button' );
+	a_check( false !== strpos( $meta_html, 'elink-meta' ), 'meta box renders with container' );
+	a_check( false !== strpos( $meta_html, 'elink-suggest' ), 'meta box has suggest button' );
 } else {
 	a_check( false, 'no post available for meta box test' );
 }
 
 // --- REST endpoints -------------------------------------------------------------
-$rest = new ELE_REST();
+$rest = new ELINK_REST();
 $post_id = $posts[0]->ID;
 
-$suggest_req = new WP_REST_Request( 'POST', '/' . ELE_REST::NS . '/suggest' );
+$suggest_req = new WP_REST_Request( 'POST', '/' . ELINK_REST::NS . '/suggest' );
 $suggest_req->set_param( 'post_id', $post_id );
 $resp = rest_do_request( $suggest_req );
 a_check( 200 === $resp->get_status(), 'REST suggest returns 200' );
@@ -88,24 +88,24 @@ $suggest_body = $resp->get_data();
 a_check( isset( $suggest_body['candidates'] ), 'REST suggest returns candidates key' );
 echo 'suggest: ' . count( $suggest_body['candidates'] ) . " candidates, status " . $resp->get_status() . "\n";
 
-$run_req = new WP_REST_Request( 'POST', '/' . ELE_REST::NS . '/run' );
+$run_req = new WP_REST_Request( 'POST', '/' . ELINK_REST::NS . '/run' );
 $run_req->set_param( 'post_id', $post_id );
 $resp = rest_do_request( $run_req );
 a_check( 200 === $resp->get_status(), 'REST run returns 200' );
 echo 'run inserted: ' . count( $resp->get_data()['inserted'] ) . "\n";
 
-$undo_req = new WP_REST_Request( 'POST', '/' . ELE_REST::NS . '/undo' );
+$undo_req = new WP_REST_Request( 'POST', '/' . ELINK_REST::NS . '/undo' );
 $undo_req->set_param( 'post_id', $post_id );
 $resp = rest_do_request( $undo_req );
 a_check( 200 === $resp->get_status() && ! empty( $resp->get_data()['ok'] ), 'REST undo returns ok' );
 
-$rebuild_req = new WP_REST_Request( 'POST', '/' . ELE_REST::NS . '/rebuild' );
+$rebuild_req = new WP_REST_Request( 'POST', '/' . ELINK_REST::NS . '/rebuild' );
 $resp = rest_do_request( $rebuild_req );
 a_check( 200 === $resp->get_status(), 'REST rebuild returns 200' );
 echo 'rebuild indexed: ' . $resp->get_data()['indexed'] . "\n";
 
 // --- Settings sanitization ------------------------------------------------------
-$admin = new ELE_Admin();
+$admin = new ELINK_Admin();
 $dirty = array(
 	'post_types' => array( 'post', 'page', '../../evil' ),
 	'max_links' => 99,
@@ -125,7 +125,7 @@ a_check( in_array( 'script', $clean['skip_blocks'], true ), 'sanitize: skip tags
 a_check( 1.0 === $clean['embed']['blend'], 'sanitize: blend capped at 1' );
 
 // --- Report detail ---------------------------------------------------------------
-$report = new ELE_Report();
+$report = new ELINK_Report();
 $detail = $report->detail();
 a_check( is_array( $detail ) && count( $detail ) > 0, 'report detail has rows' );
 

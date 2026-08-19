@@ -1,40 +1,40 @@
 /* Entity Link Engine — WordPress-native admin UI. */
 
-.ele-app {
-	--ele-ink: #151918;
-	--ele-muted: #5f6b66;
-	--ele-border: #dfe6e2;
-	--ele-soft: #f6f9f7;
-	--ele-accent: #12a66b;
-	--ele-accent-dark: #08784b;
-	--ele-accent-soft: #e5f7ef;
-	--ele-warn: #9a6700;
-	--ele-warn-soft: #fff6d9;
+.elink-app {
+	--elink-ink: #151918;
+	--elink-muted: #5f6b66;
+	--elink-border: #dfe6e2;
+	--elink-soft: #f6f9f7;
+	--elink-accent: #12a66b;
+	--elink-accent-dark: #08784b;
+	--elink-accent-soft: #e5f7ef;
+	--elink-warn: #9a6700;
+	--elink-warn-soft: #fff6d9;
 	max-width: 1180px;
-	color: var(--ele-ink);
+	color: var(--elink-ink);
 }
 
-.ele-app *,
-#ele-meta * {
+.elink-app *,
+#elink-meta * {
 	box-sizing: border-box;
 }
 
-.ele-app a,
-#ele-meta a {
-	color: var(--ele-accent-dark, #08784b);
+.elink-app a,
+#elink-meta a {
+	color: var(--elink-accent-dark, #08784b);
 }
 
-.ele-app a:focus,
-.ele-app button:focus,
-.ele-app input:focus,
-.ele-app select:focus,
-#ele-meta a:focus,
-#ele-meta button:focus {
-	box-shadow: 0 0 0 2px #fff, 0 0 0 4px var(--ele-accent, #12a66b);
+.elink-app a:focus,
+.elink-app button:focus,
+.elink-app input:focus,
+.elink-app select:focus,
+#elink-meta a:focus,
+#elink-meta button:focus {
+	box-shadow: 0 0 0 2px #fff, 0 0 0 4px var(--elink-accent, #12a66b);
 	outline: 2px solid transparent;
 }
 
-.ele-page-header {
+.elink-page-header {
 	display: flex;
 	align-items: flex-start;
 	justify-content: space-between;
@@ -42,30 +42,30 @@
 	padding: 28px 0 22px;
 }
 
-.ele-page-header h1 {
+.elink-page-header h1 {
 	margin: 3px 0 8px;
-	color: var(--ele-ink);
+	color: var(--elink-ink);
 	font-size: 30px;
 	font-weight: 600;
 	letter-spacing: -0.5px;
 	line-height: 1.18;
 }
 
-.ele-page-header .button,
-.ele-save-bar .button,
-.ele-panel .button {
+.elink-page-header .button,
+.elink-save-bar .button,
+.elink-panel .button {
 	border-color: #c7d2cc;
 	border-radius: 999px;
 }
 
-.ele-page-header .button {
+.elink-page-header .button {
 	margin-top: 9px;
 }
 
-.ele-eyebrow,
-.ele-kicker {
+.elink-eyebrow,
+.elink-kicker {
 	margin: 0;
-	color: var(--ele-accent-dark);
+	color: var(--elink-accent-dark);
 	font-size: 11px;
 	font-weight: 600;
 	letter-spacing: 0.08em;
@@ -73,28 +73,28 @@
 	text-transform: uppercase;
 }
 
-.ele-lead {
+.elink-lead {
 	max-width: 720px;
 	margin: 0;
-	color: var(--ele-muted);
+	color: var(--elink-muted);
 	font-size: 15px;
 	line-height: 1.6;
 }
 
-.ele-panel,
-.ele-card {
+.elink-panel,
+.elink-card {
 	background: #fff;
-	border: 1px solid var(--ele-border);
+	border: 1px solid var(--elink-border);
 	border-radius: 16px;
 	box-shadow: 0 2px 5px rgba(20, 42, 31, 0.025);
 }
 
-.ele-panel {
+.elink-panel {
 	padding: 24px;
 	margin: 0 0 20px;
 }
 
-.ele-panel h2 {
+.elink-panel h2 {
 	margin: 4px 0 12px;
 	font-size: 20px;
 	font-weight: 600;
@@ -102,17 +102,17 @@
 	line-height: 1.3;
 }
 
-.ele-panel h3 {
+.elink-panel h3 {
 	margin: 0 0 6px;
 	font-size: 15px;
 	font-weight: 600;
 }
 
-.ele-panel p {
+.elink-panel p {
 	line-height: 1.55;
 }
 
-.ele-section-heading {
+.elink-section-heading {
 	display: flex;
 	align-items: flex-start;
 	justify-content: space-between;
@@ -120,11 +120,11 @@
 	margin-bottom: 18px;
 }
 
-.ele-section-heading h2 {
+.elink-section-heading h2 {
 	margin-bottom: 0;
 }
 
-.ele-onboarding {
+.elink-onboarding {
 	position: relative;
 	overflow: hidden;
 	background:
@@ -132,7 +132,7 @@
 		#fff;
 }
 
-.ele-steps {
+.elink-steps {
 	display: grid;
 	grid-template-columns: repeat(4, minmax(0, 1fr));
 	gap: 12px;
@@ -141,86 +141,86 @@
 	list-style: none;
 }
 
-.ele-steps li {
+.elink-steps li {
 	display: flex;
 	gap: 12px;
 	min-height: 142px;
 	margin: 0;
 	padding: 16px;
-	background: var(--ele-soft);
+	background: var(--elink-soft);
 	border: 1px solid transparent;
 	border-radius: 12px;
 }
 
-.ele-steps li.is-current {
+.elink-steps li.is-current {
 	background: #fff;
 	border-color: rgba(18, 166, 107, 0.38);
 }
 
-.ele-steps li.is-complete .ele-step-number {
-	background: var(--ele-accent);
+.elink-steps li.is-complete .elink-step-number {
+	background: var(--elink-accent);
 	color: #fff;
 }
 
-.ele-step-number {
+.elink-step-number {
 	display: inline-flex;
 	align-items: center;
 	justify-content: center;
 	flex: 0 0 28px;
 	height: 28px;
 	background: #fff;
-	border: 1px solid var(--ele-border);
+	border: 1px solid var(--elink-border);
 	border-radius: 999px;
 	font-size: 12px;
 	font-weight: 600;
 }
 
-.ele-steps p {
+.elink-steps p {
 	min-height: 55px;
 	margin: 0 0 8px;
-	color: var(--ele-muted);
+	color: var(--elink-muted);
 	font-size: 13px;
 }
 
-.ele-steps a {
+.elink-steps a {
 	font-size: 13px;
 	font-weight: 600;
 	text-decoration: none;
 }
 
-.ele-cards {
+.elink-cards {
 	display: grid;
 	grid-template-columns: repeat(3, minmax(0, 1fr));
 	gap: 16px;
 	margin: 0 0 20px;
 }
 
-.ele-card {
+.elink-card {
 	padding: 20px 22px;
 }
 
-.ele-stat {
+.elink-stat {
 	display: flex;
 	flex-direction: column;
 	min-height: 102px;
 	justify-content: center;
 }
 
-.ele-card-num {
-	color: var(--ele-ink);
+.elink-card-num {
+	color: var(--elink-ink);
 	font-size: 31px;
 	font-weight: 600;
 	letter-spacing: -0.6px;
 	line-height: 1.15;
 }
 
-.ele-card-label {
+.elink-card-label {
 	margin-top: 5px;
-	color: var(--ele-muted);
+	color: var(--elink-muted);
 	font-size: 13px;
 }
 
-.ele-status-pill {
+.elink-status-pill {
 	display: inline-flex;
 	align-items: center;
 	min-height: 27px;
@@ -232,82 +232,82 @@
 	white-space: nowrap;
 }
 
-.ele-status-pill.is-ready {
-	background: var(--ele-accent-soft);
-	color: var(--ele-accent-dark);
+.elink-status-pill.is-ready {
+	background: var(--elink-accent-soft);
+	color: var(--elink-accent-dark);
 }
 
-.ele-status-pill.is-pending {
-	background: var(--ele-warn-soft);
-	color: var(--ele-warn);
+.elink-status-pill.is-pending {
+	background: var(--elink-warn-soft);
+	color: var(--elink-warn);
 }
 
-.ele-status-pill.is-working {
+.elink-status-pill.is-working {
 	background: #eaf2ff;
 	color: #245ca6;
 }
 
-.ele-report-table {
+.elink-report-table {
 	border: 0;
 	box-shadow: none;
 }
 
-.ele-report-table th {
-	color: var(--ele-muted);
+.elink-report-table th {
+	color: var(--elink-muted);
 	font-size: 12px;
 	font-weight: 600;
 }
 
-.ele-report-table td,
-.ele-report-table th {
+.elink-report-table td,
+.elink-report-table th {
 	padding: 12px 10px;
 	vertical-align: middle;
 }
 
-.ele-empty {
+.elink-empty {
 	padding: 28px !important;
-	color: var(--ele-muted);
+	color: var(--elink-muted);
 	text-align: center;
 }
 
-.ele-settings-grid,
-.ele-two-column {
+.elink-settings-grid,
+.elink-two-column {
 	display: grid;
 	grid-template-columns: repeat(2, minmax(0, 1fr));
 	gap: 18px;
 	align-items: start;
 }
 
-.ele-settings-grid .ele-panel,
-.ele-two-column .ele-panel {
+.elink-settings-grid .elink-panel,
+.elink-two-column .elink-panel {
 	margin-bottom: 0;
 }
 
-.ele-field {
+.elink-field {
 	margin: 18px 0 0;
 }
 
-.ele-field:first-of-type {
+.elink-field:first-of-type {
 	margin-top: 10px;
 }
 
-.ele-field-row {
+.elink-field-row {
 	display: grid;
 	grid-template-columns: repeat(2, minmax(0, 1fr));
 	gap: 14px;
 }
 
-.ele-field-label {
+.elink-field-label {
 	display: block;
 	margin-bottom: 7px;
 	font-weight: 600;
 }
 
-.ele-app input[type="text"],
-.ele-app input[type="url"],
-.ele-app input[type="password"],
-.ele-app input[type="number"],
-.ele-app select {
+.elink-app input[type="text"],
+.elink-app input[type="url"],
+.elink-app input[type="password"],
+.elink-app input[type="number"],
+.elink-app select {
 	width: 100%;
 	max-width: none;
 	min-height: 38px;
@@ -315,96 +315,96 @@
 	border-radius: 8px;
 }
 
-.ele-app .description {
+.elink-app .description {
 	margin-top: 6px;
-	color: var(--ele-muted);
+	color: var(--elink-muted);
 }
 
-.ele-check-grid {
+.elink-check-grid {
 	display: grid;
 	grid-template-columns: repeat(2, minmax(0, 1fr));
 	gap: 8px 12px;
 }
 
-.ele-check-grid label {
+.elink-check-grid label {
 	padding: 7px 9px;
-	background: var(--ele-soft);
+	background: var(--elink-soft);
 	border-radius: 8px;
 }
 
-.ele-toggle {
+.elink-toggle {
 	display: flex;
 	align-items: flex-start;
 	gap: 10px;
 }
 
-.ele-toggle input {
+.elink-toggle input {
 	margin-top: 3px;
 }
 
-.ele-toggle span,
-.ele-toggle small {
+.elink-toggle span,
+.elink-toggle small {
 	display: block;
 }
 
-.ele-toggle small {
+.elink-toggle small {
 	margin-top: 3px;
-	color: var(--ele-muted);
+	color: var(--elink-muted);
 	line-height: 1.45;
 }
 
-.ele-privacy-note {
+.elink-privacy-note {
 	display: flex;
 	align-items: flex-start;
 	gap: 10px;
 	margin: 14px 0;
 	padding: 13px 14px;
-	background: var(--ele-soft);
+	background: var(--elink-soft);
 	border-radius: 10px;
-	color: var(--ele-muted);
+	color: var(--elink-muted);
 }
 
-.ele-privacy-note .dashicons {
-	color: var(--ele-accent-dark);
+.elink-privacy-note .dashicons {
+	color: var(--elink-accent-dark);
 }
 
-.ele-privacy-note p {
+.elink-privacy-note p {
 	margin: 0;
 }
 
-.ele-save-bar {
+.elink-save-bar {
 	display: flex;
 	align-items: center;
 	gap: 16px;
 	margin-top: 18px;
 	padding: 15px 18px;
 	background: #fff;
-	border: 1px solid var(--ele-border);
+	border: 1px solid var(--elink-border);
 	border-radius: 14px;
 }
 
-.ele-entity-form .form-table,
-.ele-entity-form .form-table tbody,
-.ele-entity-form .form-table tr,
-.ele-entity-form .form-table th,
-.ele-entity-form .form-table td {
+.elink-entity-form .form-table,
+.elink-entity-form .form-table tbody,
+.elink-entity-form .form-table tr,
+.elink-entity-form .form-table th,
+.elink-entity-form .form-table td {
 	display: block;
 	width: 100%;
 }
 
-.ele-entity-form .form-table th {
+.elink-entity-form .form-table th {
 	padding: 13px 0 5px;
 }
 
-.ele-entity-form .form-table td {
+.elink-entity-form .form-table td {
 	padding: 0;
 }
 
-.ele-vocabulary-list {
+.elink-vocabulary-list {
 	overflow-x: auto;
 }
 
-.ele-progress {
+.elink-progress {
 	height: 9px;
 	margin-top: 16px;
 	overflow: hidden;
@@ -412,27 +412,27 @@
 	border-radius: 999px;
 }
 
-.ele-progress span {
+.elink-progress span {
 	display: block;
 	height: 100%;
-	background: var(--ele-accent);
+	background: var(--elink-accent);
 	border-radius: inherit;
 }
 
-.ele-progress-label {
+.elink-progress-label {
 	margin: 7px 0 0;
-	color: var(--ele-muted);
+	color: var(--elink-muted);
 	font-size: 12px;
 }
 
-.ele-docs-layout {
+.elink-docs-layout {
 	display: grid;
 	grid-template-columns: 210px minmax(0, 1fr);
 	gap: 22px;
 	align-items: start;
 }
 
-.ele-docs-nav {
+.elink-docs-nav {
 	position: sticky;
 	top: 48px;
 	display: flex;
@@ -440,53 +440,53 @@
 	gap: 3px;
 	padding: 16px;
 	background: #fff;
-	border: 1px solid var(--ele-border);
+	border: 1px solid var(--elink-border);
 	border-radius: 14px;
 }
 
-.ele-docs-nav strong {
+.elink-docs-nav strong {
 	margin: 0 8px 8px;
 	font-size: 12px;
 }
 
-.ele-docs-nav a {
+.elink-docs-nav a {
 	padding: 7px 8px;
 	border-radius: 7px;
-	color: var(--ele-muted);
+	color: var(--elink-muted);
 	text-decoration: none;
 }
 
-.ele-docs-nav a:hover {
-	background: var(--ele-soft);
-	color: var(--ele-accent-dark);
+.elink-docs-nav a:hover {
+	background: var(--elink-soft);
+	color: var(--elink-accent-dark);
 }
 
-.ele-docs-content .ele-panel {
+.elink-docs-content .elink-panel {
 	scroll-margin-top: 48px;
 }
 
-.ele-footer {
+.elink-footer {
 	padding: 8px 2px 24px;
-	color: var(--ele-muted);
+	color: var(--elink-muted);
 	font-size: 12px;
 }
 
-.ele-footer a {
+.elink-footer a {
 	color: inherit;
 	text-decoration: none;
 }
 
-.ele-footer a:hover {
-	color: var(--ele-accent-dark);
+.elink-footer a:hover {
+	color: var(--elink-accent-dark);
 }
 
-#ele-meta {
-	--ele-accent: #12a66b;
-	--ele-accent-dark: #08784b;
-	--ele-muted: #5f6b66;
+#elink-meta {
+	--elink-accent: #12a66b;
+	--elink-accent-dark: #08784b;
+	--elink-muted: #5f6b66;
 }
 
-#ele-meta .ele-meta-intro {
+#elink-meta .elink-meta-intro {
 	display: flex;
 	align-items: flex-start;
 	gap: 8px;
@@ -495,29 +495,29 @@
 	border-radius: 9px;
 }
 
-#ele-meta .ele-meta-intro .dashicons {
-	color: var(--ele-accent-dark);
+#elink-meta .elink-meta-intro .dashicons {
+	color: var(--elink-accent-dark);
 }
 
-#ele-meta .ele-meta-intro p,
-#ele-meta .ele-status {
+#elink-meta .elink-meta-intro p,
+#elink-meta .elink-status {
 	margin: 0;
-	color: var(--ele-muted);
+	color: var(--elink-muted);
 	font-size: 12px;
 	line-height: 1.45;
 }
 
-#ele-meta .ele-status {
+#elink-meta .elink-status {
 	padding: 10px 2px;
 }
 
-#ele-meta .ele-candidates {
+#elink-meta .elink-candidates {
 	margin: 4px 0 10px;
 	padding: 0;
 	list-style: none;
 }
 
-#ele-meta .ele-candidates li {
+#elink-meta .elink-candidates li {
 	margin: 0 0 7px;
 	padding: 9px;
 	background: #fff;
@@ -525,70 +525,70 @@
 	border-radius: 8px;
 }
 
-#ele-meta .ele-score {
+#elink-meta .elink-score {
 	display: inline-block;
 	padding: 1px 7px;
 	background: #e5f7ef;
 	border-radius: 999px;
-	color: var(--ele-accent-dark);
+	color: var(--elink-accent-dark);
 	font-size: 10px;
 	font-weight: 600;
 }
 
-#ele-meta .ele-meta-actions {
+#elink-meta .elink-meta-actions {
 	display: flex;
 	flex-wrap: wrap;
 	gap: 6px;
 }
 
-#ele-meta .button-primary {
-	background: var(--ele-accent-dark);
-	border-color: var(--ele-accent-dark);
+#elink-meta .button-primary {
+	background: var(--elink-accent-dark);
+	border-color: var(--elink-accent-dark);
 }
 
-#ele-meta .ele-meta-help {
+#elink-meta .elink-meta-help {
 	margin: 11px 0 0;
 	font-size: 11px;
 }
 
 @media (max-width: 1100px) {
-	.ele-steps {
+	.elink-steps {
 		grid-template-columns: repeat(2, minmax(0, 1fr));
 	}
 }
 
 @media (max-width: 782px) {
-	.ele-page-header,
-	.ele-section-heading,
-	.ele-save-bar {
+	.elink-page-header,
+	.elink-section-heading,
+	.elink-save-bar {
 		align-items: stretch;
 		flex-direction: column;
 	}
 
-	.ele-page-header .button {
+	.elink-page-header .button {
 		align-self: flex-start;
 	}
 
-	.ele-cards,
-	.ele-settings-grid,
-	.ele-two-column,
-	.ele-field-row,
-	.ele-docs-layout {
+	.elink-cards,
+	.elink-settings-grid,
+	.elink-two-column,
+	.elink-field-row,
+	.elink-docs-layout {
 		grid-template-columns: 1fr;
 	}
 
-	.ele-docs-nav {
+	.elink-docs-nav {
 		position: static;
 	}
 }
 
 @media (max-width: 560px) {
-	.ele-steps,
-	.ele-check-grid {
+	.elink-steps,
+	.elink-check-grid {
 		grid-template-columns: 1fr;
 	}
 
-	.ele-panel {
+	.elink-panel {
 		padding: 18px;
 	}
 }

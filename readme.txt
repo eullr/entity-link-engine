@@ -37,8 +37,8 @@ By default this plugin is fully local: no data leaves your site. If you enable t
 
 = Per-post control =
 
-* `_ele_auto_links` post meta = `0` disables the engine for a single post.
-* `_ele_max_links` post meta overrides the maximum number of links for a single post.
+* `_elink_auto_links` post meta = `0` disables the engine for a single post.
+* `_elink_max_links` post meta overrides the maximum number of links for a single post.
 
 == Installation ==
 

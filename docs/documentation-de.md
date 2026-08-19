@@ -66,8 +66,8 @@ Kandidaten werden aus sechs Signalgruppen bewertet:
 |---|---|
 | Gemeinsame Tags | +2,0 je Treffer (max. 4) |
 | Gemeinsame Kategorien | +1,5 je Treffer (max. 3) |
-| Gemeinsame Ziele (`_ele_objectives`) | +3,0 je Treffer (max. 3) |
-| Gleiches Format (`_ele_use_tag`) | +0,5 |
+| Gemeinsame Ziele (`_elink_objectives`) | +3,0 je Treffer (max. 3) |
+| Gleiches Format (`_elink_use_tag`) | +0,5 |
 | Titel-Term-Überschneidung | +1,25 je Treffer (max. 4) |
 | Stütz-Term-Überschneidung | +0,25 je Treffer (max. 4) |
 | Fan-out-Abdeckung (verschiedene Query-Typen) | +0,75 je Typ (max. 4) |
@@ -88,7 +88,7 @@ Links werden nur eingefügt, wenn alle Regeln gelten:
 - höchstens **ein Auto-Link pro Absatz** (auch über wiederholte Läufe);
 - bestehende redaktionelle Links werden nie verändert oder entfernt.
 
-Eingefügte Links tragen `class="ele-auto-link"` und `data-ele="<beitrags-id>"`
+Eingefügte Links tragen `class="elink-auto-link"` und `data-elink="<beitrags-id>"`
 für Reporting und sichere Wiederholungsläufe.
 
 ---
@@ -127,10 +127,10 @@ Voraussetzungen: WordPress 6.0+, PHP 7.4+.
 | Einstellung | Standard | Beschreibung |
 |---|---|---|
 | Beitragstypen | `post` | Inhaltstypen, die gescannt und verlinkt werden. |
-| Max. Links pro Beitrag | 3 | Obergrenze je Lauf. Pro-Beitrag-Override: `_ele_max_links`. |
+| Max. Links pro Beitrag | 3 | Obergrenze je Lauf. Pro-Beitrag-Override: `_elink_max_links`. |
 | Min. Score | 2,5 | Kandidaten unter diesem Score werden nicht verlinkt. |
 | Automatischer Lauf beim Veröffentlichen | an | Motor beim Veröffentlichen eines Beitrags ausführen. |
-| CSS-Klasse hinzufügen | an | Fügt `ele-auto-link` hinzu (Klassenname konfigurierbar). |
+| CSS-Klasse hinzufügen | an | Fügt `elink-auto-link` hinzu (Klassenname konfigurierbar). |
 | Blöcke überspringen | h1–h6, pre, code, table, blockquote, figure, img | Blocktypen, die nie Auto-Links erhalten. |
 | Semantische Ebene | aus | Optionale OpenAI-kompatible Embeddings (siehe §8). |
 
@@ -208,11 +208,11 @@ und wird hier sowie im readme offengelegt.
 
 | Meta-Schlüssel | Wirkung |
 |---|---|
-| `_ele_auto_links` | Auf `0` setzen, um die Autoverlinkung für diesen Beitrag zu deaktivieren. |
-| `_ele_max_links` | Überschreibt das Maximum je Lauf für diesen Beitrag. |
-| `_ele_objectives` | Kommagetrennte Liste; gemeinsame Ziele geben +3,0 je Treffer. |
-| `_ele_use_tag` | Format-Label; gemeinsamer Wert gibt +0,5. |
-| `_ele_lang` | Sprachmarker; wird auf Index-Zeilen für mehrsprachige Sites gespeichert. |
+| `_elink_auto_links` | Auf `0` setzen, um die Autoverlinkung für diesen Beitrag zu deaktivieren. |
+| `_elink_max_links` | Überschreibt das Maximum je Lauf für diesen Beitrag. |
+| `_elink_objectives` | Kommagetrennte Liste; gemeinsame Ziele geben +3,0 je Treffer. |
+| `_elink_use_tag` | Format-Label; gemeinsamer Wert gibt +0,5. |
+| `_elink_lang` | Sprachmarker; wird auf Index-Zeilen für mehrsprachige Sites gespeichert. |
 
 ---
 
@@ -234,27 +234,27 @@ Fähigkeiten `edit_post` bzw. `manage_options`.
 
 ## 11. Hooks und Filter
 
-- **`ele_manual_entities`** — Filter, um Entitäten aus Code zu ergänzen:
+- **`elink_manual_entities`** — Filter, um Entitäten aus Code zu ergänzen:
   `array( 'entity_label' => string, 'aliases' => array, 'target_post_id' => int, 'priority' => int )`.
-- **`ele_bulk_tick`** — Cron-Event, das den Stapellauf antreibt.
+- **`elink_bulk_tick`** — Cron-Event, das den Stapellauf antreibt.
 
 ---
 
 ## 12. Datenmodell
 
-**Tabellen** (Präfix `wp_ele_`):
+**Tabellen** (Präfix `wp_elink_`):
 
-- `ele_entity_index` — Entitäts-Schlüssel, Label, Beitrags-ID, Quelle, Gewicht, Sprache.
-- `ele_links` — Quell-ID, Ziel-ID, Anker, Score, Modus, Status, Zeitstempel.
+- `elink_entity_index` — Entitäts-Schlüssel, Label, Beitrags-ID, Quelle, Gewicht, Sprache.
+- `elink_links` — Quell-ID, Ziel-ID, Anker, Score, Modus, Status, Zeitstempel.
 
-**Optionen:** `ele_settings`, `ele_entities_manual`, `ele_index_built`,
-`ele_bulk_*`.
+**Optionen:** `elink_settings`, `elink_entities_manual`, `elink_index_built`,
+`elink_bulk_*`.
 
-**Post-Meta:** `_ele_snapshot`, `_ele_inserted_links`, `_ele_last_run`,
-`_ele_embedding`, `_ele_auto_links`, `_ele_max_links`, `_ele_objectives`,
-`_ele_use_tag`, `_ele_lang`.
+**Post-Meta:** `_elink_snapshot`, `_elink_inserted_links`, `_elink_last_run`,
+`_elink_embedding`, `_elink_auto_links`, `_elink_max_links`, `_elink_objectives`,
+`_elink_use_tag`, `_elink_lang`.
 
-Die Deinstallation entfernt alle Optionen, Tabellen und `_ele_*`-Post-Meta.
+Die Deinstallation entfernt alle Optionen, Tabellen und `_elink_*`-Post-Meta.
 
 ---
 

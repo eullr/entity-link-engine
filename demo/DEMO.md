@@ -17,7 +17,7 @@ wp import demo-content.xml --authors=create --allow-root
 wp eval-file demo-entities.php --allow-root
 
 # 4) Engine ueber alle Posts laufen lassen (Beispiel: 8 Posts)
-wp eval '\$e = new ELE_Engine(); foreach (range(1,8) as \$i) { \$r = \$e->run(\$i); echo \$i . ": " . count(\$r["inserted"]) . " links\n"; }' --allow-root
+wp eval '\$e = new ELINK_Engine(); foreach (range(1,8) as \$i) { \$r = \$e->run(\$i); echo \$i . ": " . count(\$r["inserted"]) . " links\n"; }' --allow-root
 ```
 
 ## Was enthalten ist
@@ -25,7 +25,7 @@ wp eval '\$e = new ELE_Engine(); foreach (range(1,8) as \$i) { \$r = \$e->run(\$
 - **Kategorien:** Planung, Produkte, Kältemittel, Effizienz, Wartung, Sicherheit, Branchen
 - **Tags:** kuehlung, rechenzentrum, logistik, produktion, foerderung, saison, smart, lebensmittel, pharma, notfall
 - **Manuelles Entity-Vokabular (28 Einträge):** Industrie-Klimageräte, Kaltwassersatz, Schaltschrankklimatisierung, Serverraum-Klimatisierung, Free Cooling, F-Gas-Verordnung, Kältemittel R290, Adiabatische Kühlung, Kältelastberechnung, Dachklimageräte, Mobile Klimageräte, Wartungsvertrag, BAFA-Förderung, EN 378, ATEX-Klimageräte, Wärmerückgewinnung, Kälteleistung, Notkühlung, Container-Klimatisierung, ErP-Richtlinie, CO2-Kältemittel R744, Hybridkühler, Abluft-Wärmepumpe, Reinraumklimatisierung, Kältemittelleckage, Glykol, Pufferspeicher, Prozessklimatisierung
-- **Post-Meta-Demos:** einige Artikel mit `_ele_max_links`-Override
+- **Post-Meta-Demos:** einige Artikel mit `_elink_max_links`-Override
 
 ## Erwartung nach dem Lauf
 

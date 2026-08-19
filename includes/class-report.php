@@ -13,7 +13,7 @@ defined( 'ABSPATH' ) || exit;
 /**
  * Report.
  */
-class ELE_Report {
+class ELINK_Report {
 
 	/**
 	 * Summary counts.
@@ -22,7 +22,7 @@ class ELE_Report {
 	 */
 	public function summary() {
 		global $wpdb;
-		$settings = ELE_Install::get_settings();
+		$settings = ELINK_Install::get_settings();
 
 		$posts = get_posts(
 			array(
@@ -35,12 +35,12 @@ class ELE_Report {
 		$total_posts = count( $posts );
 
 		// phpcs:ignore WordPress.DB.DirectDatabaseQuery.DirectQuery, WordPress.DB.DirectDatabaseQuery.NoCaching
-		$active_links = (int) $wpdb->get_var( "SELECT COUNT(*) FROM {$wpdb->prefix}ele_links WHERE status = 'active'" );
+		$active_links = (int) $wpdb->get_var( "SELECT COUNT(*) FROM {$wpdb->prefix}elink_links WHERE status = 'active'" );
 
 		// Posts with zero incoming internal links (from any source post).
 		$incoming = array();
 		// phpcs:ignore WordPress.DB.DirectDatabaseQuery.DirectQuery, WordPress.DB.DirectDatabaseQuery.NoCaching
-		$rows     = $wpdb->get_results( "SELECT target_id, COUNT(*) AS c FROM {$wpdb->prefix}ele_links WHERE status = 'active' GROUP BY target_id" );
+		$rows     = $wpdb->get_results( "SELECT target_id, COUNT(*) AS c FROM {$wpdb->prefix}elink_links WHERE status = 'active' GROUP BY target_id" );
 		foreach ( $rows as $row ) {
 			$incoming[ (int) $row->target_id ] = (int) $row->c;
 		}
@@ -71,7 +71,7 @@ class ELE_Report {
 	 */
 	public function detail() {
 		global $wpdb;
-		$settings = ELE_Install::get_settings();
+		$settings = ELINK_Install::get_settings();
 
 		$posts = get_posts(
 			array(
@@ -87,7 +87,7 @@ class ELE_Report {
 		$outgoing = array();
 		$incoming = array();
 		// phpcs:ignore WordPress.DB.DirectDatabaseQuery.DirectQuery, WordPress.DB.DirectDatabaseQuery.NoCaching
-		$rows     = $wpdb->get_results( "SELECT source_id, target_id, COUNT(*) AS c FROM {$wpdb->prefix}ele_links WHERE status = 'active' GROUP BY source_id, target_id" );
+		$rows     = $wpdb->get_results( "SELECT source_id, target_id, COUNT(*) AS c FROM {$wpdb->prefix}elink_links WHERE status = 'active' GROUP BY source_id, target_id" );
 		foreach ( $rows as $row ) {
 			$outgoing[ (int) $row->source_id ][] = (int) $row->target_id;
 			$incoming[ (int) $row->target_id ][] = (int) $row->source_id;

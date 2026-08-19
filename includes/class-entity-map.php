@@ -16,7 +16,7 @@ defined( 'ABSPATH' ) || exit;
 /**
  * Entity map.
  */
-class ELE_Entity_Map {
+class ELINK_Entity_Map {
 
 	/**
 	 * Stopwords shared with the reference implementation (DE + EN).
@@ -48,7 +48,7 @@ class ELE_Entity_Map {
 	 */
 	private function table() {
 		global $wpdb;
-		return $wpdb->prefix . 'ele_entity_index';
+		return $wpdb->prefix . 'elink_entity_index';
 	}
 
 	/**
@@ -203,7 +203,7 @@ class ELE_Entity_Map {
 			// phpcs:ignore WordPress.DB.DirectDatabaseQuery.DirectQuery, WordPress.DB.DirectDatabaseQuery.NoCaching
 			$exists = $wpdb->get_var(
 				$wpdb->prepare(
-					"SELECT id FROM {$wpdb->prefix}ele_entity_index WHERE entity_key = %s AND post_id = %d AND source = %s LIMIT 1",
+					"SELECT id FROM {$wpdb->prefix}elink_entity_index WHERE entity_key = %s AND post_id = %d AND source = %s LIMIT 1",
 					$row['entity_key'],
 					$row['post_id'],
 					$row['source']
@@ -273,13 +273,13 @@ class ELE_Entity_Map {
 	}
 
 	/**
-	 * Language of a post: from post meta '_ele_lang' or ''.
+	 * Language of a post: from post meta '_elink_lang' or ''.
 	 *
 	 * @param WP_Post $post Post.
 	 * @return string
 	 */
 	public function post_lang( $post ) {
-		$lang = get_post_meta( $post->ID, '_ele_lang', true );
+		$lang = get_post_meta( $post->ID, '_elink_lang', true );
 		return is_string( $lang ) ? $lang : '';
 	}
 
@@ -290,7 +290,7 @@ class ELE_Entity_Map {
 	 * @return int Number of indexed posts.
 	 */
 	public function rebuild( $post_ids = null ) {
-		$settings = ELE_Install::get_settings();
+		$settings = ELINK_Install::get_settings();
 		if ( null === $post_ids ) {
 			$post_ids = get_posts(
 				array(
@@ -306,7 +306,7 @@ class ELE_Entity_Map {
 			$this->index_post( (int) $post_id );
 			$count++;
 		}
-		update_option( 'ele_index_built', current_time( 'mysql' ) );
+		update_option( 'elink_index_built', current_time( 'mysql' ) );
 		return $count;
 	}
 
@@ -320,7 +320,7 @@ class ELE_Entity_Map {
 	public function manual_rows() {
 		$rows = array();
 		$now  = current_time( 'mysql' );
-		foreach ( ele_manual_entities() as $entity ) {
+		foreach ( elink_manual_entities() as $entity ) {
 			if ( ! isset( $entity['entity_label'], $entity['target_post_id'] ) ) {
 				continue;
 			}
@@ -370,7 +370,7 @@ class ELE_Entity_Map {
 		$rows = $wpdb->get_results(
 			$wpdb->prepare(
 				"SELECT entity_key, entity_label, post_id, weight, source
-				FROM {$wpdb->prefix}ele_entity_index
+				FROM {$wpdb->prefix}elink_entity_index
 				WHERE post_id <> %d
 				ORDER BY LENGTH(entity_key) DESC, weight DESC
 				LIMIT %d",

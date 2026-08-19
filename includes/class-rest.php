@@ -10,7 +10,7 @@ defined( 'ABSPATH' ) || exit;
 /**
  * REST endpoints.
  */
-class ELE_REST {
+class ELINK_REST {
 
 	/**
 	 * Namespace.
@@ -120,7 +120,7 @@ class ELE_REST {
 	 */
 	public function suggest( $request ) {
 		$post_id = (int) $request->get_param( 'post_id' );
-		$engine  = new ELE_Engine();
+		$engine  = new ELINK_Engine();
 		$result  = $engine->run( $post_id, true );
 		if ( is_wp_error( $result ) ) {
 			return new WP_REST_Response( array( 'error' => $result->get_error_message() ), 400 );
@@ -136,7 +136,7 @@ class ELE_REST {
 	 */
 	public function run( $request ) {
 		$post_id = (int) $request->get_param( 'post_id' );
-		$engine  = new ELE_Engine();
+		$engine  = new ELINK_Engine();
 		$result  = $engine->run( $post_id, false );
 		if ( is_wp_error( $result ) ) {
 			return new WP_REST_Response( array( 'error' => $result->get_error_message() ), 400 );
@@ -152,7 +152,7 @@ class ELE_REST {
 	 */
 	public function undo( $request ) {
 		$post_id = (int) $request->get_param( 'post_id' );
-		$engine  = new ELE_Engine();
+		$engine  = new ELINK_Engine();
 		$ok      = $engine->undo( $post_id );
 		return new WP_REST_Response( array( 'ok' => $ok ), 200 );
 	}
@@ -164,7 +164,7 @@ class ELE_REST {
 	 * @return WP_REST_Response
 	 */
 	public function rebuild( $request ) {
-		$map   = new ELE_Entity_Map();
+		$map   = new ELINK_Entity_Map();
 		$count = $map->rebuild();
 		return new WP_REST_Response( array( 'indexed' => $count ), 200 );
 	}

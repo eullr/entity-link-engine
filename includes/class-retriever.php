@@ -18,12 +18,12 @@ defined( 'ABSPATH' ) || exit;
 /**
  * Retriever.
  */
-class ELE_Retriever {
+class ELINK_Retriever {
 
 	/**
 	 * Entity map instance.
 	 *
-	 * @var ELE_Entity_Map
+	 * @var ELINK_Entity_Map
 	 */
 	private $map;
 
@@ -31,7 +31,7 @@ class ELE_Retriever {
 	 * Constructor.
 	 */
 	public function __construct() {
-		$this->map = new ELE_Entity_Map();
+		$this->map = new ELINK_Entity_Map();
 	}
 
 	/**
@@ -45,7 +45,7 @@ class ELE_Retriever {
 	 *                      'reasons', 'fanout_types' ).
 	 */
 	public function retrieve( $post, $queries, $mentions ) {
-		$settings  = ELE_Install::get_settings();
+		$settings  = ELINK_Install::get_settings();
 		$min_score = isset( $settings['min_score'] ) ? (float) $settings['min_score'] : 2.5;
 
 		$raw = $this->query_index( $queries, $post->ID );
@@ -62,7 +62,7 @@ class ELE_Retriever {
 		$existing_hrefs = $this->existing_hrefs( $post->post_content );
 		$source_terms  = $this->map->tokens( $post->post_title . ' ' . $post->post_excerpt . ' ' . $this->map->strip_for_matching( $post->post_content ) );
 
-		$embedder = new ELE_Embedder();
+		$embedder = new ELINK_Embedder();
 		$embed_query = array();
 		if ( $embedder->is_enabled() ) {
 			foreach ( $queries as $query ) {
@@ -76,7 +76,7 @@ class ELE_Retriever {
 			if ( ! $candidate || $candidate->post_status !== 'publish' || (int) $candidate->ID === (int) $post->ID ) {
 				continue;
 			}
-			if ( ! ELE_Install::is_post_type_enabled( $candidate->post_type ) ) {
+			if ( ! ELINK_Install::is_post_type_enabled( $candidate->post_type ) ) {
 				continue;
 			}
 
@@ -159,7 +159,7 @@ class ELE_Retriever {
 			$conditions[] = 'entity_key LIKE %s';
 			$params[]     = '%' . $wpdb->esc_like( $term ) . '%';
 		}
-		$query = 'SELECT post_id, entity_key, weight FROM ' . $wpdb->prefix . 'ele_entity_index WHERE post_id <> %d AND (' . implode( ' OR ', $conditions ) . ')';
+		$query = 'SELECT post_id, entity_key, weight FROM ' . $wpdb->prefix . 'elink_entity_index WHERE post_id <> %d AND (' . implode( ' OR ', $conditions ) . ')';
 		// phpcs:ignore WordPress.DB.DirectDatabaseQuery.DirectQuery, WordPress.DB.DirectDatabaseQuery.NoCaching, WordPress.DB.PreparedSQL.NotPrepared, PluginCheck.Security.DirectDB.UnescapedDBParameter
 		$rows = $wpdb->get_results( $wpdb->prepare( $query, $params ) );
 
@@ -176,7 +176,7 @@ class ELE_Retriever {
 		}
 
 		// Manual entities participate in retrieval with their high weight.
-		$map = new ELE_Entity_Map();
+		$map = new ELINK_Entity_Map();
 		foreach ( $map->manual_rows() as $manual ) {
 			$manual_key = (string) $manual['entity_key'];
 			foreach ( array_keys( $terms ) as $term ) {
@@ -235,13 +235,13 @@ class ELE_Retriever {
 		}
 
 		// Optional objectives + format metadata (mirrors Astro objectives/useTag).
-		$shared_objectives = $this->shared_meta_list( $source->ID, $candidate->ID, '_ele_objectives' );
+		$shared_objectives = $this->shared_meta_list( $source->ID, $candidate->ID, '_elink_objectives' );
 		$score            += min( count( $shared_objectives ), 3 ) * 3.0;
 		if ( $shared_objectives ) {
 			$reasons[] = 'objectives:' . implode( ',', array_slice( $shared_objectives, 0, 3 ) );
 		}
-		$source_format = get_post_meta( $source->ID, '_ele_use_tag', true );
-		$cand_format   = get_post_meta( $candidate->ID, '_ele_use_tag', true );
+		$source_format = get_post_meta( $source->ID, '_elink_use_tag', true );
+		$cand_format   = get_post_meta( $candidate->ID, '_elink_use_tag', true );
 		if ( $source_format && $source_format === $cand_format ) {
 			$score    += 0.5;
 			$reasons[] = 'format:' . $source_format;

@@ -11,7 +11,7 @@ defined( 'ABSPATH' ) || exit;
 /**
  * Engine.
  */
-class ELE_Engine {
+class ELINK_Engine {
 
 	/**
 	 * Run the engine on one post.
@@ -23,10 +23,10 @@ class ELE_Engine {
 	public function run( $post_id, $dry_run = false ) {
 		$post = get_post( $post_id );
 		if ( ! $post ) {
-			return new WP_Error( 'ele_no_post', __( 'Post not found.', 'entity-link-engine' ) );
+			return new WP_Error( 'elink_no_post', __( 'Post not found.', 'entity-link-engine' ) );
 		}
 
-		$per_post_disabled = get_post_meta( $post->ID, '_ele_auto_links', true );
+		$per_post_disabled = get_post_meta( $post->ID, '_elink_auto_links', true );
 		if ( $per_post_disabled && ! $dry_run && 'publish' === $post->post_status ) {
 			return array(
 				'post_id'    => (int) $post->ID,
@@ -38,25 +38,25 @@ class ELE_Engine {
 			);
 		}
 
-		$settings  = ELE_Install::get_settings();
-		$max_links = (int) get_post_meta( $post->ID, '_ele_max_links', true );
+		$settings  = ELINK_Install::get_settings();
+		$max_links = (int) get_post_meta( $post->ID, '_elink_max_links', true );
 		if ( ! $max_links ) {
 			$max_links = (int) $settings['max_links'];
 		}
 		$settings['max_links'] = $max_links;
 
 		$content  = $post->post_content;
-		$map      = new ELE_Entity_Map();
+		$map      = new ELINK_Entity_Map();
 
 		// 1. Entity mapping: find entity mentions in the content.
 		$mentions = $map->find_mentions( $content, $post->ID );
 
 		// 2. Fan-out queries: one post -> many retrieval queries.
-		$fanout   = new ELE_Fanout_Query();
+		$fanout   = new ELINK_Fanout_Query();
 		$queries  = $fanout->generate( $post, $mentions );
 
 		// 3. Retrieve + score candidates.
-		$retriever = new ELE_Retriever();
+		$retriever = new ELINK_Retriever();
 		$candidates = $retriever->retrieve( $post, $queries, $mentions );
 
 		// Attach mention texts of each candidate as anchor candidates.
@@ -92,13 +92,13 @@ class ELE_Engine {
 				'content_changed' => false,
 			);
 			if ( ! $dry_run ) {
-				update_post_meta( $post->ID, '_ele_last_run', $result );
+				update_post_meta( $post->ID, '_elink_last_run', $result );
 			}
 			return $result;
 		}
 
 		// 4. Insert links.
-		$inserter = new ELE_Link_Insert();
+		$inserter = new ELINK_Link_Insert();
 		$insertion = $inserter->insert( $content, $candidates, $settings );
 
 		$result = array(
@@ -117,9 +117,9 @@ class ELE_Engine {
 		// Persist.
 		if ( $result['content_changed'] ) {
 			// Snapshot for undo (only keep the latest snapshot per run).
-			update_post_meta( $post->ID, '_ele_snapshot', $content );
+			update_post_meta( $post->ID, '_elink_snapshot', $content );
 			// Suppress the follow-up save_post run caused by our own update.
-			set_transient( 'ele_just_ran_' . $post->ID, 1, 30 );
+			set_transient( 'elink_just_ran_' . $post->ID, 1, 30 );
 			wp_update_post(
 				array(
 					'ID'           => $post->ID,
@@ -132,8 +132,8 @@ class ELE_Engine {
 		// reflects what is really in the post (incl. links from earlier runs).
 		$this->rebuild_log( $post->ID, $insertion['content'] );
 
-		update_post_meta( $post->ID, '_ele_inserted_links', $insertion['inserted'] );
-		update_post_meta( $post->ID, '_ele_last_run', $result );
+		update_post_meta( $post->ID, '_elink_inserted_links', $insertion['inserted'] );
+		update_post_meta( $post->ID, '_elink_last_run', $result );
 
 		return $result;
 	}
@@ -149,7 +149,7 @@ class ELE_Engine {
 		if ( ! $post ) {
 			return false;
 		}
-		$snapshot = get_post_meta( $post->ID, '_ele_snapshot', true );
+		$snapshot = get_post_meta( $post->ID, '_elink_snapshot', true );
 		if ( is_string( $snapshot ) && '' !== $snapshot ) {
 			wp_update_post(
 				array(
@@ -159,9 +159,9 @@ class ELE_Engine {
 			);
 		}
 		$this->clear_log( $post->ID );
-		delete_post_meta( $post->ID, '_ele_snapshot' );
-		delete_post_meta( $post->ID, '_ele_inserted_links' );
-		delete_post_meta( $post->ID, '_ele_last_run' );
+		delete_post_meta( $post->ID, '_elink_snapshot' );
+		delete_post_meta( $post->ID, '_elink_inserted_links' );
+		delete_post_meta( $post->ID, '_elink_last_run' );
 		return true;
 	}
 
@@ -179,7 +179,7 @@ class ELE_Engine {
 				'total'  => 0,
 			)
 		);
-		$settings = ELE_Install::get_settings();
+		$settings = ELINK_Install::get_settings();
 
 		$posts = get_posts(
 			array(
@@ -195,7 +195,7 @@ class ELE_Engine {
 
 		foreach ( $posts as $pid ) {
 			$result = $this->run( $pid );
-			update_option( 'ele_bulk_last', array(
+			update_option( 'elink_bulk_last', array(
 				'post_id' => (int) $pid,
 				'inserted' => is_array( $result ) && isset( $result['inserted'] ) ? count( $result['inserted'] ) : 0,
 				'at'      => current_time( 'mysql' ),
@@ -206,17 +206,17 @@ class ELE_Engine {
 		if ( ! empty( $posts ) && ( 0 === (int) $args['total'] || $next_offset < (int) $args['total'] ) ) {
 			wp_schedule_single_event(
 				time() + 5,
-				'ele_bulk_tick',
+				'elink_bulk_tick',
 				array(
 					'offset' => $next_offset,
 					'batch'  => (int) $args['batch'],
 					'total'  => (int) $args['total'],
 				)
 			);
-			update_option( 'ele_bulk_active', $next_offset );
+			update_option( 'elink_bulk_active', $next_offset );
 		} else {
-			delete_option( 'ele_bulk_active' );
-			delete_option( 'ele_bulk_last' );
+			delete_option( 'elink_bulk_active' );
+			delete_option( 'elink_bulk_last' );
 		}
 	}
 
@@ -224,7 +224,7 @@ class ELE_Engine {
 	 * Start a bulk run over all posts.
 	 */
 	public function start_bulk() {
-		$settings = ELE_Install::get_settings();
+		$settings = ELINK_Install::get_settings();
 		$total    = count(
 			get_posts(
 				array(
@@ -235,11 +235,11 @@ class ELE_Engine {
 				)
 			)
 		);
-		update_option( 'ele_bulk_total', $total );
-		update_option( 'ele_bulk_active', 0 );
+		update_option( 'elink_bulk_total', $total );
+		update_option( 'elink_bulk_active', 0 );
 		wp_schedule_single_event(
 			time() + 2,
-			'ele_bulk_tick',
+			'elink_bulk_tick',
 			array(
 				'offset' => 0,
 				'batch'  => 5,
@@ -260,7 +260,7 @@ class ELE_Engine {
 		global $wpdb;
 		// phpcs:ignore WordPress.DB.DirectDatabaseQuery.DirectQuery, WordPress.DB.DirectDatabaseQuery.NoCaching
 		$wpdb->insert(
-			$wpdb->prefix . 'ele_links',
+			$wpdb->prefix . 'elink_links',
 			array(
 				'source_id' => (int) $source_id,
 				'target_id' => isset( $link['target_id'] ) ? (int) $link['target_id'] : 0,
@@ -282,12 +282,12 @@ class ELE_Engine {
 	private function clear_log( $source_id ) {
 		global $wpdb;
 		// phpcs:ignore WordPress.DB.DirectDatabaseQuery.DirectQuery, WordPress.DB.DirectDatabaseQuery.NoCaching
-		$wpdb->delete( $wpdb->prefix . 'ele_links', array( 'source_id' => $source_id ), array( '%d' ) );
+		$wpdb->delete( $wpdb->prefix . 'elink_links', array( 'source_id' => $source_id ), array( '%d' ) );
 	}
 
 	/**
 	 * Rebuild the active log from the final content: every auto-inserted link
-	 * (marked with data-ele) is recorded, so the report matches reality even
+	 * (marked with data-elink) is recorded, so the report matches reality even
 	 * after re-runs that add no new links.
 	 *
 	 * @param int    $source_id Source post.
@@ -297,13 +297,13 @@ class ELE_Engine {
 		$this->clear_log( $source_id );
 		$links = array();
 
-		// Match both attribute orders: <a href data-ele> and <a data-ele href>.
-		if ( preg_match_all( '/<a\b[^>]*\bhref="([^"]+)"[^>]*\bdata-ele="(\d+)"[^>]*>(.*?)<\/a>/isu', $content, $m1 ) ) {
+		// Match both attribute orders: <a href data-elink> and <a data-elink href>.
+		if ( preg_match_all( '/<a\b[^>]*\bhref="([^"]+)"[^>]*\bdata-elink="(\d+)"[^>]*>(.*?)<\/a>/isu', $content, $m1 ) ) {
 			foreach ( $m1[0] as $i => $unused ) {
 				$links[] = array( 'url' => $m1[1][ $i ], 'target_id' => (int) $m1[2][ $i ], 'anchor' => trim( wp_strip_all_tags( $m1[3][ $i ] ) ) );
 			}
 		}
-		if ( preg_match_all( '/<a\b[^>]*\bdata-ele="(\d+)"[^>]*\bhref="([^"]+)"[^>]*>(.*?)<\/a>/isu', $content, $m2 ) ) {
+		if ( preg_match_all( '/<a\b[^>]*\bdata-elink="(\d+)"[^>]*\bhref="([^"]+)"[^>]*>(.*?)<\/a>/isu', $content, $m2 ) ) {
 			foreach ( $m2[0] as $i => $unused ) {
 				$links[] = array( 'target_id' => (int) $m2[1][ $i ], 'url' => $m2[2][ $i ], 'anchor' => trim( wp_strip_all_tags( $m2[3][ $i ] ) ) );
 			}

@@ -28,22 +28,22 @@
 
 defined( 'ABSPATH' ) || exit;
 
-define( 'ELE_VERSION', '1.0.0' );
-define( 'ELE_FILE', __FILE__ );
-define( 'ELE_DIR', plugin_dir_path( __FILE__ ) );
-define( 'ELE_URL', plugin_dir_url( __FILE__ ) );
-define( 'ELE_BASENAME', plugin_basename( __FILE__ ) );
+define( 'ELINK_VERSION', '1.0.0' );
+define( 'ELINK_FILE', __FILE__ );
+define( 'ELINK_DIR', plugin_dir_path( __FILE__ ) );
+define( 'ELINK_URL', plugin_dir_url( __FILE__ ) );
+define( 'ELINK_BASENAME', plugin_basename( __FILE__ ) );
 
-require_once ELE_DIR . 'includes/class-install.php';
-require_once ELE_DIR . 'includes/class-entity-map.php';
-require_once ELE_DIR . 'includes/class-fanout-query.php';
-require_once ELE_DIR . 'includes/class-retriever.php';
-require_once ELE_DIR . 'includes/class-link-insert.php';
-require_once ELE_DIR . 'includes/class-embedder.php';
-require_once ELE_DIR . 'includes/class-engine.php';
-require_once ELE_DIR . 'includes/class-report.php';
-require_once ELE_DIR . 'includes/class-rest.php';
-require_once ELE_DIR . 'includes/class-admin.php';
+require_once ELINK_DIR . 'includes/class-install.php';
+require_once ELINK_DIR . 'includes/class-entity-map.php';
+require_once ELINK_DIR . 'includes/class-fanout-query.php';
+require_once ELINK_DIR . 'includes/class-retriever.php';
+require_once ELINK_DIR . 'includes/class-link-insert.php';
+require_once ELINK_DIR . 'includes/class-embedder.php';
+require_once ELINK_DIR . 'includes/class-engine.php';
+require_once ELINK_DIR . 'includes/class-report.php';
+require_once ELINK_DIR . 'includes/class-rest.php';
+require_once ELINK_DIR . 'includes/class-admin.php';
 
 /**
  * Hook the engine into post lifecycle.
@@ -52,7 +52,7 @@ require_once ELE_DIR . 'includes/class-admin.php';
  * @param WP_Post $post   Post object.
  * @param bool   $update  Whether this is an update.
  */
-function ele_on_save_post( $post_id, $post, $update ) {
+function elink_on_save_post( $post_id, $post, $update ) {
 	if ( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE ) {
 		return;
 	}
@@ -62,8 +62,8 @@ function ele_on_save_post( $post_id, $post, $update ) {
 	// Re-entrancy guard: the engine itself calls wp_update_post(), which fires
 	// save_post again. The transient set right before that update suppresses
 	// the follow-up run (which would be a no-op anyway).
-	if ( get_transient( 'ele_just_ran_' . $post_id ) ) {
-		delete_transient( 'ele_just_ran_' . $post_id );
+	if ( get_transient( 'elink_just_ran_' . $post_id ) ) {
+		delete_transient( 'elink_just_ran_' . $post_id );
 		return;
 	}
 	if ( ! $post instanceof WP_Post || 'publish' !== $post->post_status ) {
@@ -73,33 +73,33 @@ function ele_on_save_post( $post_id, $post, $update ) {
 	if ( isset( $_POST['bulk_edit'] ) || isset( $_POST['action'] ) && 'inline-save' === $_POST['action'] ) { // phpcs:ignore WordPress.Security.NonceVerification
 		return;
 	}
-	$settings = ELE_Install::get_settings();
+	$settings = ELINK_Install::get_settings();
 	if ( empty( $settings['auto_on_publish'] ) ) {
 		return;
 	}
-	$engine = new ELE_Engine();
+	$engine = new ELINK_Engine();
 	$engine->run( $post_id );
 }
-add_action( 'save_post', 'ele_on_save_post', 20, 3 );
+add_action( 'save_post', 'elink_on_save_post', 20, 3 );
 
 // Register activation / deactivation.
-register_activation_hook( ELE_FILE, array( 'ELE_Install', 'activate' ) );
-register_deactivation_hook( ELE_FILE, array( 'ELE_Install', 'deactivate' ) );
+register_activation_hook( ELINK_FILE, array( 'ELINK_Install', 'activate' ) );
+register_deactivation_hook( ELINK_FILE, array( 'ELINK_Install', 'deactivate' ) );
 
 // Admin hooks (menus, meta box, REST, cron tick).
 if ( is_admin() ) {
-	new ELE_Admin();
-	new ELE_REST();
+	new ELINK_Admin();
+	new ELINK_REST();
 }
 
-add_action( 'ele_bulk_tick', 'ele_bulk_tick_callback' );
+add_action( 'elink_bulk_tick', 'elink_bulk_tick_callback' );
 /**
  * Cron callback for the bulk run.
  *
  * @param array $args Tick arguments.
  */
-function ele_bulk_tick_callback( $args ) {
-	$engine = new ELE_Engine();
+function elink_bulk_tick_callback( $args ) {
+	$engine = new ELINK_Engine();
 	$engine->bulk_tick( $args );
 }
 
@@ -110,9 +110,9 @@ function ele_bulk_tick_callback( $args ) {
  *
  * @return array
  */
-function ele_manual_entities() {
-	$stored = get_option( 'ele_entities_manual', array() );
+function elink_manual_entities() {
+	$stored = get_option( 'elink_entities_manual', array() );
 	$stored = is_array( $stored ) ? $stored : array();
-	$filtered = apply_filters( 'ele_manual_entities', $stored );
+	$filtered = apply_filters( 'elink_manual_entities', $stored );
 	return is_array( $filtered ) ? $filtered : $stored;
 }

@@ -19,7 +19,7 @@ defined( 'ABSPATH' ) || exit;
 /**
  * Link inserter.
  */
-class ELE_Link_Insert {
+class ELINK_Link_Insert {
 
 	/**
 	 * Insert links into content.
@@ -34,7 +34,7 @@ class ELE_Link_Insert {
 		$max_links  = isset( $settings['max_links'] ) ? (int) $settings['max_links'] : 3;
 		$skip       = isset( $settings['skip_blocks'] ) && is_array( $settings['skip_blocks'] ) ? $settings['skip_blocks'] : array();
 		$add_class  = ! empty( $settings['add_link_class'] );
-		$link_class = isset( $settings['link_class'] ) ? sanitize_html_class( $settings['link_class'] ) : 'ele-auto-link';
+		$link_class = isset( $settings['link_class'] ) ? sanitize_html_class( $settings['link_class'] ) : 'elink-auto-link';
 
 		$existing = $this->existing_hrefs( $content );
 		$inserted = array();
@@ -132,7 +132,7 @@ class ELE_Link_Insert {
 			}
 			// Blocks that already received an auto link in an earlier run are
 			// treated as used (one auto link per paragraph, across runs).
-			if ( false !== strpos( $block, 'data-ele=' ) ) {
+			if ( false !== strpos( $block, 'data-elink=' ) ) {
 				continue;
 			}
 			if ( $this->block_skipped( $block, $skip ) ) {
@@ -188,7 +188,7 @@ class ELE_Link_Insert {
 			$label = $match[1][0];
 
 			$class_attr = $add_class && '' !== $link_class ? ' class="' . esc_attr( $link_class ) . '"' : '';
-			$data_attr  = ' data-ele="' . esc_attr( isset( $candidate['post_id'] ) ? (int) $candidate['post_id'] : '' ) . '"';
+			$data_attr  = ' data-elink="' . esc_attr( isset( $candidate['post_id'] ) ? (int) $candidate['post_id'] : '' ) . '"';
 			$link       = '<a href="' . esc_url( $url ) . '"' . $class_attr . $data_attr . '>' . $label . '</a>';
 
 			$parts[ $pi ] = substr_replace( $part, $link, $match[1][1], strlen( $label ) );
@@ -237,7 +237,7 @@ class ELE_Link_Insert {
 	 * @return string
 	 */
 	private function normalize_anchor( $anchor ) {
-		$map = new ELE_Entity_Map();
+		$map = new ELINK_Entity_Map();
 		return $map->normalize( $anchor );
 	}
 

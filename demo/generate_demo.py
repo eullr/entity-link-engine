@@ -14,7 +14,7 @@ from datetime import datetime, timedelta
 OUT = os.path.dirname(os.path.abspath(__file__))
 
 # ---------------------------------------------------------------------------
-# Manuelles Entity-Vokabular (wird als ele_entities_manual importiert)
+# Manuelles Entity-Vokabular (wird als elink_entities_manual importiert)
 # (label, aliases, target_slug, priority)
 # ---------------------------------------------------------------------------
 ENTITIES = [
@@ -908,9 +908,9 @@ def render_item(post, post_id, is_page=False):
     for tag in post["tags"]:
         out.append("    <category domain=\"post_tag\" nicename=\"%s\"><![CDATA[%s]]></category>" % (tag, tag))
     if post.get("max_links"):
-        out.append("    <wp:postmeta><wp:meta_key>_ele_max_links</wp:meta_key><wp:meta_value>%d</wp:meta_value></wp:postmeta>" % post["max_links"])
+        out.append("    <wp:postmeta><wp:meta_key>_elink_max_links</wp:meta_key><wp:meta_value>%d</wp:meta_value></wp:postmeta>" % post["max_links"])
     if post.get("auto_links") is not None:
-        out.append("    <wp:postmeta><wp:meta_key>_ele_auto_links</wp:meta_key><wp:meta_value>%d</wp:meta_value></wp:postmeta>" % post["auto_links"])
+        out.append("    <wp:postmeta><wp:meta_key>_elink_auto_links</wp:meta_key><wp:meta_value>%d</wp:meta_value></wp:postmeta>" % post["auto_links"])
     out.append("  </item>")
     return "\n".join(out)
 
@@ -957,7 +957,7 @@ def build_entities_php():
     lines.append("/**")
     lines.append(" * Demo-Entities fuer Entity Link Engine importieren.")
     lines.append(" * Aufruf: wp eval-file demo-entities.php --allow-root")
-    lines.append(" * Setzt ele_entities_manual (Ziele per Slug aufgeloest) und baut den Index neu.")
+    lines.append(" * Setzt elink_entities_manual (Ziele per Slug aufgeloest) und baut den Index neu.")
     lines.append(" */")
     lines.append("defined( 'ABSPATH' ) || die( 'WP context required.' );")
     lines.append("")
@@ -987,7 +987,7 @@ def build_entities_php():
     lines.append(r"    unset($entities[ $i ]['_target_slug']);")
     lines.append(r"}")
     lines.append("")
-    lines.append("update_option( 'ele_entities_manual', array_values( $entities ) );")
+    lines.append("update_option( 'elink_entities_manual', array_values( $entities ) );")
     lines.append("echo 'Entities gesetzt: ' . count( $entities ) . PHP_EOL;")
     lines.append("")
     lines.append(r"$map = new ELE_Entity_Map();")
@@ -1040,7 +1040,7 @@ wp eval '\\$e = new ELE_Engine(); foreach (range(1,8) as \\$i) { \\$r = \\$e->ru
 - **Kategorien:** Planung, Produkte, Kältemittel, Effizienz, Wartung, Sicherheit, Branchen
 - **Tags:** kuehlung, rechenzentrum, logistik, produktion, foerderung, saison, smart, lebensmittel, pharma, notfall
 - **Manuelles Entity-Vokabular (28 Einträge):** Industrie-Klimageräte, Kaltwassersatz, Schaltschrankklimatisierung, Serverraum-Klimatisierung, Free Cooling, F-Gas-Verordnung, Kältemittel R290, Adiabatische Kühlung, Kältelastberechnung, Dachklimageräte, Mobile Klimageräte, Wartungsvertrag, BAFA-Förderung, EN 378, ATEX-Klimageräte, Wärmerückgewinnung, Kälteleistung, Notkühlung, Container-Klimatisierung, ErP-Richtlinie, CO2-Kältemittel R744, Hybridkühler, Abluft-Wärmepumpe, Reinraumklimatisierung, Kältemittelleckage, Glykol, Pufferspeicher, Prozessklimatisierung
-- **Post-Meta-Demos:** einige Artikel mit `_ele_max_links`-Override
+- **Post-Meta-Demos:** einige Artikel mit `_elink_max_links`-Override
 
 ## Erwartung nach dem Lauf
 

@@ -2,7 +2,7 @@
 /**
  * Demo-Entities fuer Entity Link Engine importieren.
  * Aufruf: wp eval-file demo-entities.php --allow-root
- * Setzt ele_entities_manual (Ziele per Slug aufgeloest) und baut den Index neu.
+ * Setzt elink_entities_manual (Ziele per Slug aufgeloest) und baut den Index neu.
  */
 defined( 'ABSPATH' ) || die( 'WP context required.' );
 
@@ -247,10 +247,10 @@ foreach ( $entities as $i => $entity ) {
     unset($entities[ $i ]['_target_slug']);
 }
 
-update_option( 'ele_entities_manual', array_values( $entities ) );
+update_option( 'elink_entities_manual', array_values( $entities ) );
 echo 'Entities gesetzt: ' . count( $entities ) . PHP_EOL;
 
-$map = new ELE_Entity_Map();
+$map = new ELINK_Entity_Map();
 $count = $map->rebuild();
 echo 'Index neu aufgebaut: ' . $count . ' Posts' . PHP_EOL;
 

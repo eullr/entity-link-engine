@@ -2,20 +2,20 @@
 (function () {
 	'use strict';
 
-	var data = window.eleData || {};
+	var data = window.elinkData || {};
 	if (!data.restUrl) {
 		return;
 	}
 
-	var box = document.getElementById('ele-meta');
+	var box = document.getElementById('elink-meta');
 	if (!box) {
 		return;
 	}
 
-	var results = box.querySelector('.ele-results');
-	var btnSuggest = box.querySelector('.ele-suggest');
-	var btnApply = box.querySelector('.ele-apply');
-	var btnUndo = box.querySelector('.ele-undo');
+	var results = box.querySelector('.elink-results');
+	var btnSuggest = box.querySelector('.elink-suggest');
+	var btnApply = box.querySelector('.elink-apply');
+	var btnUndo = box.querySelector('.elink-undo');
 	var current = null;
 
 	function post(route, body) {
@@ -40,12 +40,12 @@
 			btnApply.style.display = 'none';
 			return;
 		}
-		var html = '<ul class="ele-candidates">';
+		var html = '<ul class="elink-candidates">';
 		candidates.forEach(function (c) {
 			var reasons = (c.reasons || []).join(', ');
 			// c.url is escaped for the attribute; title/reasons escaped for text.
 			html += '<li><a href="' + escapeAttr(c.url) + '" target="_blank" rel="noopener">' + escapeHtml(c.title) + '</a> ' +
-				'<span class="ele-score">' + Number(c.score).toFixed(2) + '</span>' +
+				'<span class="elink-score">' + Number(c.score).toFixed(2) + '</span>' +
 				(reasons ? '<br /><small>' + escapeHtml(reasons) + '</small>' : '') +
 				(c.already_linked ? ' <small>(' + escapeHtml(data.i18n.already) + ')</small>' : '') +
 				'</li>';

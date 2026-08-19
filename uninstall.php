@@ -10,4 +10,4 @@
 defined( 'WP_UNINSTALL_PLUGIN' ) || exit;
 
 require_once __DIR__ . '/includes/class-install.php';
-ELE_Install::uninstall();
+ELINK_Install::uninstall();

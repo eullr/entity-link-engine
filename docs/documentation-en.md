@@ -64,8 +64,8 @@ Candidates are scored from six signal groups:
 |---|---|
 | Shared tags | +2.0 each (max 4) |
 | Shared categories | +1.5 each (max 3) |
-| Shared objectives (`_ele_objectives`) | +3.0 each (max 3) |
-| Same format (`_ele_use_tag`) | +0.5 |
+| Shared objectives (`_elink_objectives`) | +3.0 each (max 3) |
+| Same format (`_elink_use_tag`) | +0.5 |
 | Title term overlap | +1.25 each (max 4) |
 | Supporting term overlap | +0.25 each (max 4) |
 | Fan-out coverage (distinct query types) | +0.75 each (max 4) |
@@ -86,7 +86,7 @@ Links are inserted only when every rule holds:
 - at most **one auto link per paragraph** (also across repeated runs);
 - existing editorial links are never modified or removed.
 
-Inserted links carry `class="ele-auto-link"` and `data-ele="<post-id>"` for
+Inserted links carry `class="elink-auto-link"` and `data-elink="<post-id>"` for
 reporting and safe re-runs.
 
 ---
@@ -124,10 +124,10 @@ Requires WordPress 6.0+ and PHP 7.4+.
 | Setting | Default | Description |
 |---|---|---|
 | Post types | `post` | Content types the engine scans and links. |
-| Max links per post | 3 | Upper bound per run. Per-post override: `_ele_max_links`. |
+| Max links per post | 3 | Upper bound per run. Per-post override: `_elink_max_links`. |
 | Min score | 2.5 | Candidates below this score are not linked. |
 | Automatic run on publish | on | Run the engine when a post is published. |
-| Add CSS class | on | Adds `ele-auto-link` (class name configurable). |
+| Add CSS class | on | Adds `elink-auto-link` (class name configurable). |
 | Skip blocks | h1–h6, pre, code, table, blockquote, figure, img | Block types that never receive auto links. |
 | Semantic layer | off | Optional OpenAI-compatible embeddings (see §8). |
 
@@ -201,11 +201,11 @@ the plugin's readme.
 
 | Meta key | Effect |
 |---|---|
-| `_ele_auto_links` | Set to `0` to disable auto-linking for this post. |
-| `_ele_max_links` | Override the max links per run for this post. |
-| `_ele_objectives` | Comma-separated list; shared objectives add +3.0 each. |
-| `_ele_use_tag` | Format label; shared value adds +0.5. |
-| `_ele_lang` | Language marker; stored on index rows for multilingual sites. |
+| `_elink_auto_links` | Set to `0` to disable auto-linking for this post. |
+| `_elink_max_links` | Override the max links per run for this post. |
+| `_elink_objectives` | Comma-separated list; shared objectives add +3.0 each. |
+| `_elink_use_tag` | Format label; shared value adds +0.5. |
+| `_elink_lang` | Language marker; stored on index rows for multilingual sites. |
 
 ---
 
@@ -227,27 +227,27 @@ All endpoints require a REST nonce (`X-WP-Nonce`) and validate `edit_post` /
 
 ## 11. Hooks and filters
 
-- **`ele_manual_entities`** — filter to add entities from code:
+- **`elink_manual_entities`** — filter to add entities from code:
   `array( 'entity_label' => string, 'aliases' => array, 'target_post_id' => int, 'priority' => int )`.
-- **`ele_bulk_tick`** — cron event that drives the bulk run.
+- **`elink_bulk_tick`** — cron event that drives the bulk run.
 
 ---
 
 ## 12. Data model
 
-**Tables** (prefix `wp_ele_`):
+**Tables** (prefix `wp_elink_`):
 
-- `ele_entity_index` — entity key, label, post id, source, weight, lang.
-- `ele_links` — source id, target id, anchor, score, mode, status, created.
+- `elink_entity_index` — entity key, label, post id, source, weight, lang.
+- `elink_links` — source id, target id, anchor, score, mode, status, created.
 
-**Options:** `ele_settings`, `ele_entities_manual`, `ele_index_built`,
-`ele_bulk_*`.
+**Options:** `elink_settings`, `elink_entities_manual`, `elink_index_built`,
+`elink_bulk_*`.
 
-**Post meta:** `_ele_snapshot`, `_ele_inserted_links`, `_ele_last_run`,
-`_ele_embedding`, `_ele_auto_links`, `_ele_max_links`, `_ele_objectives`,
-`_ele_use_tag`, `_ele_lang`.
+**Post meta:** `_elink_snapshot`, `_elink_inserted_links`, `_elink_last_run`,
+`_elink_embedding`, `_elink_auto_links`, `_elink_max_links`, `_elink_objectives`,
+`_elink_use_tag`, `_elink_lang`.
 
-Uninstall removes all options, tables and `_ele_*` post meta.
+Uninstall removes all options, tables and `_elink_*` post meta.
 
 ---
 

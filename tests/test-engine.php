@@ -22,13 +22,13 @@ function t_check( $cond, $label ) {
 }
 
 // Isolate from the save_post auto-run hook while fixtures are created.
-$original_settings = ELE_Install::get_settings();
+$original_settings = ELINK_Install::get_settings();
 $iso_settings = $original_settings;
 $iso_settings['auto_on_publish'] = 0;
-update_option( 'ele_settings', $iso_settings );
+update_option( 'elink_settings', $iso_settings );
 
 // --- Cleanup previous fixtures -------------------------------------------
-$old = get_posts( array( 'post_type' => 'post', 'numberposts' => -1, 'meta_key' => '_ele_test_fixture', 'fields' => 'ids' ) );
+$old = get_posts( array( 'post_type' => 'post', 'numberposts' => -1, 'meta_key' => '_elink_test_fixture', 'fields' => 'ids' ) );
 foreach ( $old as $pid ) {
 	wp_delete_post( $pid, true );
 }
@@ -106,13 +106,13 @@ foreach ( $fixtures as $f ) {
 			'tags_input'   => $tag_ids,
 		)
 	);
-	update_post_meta( $pid, '_ele_test_fixture', 1 );
+	update_post_meta( $pid, '_elink_test_fixture', 1 );
 	$created[ $f['slug'] ] = (int) $pid;
 }
 t_check( count( $created ) === 6, 'fixtures created (' . count( $created ) . ')' );
 
 // --- Rebuild index ---------------------------------------------------------
-$map = new ELE_Entity_Map();
+$map = new ELINK_Entity_Map();
 $count = $map->rebuild();
 t_check( $count >= 6, 'index rebuilt (' . $count . ' posts)' );
 
@@ -154,7 +154,7 @@ $manual_entities = array(
 		'priority'       => 90,
 	),
 );
-update_option( 'ele_entities_manual', $manual_entities );
+update_option( 'elink_entities_manual', $manual_entities );
 
 // --- Source post with entity mentions --------------------------------------
 $source_body = "<h2>Warum Sichtbarkeit heute anders gemessen wird</h2>\n\n"
@@ -174,10 +174,10 @@ $source_id = wp_insert_post(
 		'tags_input'   => array( (int) get_term_by( 'name', 'geo', 'post_tag' )->term_id ),
 	)
 );
-update_post_meta( $source_id, '_ele_test_fixture', 1 );
+update_post_meta( $source_id, '_elink_test_fixture', 1 );
 
 // --- Dry run ----------------------------------------------------------------
-$engine = new ELE_Engine();
+$engine = new ELINK_Engine();
 $dry = $engine->run( $source_id, true );
 
 echo "--- dry run ---\n";
@@ -252,7 +252,7 @@ t_check( false !== strpos( $content, '>GEO-Audit</a>' ), 'GEO-Audit linked as a 
 $engine->undo( $source_id );
 $after_undo = get_post( $source_id )->post_content;
 t_check( $after_undo === $source_body, 'undo restores exact original content' );
-t_check( false === strpos( $after_undo, 'ele-auto-link' ), 'undo removes inserted classes' );
+t_check( false === strpos( $after_undo, 'elink-auto-link' ), 'undo removes inserted classes' );
 // Restore the linked state for the following tests (per-post override etc.).
 $engine->run( $source_id, false );
 
@@ -272,7 +272,7 @@ $pid2 = wp_insert_post(
 		'post_type'    => 'post',
 	)
 );
-update_post_meta( $pid2, '_ele_test_fixture', 1 );
+update_post_meta( $pid2, '_elink_test_fixture', 1 );
 $res2 = $engine->run( $pid2, false );
 $manual_kept = false !== strpos( get_post( $pid2 )->post_content, '>llms.txt</a>' );
 t_check( $manual_kept, 'existing manual link preserved after run' );
@@ -285,23 +285,23 @@ foreach ( $inserted2 as $l ) {
 }
 t_check( $no_dup, 'run does not re-link an already linked URL' );
 
-// Per-post override: _ele_max_links=1.
-update_post_meta( $source_id, '_ele_max_links', 1 );
+// Per-post override: _elink_max_links=1.
+update_post_meta( $source_id, '_elink_max_links', 1 );
 $res3 = $engine->run( $source_id, false );
 t_check( count( $res3['inserted'] ) <= 1, 'per-post max_links=1 honored (' . count( $res3['inserted'] ) . ')' );
-delete_post_meta( $source_id, '_ele_max_links' );
+delete_post_meta( $source_id, '_elink_max_links' );
 
 // --- Report ------------------------------------------------------------------
-$report = new ELE_Report();
+$report = new ELINK_Report();
 $summary = $report->summary();
 echo '--- report ---' . "\n";
 echo 'posts: ' . $summary['posts'] . ', auto_edges: ' . $summary['auto_edges'] . ', orphans: ' . count( $summary['orphans'] ) . "\n";
 t_check( $summary['auto_edges'] >= 3, 'report counts auto links' );
 
 // --- Auto-run on publish ------------------------------------------------------
-$auto_settings = ELE_Install::get_settings();
+$auto_settings = ELINK_Install::get_settings();
 $auto_settings['auto_on_publish'] = 1;
-update_option( 'ele_settings', $auto_settings );
+update_option( 'elink_settings', $auto_settings );
 
 $auto_body = "<p>Wer Sichtbarkeit aufbauen will, beginnt mit einem GEO-Audit und prueft die llms.txt. Der Retrieval-Zitat-Funnel zeigt dann die Luecke.</p>";
 $auto_id = wp_insert_post(
@@ -313,15 +313,15 @@ $auto_id = wp_insert_post(
 		'post_type'    => 'post',
 	)
 );
-update_post_meta( $auto_id, '_ele_test_fixture', 1 );
+update_post_meta( $auto_id, '_elink_test_fixture', 1 );
 $auto_post = get_post( $auto_id );
-$auto_has_links = false !== strpos( $auto_post->post_content, 'ele-auto-link' );
+$auto_has_links = false !== strpos( $auto_post->post_content, 'elink-auto-link' );
 t_check( $auto_has_links, 'auto-run on publish inserted links without manual trigger' );
 echo '--- auto-run ---' . "\n";
-echo 'auto links in fresh post: ' . substr_count( $auto_post->post_content, 'ele-auto-link' ) . "\n";
+echo 'auto links in fresh post: ' . substr_count( $auto_post->post_content, 'elink-auto-link' ) . "\n";
 
 // Restore original settings (auto_on_publish as configured by user).
-update_option( 'ele_settings', $original_settings );
+update_option( 'elink_settings', $original_settings );
 
 // --- Summary -----------------------------------------------------------------
 echo "\n" . '=== PASS: ' . count( $passes ) . ' / ' . ( count( $passes ) + count( $errors ) ) . " ===\n";

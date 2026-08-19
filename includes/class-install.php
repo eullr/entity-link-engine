@@ -10,7 +10,7 @@ defined( 'ABSPATH' ) || exit;
 /**
  * Install / uninstall helpers and settings store.
  */
-class ELE_Install {
+class ELINK_Install {
 
 	/**
 	 * Default settings.
@@ -24,7 +24,7 @@ class ELE_Install {
 			'min_score'       => 2.5,
 			'auto_on_publish' => 1,
 			'add_link_class'  => 1,
-			'link_class'      => 'ele-auto-link',
+			'link_class'      => 'elink-auto-link',
 			'skip_blocks'     => array( 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'pre', 'code', 'table', 'blockquote', 'figure', 'img' ),
 			'embed'           => array(
 				'enabled' => 0,
@@ -42,7 +42,7 @@ class ELE_Install {
 	 * @return array
 	 */
 	public static function get_settings() {
-		$saved = get_option( 'ele_settings', array() );
+		$saved = get_option( 'elink_settings', array() );
 		$saved = is_array( $saved ) ? $saved : array();
 		return wp_parse_args( $saved, self::defaults() );
 	}
@@ -67,8 +67,8 @@ class ELE_Install {
 	public static function tables() {
 		global $wpdb;
 		return array(
-			'index' => $wpdb->prefix . 'ele_entity_index',
-			'links' => $wpdb->prefix . 'ele_links',
+			'index' => $wpdb->prefix . 'elink_entity_index',
+			'links' => $wpdb->prefix . 'elink_links',
 		);
 	}
 
@@ -120,17 +120,17 @@ class ELE_Install {
 	 */
 	public static function activate() {
 		self::create_tables();
-		if ( false === get_option( 'ele_settings' ) ) {
-			add_option( 'ele_settings', self::defaults() );
+		if ( false === get_option( 'elink_settings' ) ) {
+			add_option( 'elink_settings', self::defaults() );
 		}
-		update_option( 'ele_db_version', '1.0.0' );
+		update_option( 'elink_db_version', '1.0.0' );
 	}
 
 	/**
 	 * Deactivation: nothing destructive.
 	 */
 	public static function deactivate() {
-		wp_clear_scheduled_hook( 'ele_bulk_tick' );
+		wp_clear_scheduled_hook( 'elink_bulk_tick' );
 	}
 
 	/**
@@ -140,24 +140,24 @@ class ELE_Install {
 	public static function uninstall() {
 		global $wpdb;
 
-		delete_option( 'ele_settings' );
-		delete_option( 'ele_entities_manual' );
-		delete_option( 'ele_index_built' );
-		delete_option( 'ele_db_version' );
+		delete_option( 'elink_settings' );
+		delete_option( 'elink_entities_manual' );
+		delete_option( 'elink_index_built' );
+		delete_option( 'elink_db_version' );
 
 		// phpcs:ignore WordPress.DB.DirectDatabaseQuery.DirectQuery, WordPress.DB.DirectDatabaseQuery.NoCaching, WordPress.DB.DirectDatabaseQuery.SchemaChange
-		$wpdb->query( "DROP TABLE IF EXISTS {$wpdb->prefix}ele_links" );
+		$wpdb->query( "DROP TABLE IF EXISTS {$wpdb->prefix}elink_links" );
 		// phpcs:ignore WordPress.DB.DirectDatabaseQuery.DirectQuery, WordPress.DB.DirectDatabaseQuery.NoCaching, WordPress.DB.DirectDatabaseQuery.SchemaChange
-		$wpdb->query( "DROP TABLE IF EXISTS {$wpdb->prefix}ele_entity_index" );
+		$wpdb->query( "DROP TABLE IF EXISTS {$wpdb->prefix}elink_entity_index" );
 
-		delete_post_meta_by_key( '_ele_snapshot' );
-		delete_post_meta_by_key( '_ele_inserted_links' );
-		delete_post_meta_by_key( '_ele_last_run' );
-		delete_post_meta_by_key( '_ele_embedding' );
-		delete_post_meta_by_key( '_ele_auto_links' );
-		delete_post_meta_by_key( '_ele_max_links' );
-		delete_post_meta_by_key( '_ele_objectives' );
-		delete_post_meta_by_key( '_ele_use_tag' );
-		delete_post_meta_by_key( '_ele_lang' );
+		delete_post_meta_by_key( '_elink_snapshot' );
+		delete_post_meta_by_key( '_elink_inserted_links' );
+		delete_post_meta_by_key( '_elink_last_run' );
+		delete_post_meta_by_key( '_elink_embedding' );
+		delete_post_meta_by_key( '_elink_auto_links' );
+		delete_post_meta_by_key( '_elink_max_links' );
+		delete_post_meta_by_key( '_elink_objectives' );
+		delete_post_meta_by_key( '_elink_use_tag' );
+		delete_post_meta_by_key( '_elink_lang' );
 	}
 }

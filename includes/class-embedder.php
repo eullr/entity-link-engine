@@ -15,7 +15,7 @@ defined( 'ABSPATH' ) || exit;
 /**
  * Embedder.
  */
-class ELE_Embedder {
+class ELINK_Embedder {
 
 	/**
 	 * Whether the semantic layer is enabled.
@@ -23,7 +23,7 @@ class ELE_Embedder {
 	 * @return bool
 	 */
 	public function is_enabled() {
-		$settings = ELE_Install::get_settings();
+		$settings = ELINK_Install::get_settings();
 		$embed    = isset( $settings['embed'] ) ? $settings['embed'] : array();
 		return ! empty( $embed['enabled'] ) && ! empty( $embed['api_key'] ) && ! empty( $embed['api_url'] );
 	}
@@ -35,7 +35,7 @@ class ELE_Embedder {
 	 * @return array|WP_Error Vectors or error.
 	 */
 	public function embed_texts( $texts ) {
-		$settings = ELE_Install::get_settings();
+		$settings = ELINK_Install::get_settings();
 		$embed    = isset( $settings['embed'] ) ? $settings['embed'] : array();
 		$api_url  = untrailingslashit( (string) $embed['api_url'] );
 		$model    = ! empty( $embed['model'] ) ? (string) $embed['model'] : 'text-embedding-3-small';
@@ -62,11 +62,11 @@ class ELE_Embedder {
 		}
 		$code = (int) wp_remote_retrieve_response_code( $response );
 		if ( $code < 200 || $code >= 300 ) {
-			return new WP_Error( 'ele_embed_http', 'Embedding API returned HTTP ' . $code );
+			return new WP_Error( 'elink_embed_http', 'Embedding API returned HTTP ' . $code );
 		}
 		$body = json_decode( wp_remote_retrieve_body( $response ), true );
 		if ( ! is_array( $body ) || empty( $body['data'] ) ) {
-			return new WP_Error( 'ele_embed_empty', 'Embedding API returned no data.' );
+			return new WP_Error( 'elink_embed_empty', 'Embedding API returned no data.' );
 		}
 
 		$vectors = array();
@@ -85,10 +85,10 @@ class ELE_Embedder {
 	 * @return array|null
 	 */
 	public function get_post_embedding( $post_id ) {
-		$settings = ELE_Install::get_settings();
+		$settings = ELINK_Install::get_settings();
 		$model    = isset( $settings['embed']['model'] ) ? (string) $settings['embed']['model'] : '';
 
-		$cached = get_post_meta( $post_id, '_ele_embedding', true );
+		$cached = get_post_meta( $post_id, '_elink_embedding', true );
 		if ( is_array( $cached ) && isset( $cached['model'], $cached['vec'] ) && $cached['model'] === $model ) {
 			return $cached['vec'];
 		}
@@ -116,9 +116,9 @@ class ELE_Embedder {
 		if ( is_wp_error( $vecs ) || empty( $vecs ) ) {
 			return null;
 		}
-		$settings = ELE_Install::get_settings();
+		$settings = ELINK_Install::get_settings();
 		$model    = isset( $settings['embed']['model'] ) ? (string) $settings['embed']['model'] : '';
-		update_post_meta( $post_id, '_ele_embedding', array( 'model' => $model, 'vec' => $vecs[0] ) );
+		update_post_meta( $post_id, '_elink_embedding', array( 'model' => $model, 'vec' => $vecs[0] ) );
 		return $vecs[0];
 	}
 
